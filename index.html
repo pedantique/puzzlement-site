@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puzzlement — Your daily puzzles, one app</title>
+<meta name="description" content="Puzzlement wraps 90+ daily web puzzles — NYT, LinkedIn, WaPo, LA Times and more — into one iOS app. Track your streaks, scores and progress.">
+<style>
+  :root {
+    --red: #700000;
+    --green: #037036;
+    --navy: #191970;
+    --purple: #580470;
+    --orange: #E07E1B;
+    --ink: #1a1a2e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: #fafafa;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+  header { text-align: center; padding: 72px 0 40px; }
+  .piece {
+    display: grid; grid-template-columns: 34px 34px; grid-template-rows: 34px 34px;
+    gap: 3px; width: 71px; margin: 0 auto 28px; transform: rotate(-4deg);
+  }
+  .piece div { border-radius: 7px; }
+  .piece .q1 { background: var(--red); }
+  .piece .q2 { background: var(--green); }
+  .piece .q3 { background: var(--navy); }
+  .piece .q4 { background: var(--purple); }
+  h1 { font-size: 2.6rem; letter-spacing: -0.02em; }
+  .tagline { font-size: 1.25rem; color: #555; margin-top: 8px; }
+  .badge {
+    display: inline-block; margin-top: 28px; padding: 12px 26px;
+    background: var(--ink); color: #fff; border-radius: 12px;
+    font-weight: 600; text-decoration: none; font-size: 1rem;
+  }
+  .badge span { opacity: 0.7; font-weight: 400; }
+  section { padding: 36px 0; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; margin-top: 8px; }
+  .card { background: #fff; border-radius: 14px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .card h3 { font-size: 1rem; margin-bottom: 6px; }
+  .card p { font-size: 0.92rem; color: #555; }
+  .card.streaks h3 { color: var(--red); }
+  .card.scores h3 { color: var(--green); }
+  .card.daily h3 { color: var(--navy); }
+  .card.everything h3 { color: var(--purple); }
+  .pubs { text-align: center; color: #777; font-size: 0.95rem; padding-bottom: 8px; }
+  footer {
+    text-align: center; color: #888; font-size: 0.85rem;
+    padding: 40px 0 48px; border-top: 1px solid #e5e5e5; margin-top: 40px;
+  }
+  footer a { color: #666; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="piece" aria-hidden="true">
+        <div class="q1"></div><div class="q2"></div><div class="q3"></div><div class="q4"></div>
+      </div>
+      <h1>Puzzlement</h1>
+      <p class="tagline">Your daily puzzles. One app.</p>
+      <a class="badge" href="#"><span>Coming soon to the</span> App&nbsp;Store</a>
+    </header>
+
+    <section>
+      <div class="cards">
+        <div class="card everything"><h3>90+ daily puzzles</h3><p>Wordle, Connections, Strands, Queens, Pinpoint, crosswords, sudoku and dozens more — all in one place.</p></div>
+        <div class="card daily"><h3>One daily checklist</h3><p>See what&rsquo;s left today, when each puzzle resets, and tick them off as you go.</p></div>
+        <div class="card streaks"><h3>Streaks that matter</h3><p>Track your streak for every puzzle — and your overall Puzzlement streak.</p></div>
+        <div class="card scores"><h3>Scores, captured</h3><p>Your results are detected automatically and charted over time. No spreadsheets.</p></div>
+      </div>
+    </section>
+
+    <p class="pubs">Puzzles from The New York Times, LinkedIn, The Washington Post, LA&nbsp;Times, The&nbsp;Guardian, The&nbsp;Atlantic, Puzzmo and many more.</p>
+
+    <footer>
+      <p><a href="/privacy/">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="mailto:support@puzzlement.games">support@puzzlement.games</a></p>
+      <p style="margin-top:8px">&copy; Challis &amp; Company Pty Limited. Handtuned in Sydney, Australia.</p>
+      <p style="margin-top:8px; font-size:0.78rem">Puzzlement links to third-party puzzles; all puzzle names and trademarks belong to their respective publishers.</p>
+    </footer>
+  </div>
+</body>
+</html>
