@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Puzzlement — Your daily puzzles, one app</title>
-<meta name="description" content="Puzzlement wraps 90+ daily web puzzles — NYT, LinkedIn, WaPo, LA Times and more — into one iOS app. Track your streaks, scores and progress.">
+<meta name="description" content="Puzzlement wraps 90+ daily web puzzles — NYT, LinkedIn, WaPo, LA Times and more — into one iOS app. Track your progress, streaks and scores.">
 <style>
   :root {
     --red: #700000;
@@ -12,78 +12,209 @@
     --navy: #191970;
     --purple: #580470;
     --orange: #E07E1B;
+    --teal: #065570;
     --ink: #1a1a2e;
+    --paper: #f6f6f8;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: var(--ink);
-    background: #fafafa;
+    background: #fff;
     line-height: 1.6;
   }
-  .wrap { max-width: 680px; margin: 0 auto; padding: 0 24px; }
-  header { text-align: center; padding: 72px 0 40px; }
-  .piece {
-    display: grid; grid-template-columns: 34px 34px; grid-template-rows: 34px 34px;
-    gap: 3px; width: 71px; margin: 0 auto 28px; transform: rotate(-4deg);
+  .wrap { max-width: 1020px; margin: 0 auto; padding: 0 24px; }
+  em { font-style: italic; }
+
+  /* ---------- Hero ---------- */
+  header {
+    background: linear-gradient(180deg, #fff 0%, var(--paper) 100%);
+    text-align: center;
+    padding: 64px 0 40px;
   }
-  .piece div { border-radius: 7px; }
-  .piece .q1 { background: var(--red); }
-  .piece .q2 { background: var(--green); }
-  .piece .q3 { background: var(--navy); }
-  .piece .q4 { background: var(--purple); }
-  h1 { font-size: 2.6rem; letter-spacing: -0.02em; }
-  .tagline { font-size: 1.25rem; color: #555; margin-top: 8px; }
+  .app-icon {
+    width: 108px; height: 108px; border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(26,26,46,0.22);
+    margin-bottom: 24px;
+  }
+  h1 { font-size: 3rem; letter-spacing: -0.02em; font-style: italic; }
+  h1 .tld { color: var(--green); font-style: normal; font-weight: 600; font-size: 1.6rem; vertical-align: baseline; }
+  .tagline { font-size: 1.3rem; color: #444; margin-top: 10px; }
+  .tagline strong { color: var(--navy); }
   .badge {
-    display: inline-block; margin-top: 28px; padding: 12px 26px;
-    background: var(--ink); color: #fff; border-radius: 12px;
-    font-weight: 600; text-decoration: none; font-size: 1rem;
+    display: inline-block; margin-top: 26px; padding: 13px 30px;
+    background: var(--ink); color: #fff; border-radius: 14px;
+    font-weight: 600; text-decoration: none; font-size: 1.05rem;
+    transition: transform 0.15s ease;
   }
-  .badge span { opacity: 0.7; font-weight: 400; }
-  section { padding: 36px 0; }
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; margin-top: 8px; }
-  .card { background: #fff; border-radius: 14px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
-  .card h3 { font-size: 1rem; margin-bottom: 6px; }
-  .card p { font-size: 0.92rem; color: #555; }
-  .card.streaks h3 { color: var(--red); }
-  .card.scores h3 { color: var(--green); }
-  .card.daily h3 { color: var(--navy); }
-  .card.everything h3 { color: var(--purple); }
-  .pubs { text-align: center; color: #777; font-size: 0.95rem; padding-bottom: 8px; }
+  .badge:hover { transform: scale(1.03); }
+  .badge span { opacity: 0.65; font-weight: 400; }
+  .sub-badge { display: block; margin-top: 10px; color: #888; font-size: 0.85rem; }
+
+  /* ---------- Screenshots ---------- */
+  .shots {
+    background: var(--paper);
+    padding: 40px 0 56px;
+  }
+  .shots-row {
+    display: flex; gap: 28px; justify-content: center; align-items: flex-start;
+    flex-wrap: nowrap; overflow-x: auto; padding: 8px 24px 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .phone { flex: 0 0 auto; width: 232px; text-align: center; }
+  .phone img {
+    width: 100%; display: block; border-radius: 26px;
+    border: 6px solid var(--ink);
+    box-shadow: 0 16px 36px rgba(26,26,46,0.25);
+    background: #000;
+  }
+  .phone figcaption { font-size: 0.88rem; color: #555; margin-top: 12px; }
+  .phone figcaption b { color: var(--ink); }
+
+  /* ---------- Feature grid ---------- */
+  .features { padding: 60px 0 24px; }
+  .features h2, .pubs h2 { text-align: center; font-size: 1.7rem; letter-spacing: -0.01em; }
+  .features h2 em { font-style: italic; }
+  .grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 32px;
+  }
+  .card {
+    background: #fff; border-radius: 16px; padding: 22px 20px 20px;
+    box-shadow: 0 2px 10px rgba(26,26,46,0.08);
+    border-top: 4px solid var(--accent, var(--navy));
+  }
+  .card .glyph {
+    width: 40px; height: 40px; border-radius: 11px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; color: #fff; background: var(--accent, var(--navy));
+    margin-bottom: 12px;
+  }
+  .card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+  .card p { font-size: 0.93rem; color: #555; }
+  .c-purple { --accent: var(--purple); }
+  .c-navy   { --accent: var(--navy); }
+  .c-red    { --accent: var(--red); }
+  .c-green  { --accent: var(--green); }
+  .c-orange { --accent: var(--orange); }
+  .c-teal   { --accent: var(--teal); }
+
+  /* ---------- Publishers ---------- */
+  .pubs { padding: 44px 0 8px; text-align: center; }
+  .pubs p { color: #666; font-size: 1rem; max-width: 640px; margin: 14px auto 0; }
+  .pub-names { margin-top: 14px; font-size: 0.95rem; color: #444; line-height: 2; }
+  .pub-names span {
+    display: inline-block; padding: 3px 12px; margin: 3px;
+    background: var(--paper); border-radius: 999px;
+  }
+
+  /* ---------- Footer ---------- */
   footer {
     text-align: center; color: #888; font-size: 0.85rem;
-    padding: 40px 0 48px; border-top: 1px solid #e5e5e5; margin-top: 40px;
+    padding: 44px 24px 52px; border-top: 1px solid #ececf0; margin-top: 48px;
   }
-  footer a { color: #666; }
+  footer a { color: var(--green); }
+  footer .legal { font-size: 0.78rem; max-width: 680px; margin: 12px auto 0; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 860px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    h1 { font-size: 2.4rem; }
+  }
+  @media (max-width: 560px) {
+    .grid { grid-template-columns: 1fr; }
+    .shots-row { justify-content: flex-start; }
+    h1 { font-size: 2rem; }
+    .tagline { font-size: 1.1rem; }
+  }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="piece" aria-hidden="true">
-        <div class="q1"></div><div class="q2"></div><div class="q3"></div><div class="q4"></div>
-      </div>
-      <h1>Puzzlement</h1>
-      <p class="tagline">Your daily puzzles. One app.</p>
+
+  <header>
+    <div class="wrap">
+      <img class="app-icon" src="img/icon.png" alt="Puzzlement app icon — four puzzle pieces">
+      <h1>Puzzlement<span class="tld">.games</span></h1>
+      <p class="tagline">Your <strong>daily puzzles</strong>. One app.</p>
       <a class="badge" href="#"><span>Coming soon to the</span> App&nbsp;Store</a>
-    </header>
+      <span class="sub-badge">In beta testing now for iPhone</span>
+    </div>
+  </header>
 
-    <section>
-      <div class="cards">
-        <div class="card everything"><h3>90+ daily puzzles</h3><p>Wordle, Connections, Strands, Queens, Pinpoint, crosswords, sudoku and dozens more — all in one place.</p></div>
-        <div class="card daily"><h3>One daily checklist</h3><p>See what&rsquo;s left today, when each puzzle resets, and tick them off as you go.</p></div>
-        <div class="card streaks"><h3>Streaks that matter</h3><p>Track your streak for every puzzle — and your overall Puzzlement streak.</p></div>
-        <div class="card scores"><h3>Scores, captured</h3><p>Your results are detected automatically and charted over time. No spreadsheets.</p></div>
+  <section class="shots">
+    <div class="shots-row">
+      <figure class="phone">
+        <img src="img/todays.png" alt="Today's daily puzzles checklist with progress bar and reset timers">
+        <figcaption><b>Today's</b> — your daily checklist</figcaption>
+      </figure>
+      <figure class="phone">
+        <img src="img/game.png" alt="Wordle running inside Puzzlement">
+        <figcaption><b>Play</b> — every puzzle, in one place</figcaption>
+      </figure>
+      <figure class="phone">
+        <img src="img/results.png" alt="Wordle results page with streak, guess distribution chart and calendar heatmap">
+        <figcaption><b>Results</b> — streaks, charts, heatmaps</figcaption>
+      </figure>
+      <figure class="phone">
+        <img src="img/discovery.png" alt="Puzzles discovery page listing active and available puzzles">
+        <figcaption><b>Discovery</b> — 90+ puzzles to explore</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="wrap">
+      <h2>Why <em>Puzzlement</em>?</h2>
+      <div class="grid">
+        <div class="card c-purple">
+          <div class="glyph">&#129513;</div>
+          <h3>90+ daily puzzles</h3>
+          <p>Wordle, Connections, Strands, Queens, Pinpoint, crosswords, sudoku and dozens more&mdash;every daily habit in one place.</p>
+        </div>
+        <div class="card c-navy">
+          <div class="glyph">&#128197;</div>
+          <h3>One daily checklist</h3>
+          <p>See what&rsquo;s left today, when each puzzle resets in your timezone, and tick them off as you go.</p>
+        </div>
+        <div class="card c-red">
+          <div class="glyph">&#128293;</div>
+          <h3>Streaks that matter</h3>
+          <p>A streak for every game, plus your overall <em>Puzzlement</em> streak&mdash;and you can import the streaks you&rsquo;ve already earned.</p>
+        </div>
+        <div class="card c-green">
+          <div class="glyph">&#9989;</div>
+          <h3>Scores, captured</h3>
+          <p>Results are detected automatically when you finish&mdash;no copying, no spreadsheets, no honour system.</p>
+        </div>
+        <div class="card c-orange">
+          <div class="glyph">&#128202;</div>
+          <h3>Charts &amp; history</h3>
+          <p>Guess distributions, calendar heatmaps and trends for every game. Jump back to any past edition.</p>
+        </div>
+        <div class="card c-teal">
+          <div class="glyph">&#128276;</div>
+          <h3>Widgets &amp; reminders</h3>
+          <p>Home-screen widgets show today&rsquo;s progress; a daily reminder keeps the streak alive. Sync across devices with iCloud.</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <p class="pubs">Puzzles from The New York Times, LinkedIn, The Washington Post, LA&nbsp;Times, The&nbsp;Guardian, The&nbsp;Atlantic, Puzzmo and many more.</p>
+  <section class="pubs">
+    <div class="wrap">
+      <h2>All your favourite publishers</h2>
+      <p>Puzzles load live from each publisher&rsquo;s own website&mdash;just like in a browser, with your logins remembered.</p>
+      <div class="pub-names">
+        <span>The New York Times</span><span>LinkedIn</span><span>The Washington Post</span><span>LA Times</span><span>The Guardian</span><span>The Atlantic</span><span>The New Yorker</span><span>Merriam-Webster</span><span>Puzzmo</span><span>Britannica</span><span>Trainwreck Labs</span><span>and many more</span>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <p><a href="/privacy/">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="mailto:support@puzzlement.games">support@puzzlement.games</a></p>
-      <p style="margin-top:8px">&copy; Challis &amp; Company Pty Limited. Handtuned in Sydney, Australia.</p>
-      <p style="margin-top:8px; font-size:0.78rem">Puzzlement is an independent app, not affiliated with or endorsed by any puzzle publisher. Like a web browser, it loads puzzles live from each publisher&rsquo;s own website and does not host or copy their content. All puzzles, game names, logos and trademarks are the intellectual property of their respective owners.</p>
-    </footer>
-  </div>
+  <footer>
+    <p><a href="/privacy/">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="mailto:support@puzzlement.games">support@puzzlement.games</a></p>
+    <p style="margin-top:8px">&copy; 2026 Challis &amp; Company Pty Limited. Handtuned in Sydney, Australia.</p>
+    <p class="legal"><em>Puzzlement</em> is an independent app, not affiliated with or endorsed by any puzzle publisher. Like a web browser, it loads puzzles live from each publisher&rsquo;s own website and does not host or copy their content. All puzzles, game names, logos and trademarks are the intellectual property of their respective owners.</p>
+  </footer>
+
 </body>
 </html>
