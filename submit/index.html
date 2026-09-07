@@ -147,9 +147,20 @@
         </div>
       </div>
 
+      <div class="row2">
+        <div class="field">
+          <label for="estMinutes">How long does it take? <span class="opt">(optional)</span></label>
+          <input type="text" id="estMinutes" name="Estimated time" placeholder="e.g. 5 minutes">
+        </div>
+        <div class="field">
+          <label for="variant">Difficulty / size variants <span class="opt">(optional)</span></label>
+          <input type="text" id="variant" name="Variant" placeholder="e.g. Easy/Medium/Hard, or 4x4/6x6">
+        </div>
+      </div>
+
       <div class="field">
-        <label for="estMinutes">How long does it usually take to play? <span class="opt">(optional)</span></label>
-        <input type="text" id="estMinutes" name="Estimated time" placeholder="e.g. 5 minutes">
+        <label for="tags">Anything special about how it plays? <span class="opt">(optional)</span></label>
+        <input type="text" id="tags" name="Tags" placeholder="e.g. Zen mode, untimed, co-op">
       </div>
 
       <div class="field">
@@ -158,13 +169,124 @@
       </div>
 
       <div class="field">
-        <label for="notes">Anything else we should know? <span class="opt">(optional)</span></label>
-        <textarea id="notes" name="Notes" placeholder="Archive of past puzzles, quirks, edition numbering, etc."></textarea>
+        <label for="icon">Icon or logo image <span class="opt">(optional, PNG preferred, square)</span></label>
+        <input type="file" id="icon" name="Icon image" accept="image/png,image/jpeg">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Scoring <span style="text-transform:none; font-weight:400; color:#999;">(optional, but helps us wire up streaks correctly)</span></legend>
+
+      <div class="row2">
+        <div class="field">
+          <label for="primaryMetric">What does a result look like?</label>
+          <select id="primaryMetric" name="Primary metric">
+            <option>Not sure</option>
+            <option>Time (a timer/stopwatch)</option>
+            <option>Guesses / attempts</option>
+            <option>Mistakes made</option>
+            <option>Tier or rank (e.g. Genius, Queen Bee)</option>
+            <option>Points / score</option>
+            <option>Par (like golf, under/over)</option>
+            <option>None — just pass or fail</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="lowerIsBetter">Is a lower number better?</label>
+          <select id="lowerIsBetter" name="Lower is better">
+            <option>Not sure</option>
+            <option>Yes (fewer/faster is better)</option>
+            <option>No (higher is better)</option>
+            <option>N/A</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label for="canFail">Can you actually fail/lose it?</label>
+          <select id="canFail" name="Can fail">
+            <option>Not sure</option>
+            <option>Yes</option>
+            <option>No — everyone eventually solves it</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="hints">Does it track hints or other aids used?</label>
+          <select id="hints" name="Hints/aids tracked">
+            <option>Not sure</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label for="bonus">Does it have a bonus round?</label>
+          <select id="bonus" name="Bonus round">
+            <option>Not sure</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="stars">Is it rated in stars?</label>
+          <select id="stars" name="Star rated">
+            <option>Not sure</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Sharing a result <span style="text-transform:none; font-weight:400; color:#999;">(optional)</span></legend>
+
+      <div class="row2">
+        <div class="field">
+          <label for="scoreShare">How do you share/save your result?</label>
+          <select id="scoreShare" name="Result sharing">
+            <option>Not sure</option>
+            <option>Has a "Share" or "Copy results" button</option>
+            <option>No share button, but the result text can be copied manually</option>
+            <option>No way to share a result</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="shareLabel">Exact label on that button <span class="opt">(optional)</span></label>
+          <input type="text" id="shareLabel" name="Share button label" placeholder="e.g. Share, Copy score">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Archive &amp; extras <span style="text-transform:none; font-weight:400; color:#999;">(optional)</span></legend>
+
+      <div class="row2">
+        <div class="field">
+          <label for="hasArchive">Can you play past days&rsquo; puzzles?</label>
+          <select id="hasArchive" name="Has archive">
+            <option>Not sure</option>
+            <option>Yes</option>
+            <option>No — only today&rsquo;s is playable</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="freeArchiveDays">How many past days are free? <span class="opt">(optional)</span></label>
+          <input type="text" id="freeArchiveDays" name="Free archive days" placeholder="e.g. 7 days, or all">
+        </div>
       </div>
 
       <div class="field">
-        <label for="icon">Icon or logo image <span class="opt">(optional, PNG preferred, square)</span></label>
-        <input type="file" id="icon" name="Icon image" accept="image/png,image/jpeg">
+        <label for="loginBenefit">Does creating an account help? <span class="opt">(optional)</span></label>
+        <input type="text" id="loginBenefit" name="Login benefit" placeholder="e.g. saves your stats, avoids repeat puzzles">
+      </div>
+
+      <div class="field">
+        <label for="notes">Anything else we should know? <span class="opt">(optional)</span></label>
+        <textarea id="notes" name="Notes" placeholder="Edition numbering, URL quirks, regional differences, etc."></textarea>
       </div>
     </fieldset>
 
@@ -196,6 +318,9 @@
   var form = document.getElementById('puzzleForm');
   form.addEventListener('submit', function () {
     var val = function (id) { return document.getElementById(id).value.trim(); };
+    // Skip the "Not sure" default for optional select fields so the markdown
+    // draft only lists what the submitter actually knew.
+    var known = function (id) { var v = val(id); return v === 'Not sure' ? '' : v; };
     var name = val('name');
     document.getElementById('subjectField').value = 'New puzzle suggestion: ' + (name || '(unnamed)');
 
@@ -208,6 +333,19 @@
     lines.push('- **Cadence:** ' + val('cadence'));
     if (val('resetTime')) lines.push('- **Reset time:** ' + val('resetTime'));
     if (val('estMinutes')) lines.push('- **Est. time:** ' + val('estMinutes'));
+    if (val('variant')) lines.push('- **Variants:** ' + val('variant'));
+    if (val('tags')) lines.push('- **Tags:** ' + val('tags'));
+    if (known('primaryMetric')) lines.push('- **Primary metric:** ' + known('primaryMetric'));
+    if (known('lowerIsBetter')) lines.push('- **Lower is better:** ' + known('lowerIsBetter'));
+    if (known('canFail')) lines.push('- **Can fail:** ' + known('canFail'));
+    if (known('hints')) lines.push('- **Hints/aids tracked:** ' + known('hints'));
+    if (known('bonus')) lines.push('- **Bonus round:** ' + known('bonus'));
+    if (known('stars')) lines.push('- **Star rated:** ' + known('stars'));
+    if (known('scoreShare')) lines.push('- **Result sharing:** ' + known('scoreShare'));
+    if (val('shareLabel')) lines.push('- **Share button label:** ' + val('shareLabel'));
+    if (known('hasArchive')) lines.push('- **Has archive:** ' + known('hasArchive'));
+    if (val('freeArchiveDays')) lines.push('- **Free archive days:** ' + val('freeArchiveDays'));
+    if (val('loginBenefit')) lines.push('- **Login benefit:** ' + val('loginBenefit'));
     lines.push('');
     lines.push(val('description'));
     if (val('notes')) {
