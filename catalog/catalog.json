@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-09-11",
+  "puzzles": {
+    "guardian-cryptic": {
+      "url": "https://www.theguardian.com/crosswords/series/cryptic"
+    },
+    "guardian-mini": {
+      "url": "https://www.theguardian.com/crosswords/series/mini-crossword"
+    },
+    "guardian-quick": {
+      "url": "https://www.theguardian.com/crosswords/series/quick"
+    },
+    "metaflora": {
+      "url": "https://flora.metazooa.com/"
+    },
+    "octordle": {
+      "url": "https://www.merriam-webster.com/games/octordle/"
+    },
+    "strands-colorful": {
+      "classification": {
+        "manualArchiveURLs": {
+          "2026-09-09": "https://www.nytimes.com/games/bonus/strands/colorful/2026-09-09-1086"
+        }
+      }
+    }
+  },
+  "added": [],
+  "removed": []
+}

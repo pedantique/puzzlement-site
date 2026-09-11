@@ -1,0 +1,52 @@
+name: Add Colorful Strands edition
+
+# The Wednesday form. Actions → "Add Colorful Strands edition" → Run workflow,
+# paste the week's URL (or just the slug / trailing number), Run. The change is
+# committed to catalog/catalog.json, GitHub Pages redeploys in about a minute,
+# and the app picks it up on its next launch or foreground (hourly check).
+
+on:
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: "This week's URL, slug (2026-09-16-1101) or just the number (1101)"
+        required: true
+        type: string
+      date:
+        description: "Edition date yyyy-MM-dd (leave blank: taken from the slug, else the nearest Wednesday)"
+        required: false
+        type: string
+      puzzle:
+        description: "Catalog id"
+        required: false
+        default: strands-colorful
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update catalog.json
+        id: update
+        run: |
+          set -e
+          ARGS=("${{ inputs.edition }}" --puzzle "${{ inputs.puzzle }}")
+          if [ -n "${{ inputs.date }}" ]; then ARGS+=(--date "${{ inputs.date }}"); fi
+          python3 catalog/add_edition.py "${ARGS[@]}" | tee result.txt
+          echo "summary=$(cat result.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Validate JSON
+        run: python3 -c "import json; json.load(open('catalog/catalog.json'))"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog/catalog.json
+          git commit -m "Catalog: ${{ steps.update.outputs.summary }}"
+          git push
