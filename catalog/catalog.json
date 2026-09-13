@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-11",
+  "updated": "2026-09-13",
   "puzzles": {
     "guardian-cryptic": {
       "url": "https://www.theguardian.com/crosswords/series/cryptic"
@@ -25,6 +25,24 @@
       }
     }
   },
-  "added": [],
+  "added": [
+    {
+      "id": "catalog-test",
+      "name": "Catalog Test",
+      "emoji": "🛰️",
+      "url": "https://puzzlement.games/",
+      "source": "Puzzlement",
+      "description": "Temporary entry proving the remote catalog reaches the app. Will vanish on the next refresh.",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "scoreShare": "none",
+        "estimatedMinutes": 1
+      }
+    }
+  ],
   "removed": []
 }
