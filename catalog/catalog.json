@@ -27,6 +27,31 @@
       }
     }
   },
-  "added": [],
+  "added": [
+    {
+      "id": "special-crossword",
+      "name": "Special Crossword",
+      "emoji": "✨",
+      "url": "https://www.nytimes.com/games/bonus/crossword/standard/2026-09-17",
+      "source": "NYT",
+      "description": "An occasional full-size crossword from the NYT bonus hub",
+      "category": "Crossword",
+      "access": "Paid sub required",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "cadence": "sporadic",
+        "archiveAccess": "subscriptionRequired",
+        "estimatedMinutes": 15,
+        "shareButtonLabel": "Share",
+        "popularityScore": 45,
+        "launchDate": "2026-09-17",
+        "resetTime": "Midnight local",
+        "manualArchiveURLs": {
+          "2026-09-17": "https://www.nytimes.com/games/bonus/crossword/standard/2026-09-17"
+        }
+      }
+    }
+  ],
   "removed": []
 }

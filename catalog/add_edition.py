@@ -7,6 +7,7 @@ locally:
     python3 catalog/add_edition.py 2026-09-16-1101
     python3 catalog/add_edition.py https://www.nytimes.com/games/bonus/strands/colorful/2026-09-16-1101
     python3 catalog/add_edition.py 1101 --date 2026-09-16
+    python3 catalog/add_edition.py --puzzle special-crossword 2026-09-17
     python3 catalog/add_edition.py --puzzle some-other-id --date 2026-09-16 https://example.com/x
 
 The edition may be a full URL, a slug ("2026-09-16-1101"), or just the trailing
@@ -25,6 +26,8 @@ CATALOG = Path(__file__).with_name("catalog.json")
 # Where a bare slug/number goes for each puzzle that uses manual editions.
 BASE_URLS = {
     "strands-colorful": "https://www.nytimes.com/games/bonus/strands/colorful/",
+    # Special Crossword: the slug IS the date, so a bare "2026-09-17" works.
+    "special-crossword": "https://www.nytimes.com/games/bonus/crossword/standard/",
 }
 # Weekday the puzzle publishes on (Mon=0 … Sun=6), for the default date.
 PUBLISH_WEEKDAY = {
@@ -85,7 +88,11 @@ def main() -> int:
     date, url = resolve(args.puzzle, args.edition, args.date, today)
 
     doc = json.loads(CATALOG.read_text())
-    entry = doc.setdefault("puzzles", {}).setdefault(args.puzzle, {})
+    # A puzzle the app doesn't have yet lives in "added" with its full definition;
+    # its editions belong on that entry, not in the "puzzles" override map.
+    entry = next((a for a in doc.get("added", []) if a.get("id") == args.puzzle), None)
+    if entry is None:
+        entry = doc.setdefault("puzzles", {}).setdefault(args.puzzle, {})
     urls = entry.setdefault("classification", {}).setdefault("manualArchiveURLs", {})
     previous = urls.get(date)
     urls[date] = url

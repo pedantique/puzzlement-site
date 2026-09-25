@@ -1,27 +1,30 @@
-name: Add Colorful Strands edition
+name: Add a puzzle edition
 
-# The Wednesday form. Actions → "Add Colorful Strands edition" → Run workflow,
-# paste the week's URL (or just the slug / trailing number), Run. The change is
+# The Wednesday form. Actions → "Add a puzzle edition" → Run workflow, pick the
+# puzzle, paste its URL (Colorful Strands also takes just the slug or number),
+# Run. The change is
 # committed to catalog/catalog.json, GitHub Pages redeploys in about a minute,
 # and the app picks it up on its next launch or foreground (hourly check).
 
 on:
   workflow_dispatch:
     inputs:
+      puzzle:
+        description: "Which puzzle"
+        required: true
+        default: strands-colorful
+        type: choice
+        options:
+          - strands-colorful
+          - special-crossword
       edition:
-        description: "This week's URL, slug (2026-09-16-1101) or just the number (1101)"
+        description: "The URL. Colorful Strands also accepts the slug (2026-09-16-1101) or just the number (1101); Special Crossword accepts its date (2026-09-17)"
         required: true
         type: string
       date:
         description: "Edition date yyyy-MM-dd (leave blank: taken from the slug, else the nearest Wednesday)"
         required: false
         type: string
-      puzzle:
-        description: "Catalog id"
-        required: false
-        default: strands-colorful
-        type: string
-
 permissions:
   contents: write
 
