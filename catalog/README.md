@@ -27,6 +27,20 @@ Anything else in the file can be edited directly in GitHub's web editor —
 the app ignores a file that doesn't parse, so a typo can't break it, but
 the workflow's "Validate JSON" step will tell you.
 
+## Community catalog (experimental)
+
+`community.json` is a second, opt-in document: ~175 daily games converted from
+[awesome-daily-minigames](https://github.com/guilyx/awesome-daily-minigames),
+which is CC0-1.0 (public domain, no attribution or share-alike conditions, so a
+paid app can use it). The app fetches it **only** when Settings → Experimental →
+Community puzzles is on, marks every game `Community`, and drops them all again
+when the switch goes off.
+
+Rebuild it with `python3 catalog/build_community.py`; `catalog/known_hosts.txt`
+lists the domains Puzzlement already has, so its own games aren't duplicated.
+The "Refresh community catalog" action does this weekly and opens a pull request
+so new upstream entries get a look before they ship.
+
 ## Format
 
 ```json
@@ -72,6 +86,13 @@ the built-in entries), `sundayURL`,
 `dateURLReset` (`{"hour": 22, "minute": 0, "timezone": "America/New_York", "isNextDayRelease": true}`),
 `fitToScreen`, `editionNameJS`, `editionNameAPIURL`, `editionNameAPIField`,
 `editionNameAPIFieldPost`.
+
+`adBlockRules` (optional) replaces the app's built-in content-blocker list for
+the puzzle web view — Safari's `WKContentRuleList` format,
+`[{"trigger": {"url-filter": "…"}, "action": {"type": "block"}}]`. A malformed
+rule makes the app reject the whole document and keep its cached copy, and a
+list that fails to compile falls back to the built-in one. Use it to add a
+tracker, or to loosen a rule that breaks a puzzle, without an App Store release.
 
 `schemaVersion` must stay `1` until an app build that understands a newer one
 ships — older builds ignore a document with a version they don't know.

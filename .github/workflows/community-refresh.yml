@@ -1,0 +1,42 @@
+name: Refresh community catalog
+
+# Rebuilds catalog/community.json from the upstream CC0 list and opens a pull
+# request if anything changed. A PR rather than a push: the upstream list takes
+# community contributions, so new entries get a look before they reach anyone's
+# Discovery tab.
+
+on:
+  schedule:
+    - cron: "0 19 * * 1"    # Monday 19:00 UTC = Tuesday 05:00 AEST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild community.json
+        run: python3 catalog/build_community.py --out catalog/community.json
+
+      - name: Validate JSON
+        run: python3 -c "import json; d=json.load(open('catalog/community.json')); print(len(d['added']), 'games')"
+
+      - name: Open a pull request if it changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: community-catalog-refresh
+          title: "Community catalog refresh"
+          commit-message: "Catalog: refresh the community list from upstream"
+          body: |
+            Rebuilt `catalog/community.json` from
+            [awesome-daily-minigames](https://github.com/guilyx/awesome-daily-minigames) (CC0-1.0).
+
+            Check the diff for games you would rather not ship, then merge.
+            These only reach users who switch on Settings → Experimental →
+            Community puzzles.
+          delete-branch: true
