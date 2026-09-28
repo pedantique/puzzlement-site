@@ -48,6 +48,17 @@ CATEGORY = {
     "hubs": "Word",
 }
 
+# Fallback emoji per Puzzlement category — matches PuzzleCategory.emoji in the
+# app, so a community game without a usable favicon still looks like its genre
+# rather than one of 175 identical puzzle pieces.
+EMOJI = {
+    "Word": "\U0001F524", "Spelling": "\U0001F41D", "Trivia": "\u2753",
+    "Logic": "\U0001F914", "Numbers": "\U0001F522", "Sudoku": "9\uFE0F\u20E3",
+    "Crossword": "\u25FB\uFE0F", "Cryptic": "\U0001F575\uFE0F",
+    "Visual": "\U0001F5BC\uFE0F", "Music": "\U0001F3B5", "Sports": "\u26BD",
+    "Geography": "\U0001F30D", "Science": "\U0001F52C", "Movie & TV": "\U0001F3AC",
+}
+
 FIELD_RE = {k: re.compile(rf"^\s*-?\s*{k}: (.*)$", re.M) for k in
             ("name", "url", "category", "platform", "description")}
 TAGS_RE = re.compile(r"^\s*tags: \[(.*)\]", re.M)
@@ -98,14 +109,15 @@ def convert(games: list[dict], known_hosts: set[str]) -> list[dict]:
         seen.add(gid)
         tags = g.get("tags", [])
         access = "Paid sub required" if "paywalled" in tags else "Free"
+        category = CATEGORY[g["category"]]
         out.append({
             "id": gid,
             "name": g["name"],
-            "emoji": "\U0001F9E9",
+            "emoji": EMOJI.get(category, "\U0001F9E9"),
             "url": g["url"],
             "source": "Community",
             "description": g.get("description", "").rstrip("."),
-            "category": CATEGORY[g["category"]],
+            "category": category,
             "access": access,
             "classification": {
                 "cadence": "unlimited" if "unlimited" in tags else "daily",

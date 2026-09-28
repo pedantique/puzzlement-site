@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "warning": "Unvetted. Some of these games will not load, fit, reset or score correctly in an embedded web view.",
   "updated": "2026-09-29",
   "source": "https://github.com/guilyx/awesome-daily-minigames (CC0-1.0)",
   "note": "Community list, not vetted by Puzzlement. Shown only when Settings > Experimental > Community puzzles is on.",
@@ -7,7 +8,7 @@
     {
       "id": "community-absurdle",
       "name": "Absurdle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://qntm.org/files/absurdle/absurdle.html",
       "source": "Community",
       "description": "Adversarial Wordle that quietly changes its answer to stay as far from your guess as it legally can",
@@ -23,7 +24,7 @@
     {
       "id": "community-actorle",
       "name": "Actorle",
-      "emoji": "🧩",
+      "emoji": "🎬",
       "url": "https://actorle.com/",
       "source": "Community",
       "description": "Identify an actor from a filmography with the titles blanked out and only genres and ratings showing",
@@ -39,7 +40,7 @@
     {
       "id": "community-angle",
       "name": "Angle",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://angle.wtf/",
       "source": "Community",
       "description": "Estimate the angle in degrees, with warmer and colder feedback",
@@ -55,7 +56,7 @@
     {
       "id": "community-antiwordle",
       "name": "Antiwordle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://www.antiwordle.com/",
       "source": "Community",
       "description": "Inverted scoring where the goal is to avoid the word for as many turns as possible",
@@ -71,7 +72,7 @@
     {
       "id": "community-artle",
       "name": "Artle",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://www.nga.gov/artle.html",
       "source": "Community",
       "description": "The National Gallery of Art shows you four works; name the artist who made them",
@@ -87,7 +88,7 @@
     {
       "id": "community-balance-grid",
       "name": "Balance Grid",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://playbalancegrid.com/daily/",
       "source": "Community",
       "description": "Fill a daily 6x6 grid with three Light and three Dark cells per line, no triples and no duplicate lines; each puzzle has exactly one solution",
@@ -103,7 +104,7 @@
     {
       "id": "community-balatrodle",
       "name": "Balatrodle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://www.balatrodle.com/",
       "source": "Community",
       "description": "Guess the day's Balatro joker from its rarity, cost and effect",
@@ -119,7 +120,7 @@
     {
       "id": "community-birdie-game",
       "name": "Birdie Game",
-      "emoji": "🧩",
+      "emoji": "🔬",
       "url": "https://birdiegame.net/",
       "source": "Community",
       "description": "Identify the bird of the day from photographs and range clues",
@@ -135,7 +136,7 @@
     {
       "id": "community-blind-corners",
       "name": "Blind Corners",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://arkai.win/games/blind-corners/",
       "source": "Community",
       "description": "Fire a beam of light into a hidden grid of mirrors and mark where they must be, judged only by where each beam comes back out",
@@ -151,7 +152,7 @@
     {
       "id": "community-box-office-game",
       "name": "Box Office Game",
-      "emoji": "🧩",
+      "emoji": "🎬",
       "url": "https://boxofficega.me/",
       "source": "Community",
       "description": "Name the top five films at the US box office for a mystery weekend in history",
@@ -167,7 +168,7 @@
     {
       "id": "community-brainbashers-daily-puzzle",
       "name": "BrainBashers Daily Puzzle",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://www.brainbashers.com/dailypuzzle.asp",
       "source": "Community",
       "description": "A long-running rotation of Slitherlink, Hitori, Futoshiki and a dozen other pencil puzzles",
@@ -183,7 +184,7 @@
     {
       "id": "community-cell-tower",
       "name": "Cell Tower",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://www.andrewt.net/puzzles/cell-tower",
       "source": "Community",
       "description": "Build words up a tower of cells where every level constrains the next",
@@ -199,7 +200,7 @@
     {
       "id": "community-cemantle",
       "name": "Cemantle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://cemantle.certitudes.org/",
       "source": "Community",
       "description": "Semantle's hot-and-cold sibling, reporting temperature instead of a raw rank",
@@ -215,7 +216,7 @@
     {
       "id": "community-chemdle",
       "name": "Chemdle",
-      "emoji": "🧩",
+      "emoji": "🔬",
       "url": "https://www.chemdle.com/",
       "source": "Community",
       "description": "Deduce the day's chemical compound from its formula and properties",
@@ -231,7 +232,7 @@
     {
       "id": "community-chess-com-daily-puzzle",
       "name": "Chess.com Daily Puzzle",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://www.chess.com/daily-chess-puzzle",
       "source": "Community",
       "description": "One tactical position a day from real games, free without an account",
@@ -247,7 +248,7 @@
     {
       "id": "community-chessguessr",
       "name": "Chessguessr",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://www.chessguessr.com/",
       "source": "Community",
       "description": "Predict the next moves of a famous game, Wordle-style",
@@ -263,7 +264,7 @@
     {
       "id": "community-chessle",
       "name": "Chessle",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://jackli.gg/chessle/",
       "source": "Community",
       "description": "Guess the chess opening from its move sequence with green and yellow feedback",
@@ -279,7 +280,7 @@
     {
       "id": "community-chroma",
       "name": "Chroma",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://robson.plus/chroma",
       "source": "Community",
       "description": "Reproduce the target colour by mixing your own",
@@ -295,7 +296,7 @@
     {
       "id": "community-chrono",
       "name": "Chrono",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://chrono.quest/",
       "source": "Community",
       "description": "Drop historical events into the correct order on a timeline",
@@ -311,7 +312,7 @@
     {
       "id": "community-chronophoto",
       "name": "Chronophoto",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://www.chronophoto.app/",
       "source": "Community",
       "description": "Five photographs, five guesses at the year each one was taken",
@@ -327,7 +328,7 @@
     {
       "id": "community-cinematrix",
       "name": "Cinematrix",
-      "emoji": "🧩",
+      "emoji": "🎬",
       "url": "https://www.vulture.com/article/daily-movie-grid-trivia-game-cinematrix.html",
       "source": "Community",
       "description": "Vulture's 3x3 film grid — fill each cell with a movie matching both criteria",
@@ -343,7 +344,7 @@
     {
       "id": "community-cinenerdle",
       "name": "CineNerdle",
-      "emoji": "🧩",
+      "emoji": "🎬",
       "url": "https://www.cinenerdle.app/",
       "source": "Community",
       "description": "A suite of film puzzles including the excellent Cine2Nerdle tile-swapping grid",
@@ -359,7 +360,7 @@
     {
       "id": "community-clues-by-sam",
       "name": "Clues by Sam",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://cluesbysam.com/",
       "source": "Community",
       "description": "A daily deduction grid where each clue eliminates suspects, houses or objects",
@@ -375,7 +376,7 @@
     {
       "id": "community-coffee-first-games",
       "name": "Coffee First Games",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://coffeefirst.games/",
       "source": "Community",
       "description": "A small indie studio shipping several short, polished dailies",
@@ -391,7 +392,7 @@
     {
       "id": "community-colorecall",
       "name": "Colorecall",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://www.colorecall.com/",
       "source": "Community",
       "description": "Two shapes, two colors, one intense memory challenge testing your color recall",
@@ -407,7 +408,7 @@
     {
       "id": "community-colorfle",
       "name": "Colorfle",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://colorfle.com/",
       "source": "Community",
       "description": "Guess the exact colour by blending three of your own in Wordle-style rounds",
@@ -423,7 +424,7 @@
     {
       "id": "community-combinations",
       "name": "Combinations",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://combinations.org/",
       "source": "Community",
       "description": "Find the word that pairs with every one of the given words to form a compound",
@@ -439,7 +440,7 @@
     {
       "id": "community-conexo",
       "name": "Conexo",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://conexo.ws/en",
       "source": "Community",
       "description": "Connections-style grouping puzzle with a generous daily archive",
@@ -455,7 +456,7 @@
     {
       "id": "community-countryle",
       "name": "Countryle",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://www.countryle.com/",
       "source": "Community",
       "description": "Narrow down a country using continent, hemisphere, population and temperature clues",
@@ -471,7 +472,7 @@
     {
       "id": "community-cropple",
       "name": "Cropple",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://cropple.app/",
       "source": "Community",
       "description": "Identify a photograph from an extreme crop that widens with every guess",
@@ -487,7 +488,7 @@
     {
       "id": "community-crosshare",
       "name": "Crosshare",
-      "emoji": "🧩",
+      "emoji": "◻️",
       "url": "https://crosshare.org/",
       "source": "Community",
       "description": "Free, open-source, ad-light home for community-built crosswords including a daily mini",
@@ -503,7 +504,7 @@
     {
       "id": "community-crosstune",
       "name": "Crosstune",
-      "emoji": "🧩",
+      "emoji": "🎵",
       "url": "https://crosstune.io/",
       "source": "Community",
       "description": "A crossword whose clues are song clips instead of text",
@@ -519,7 +520,7 @@
     {
       "id": "community-crossword-club",
       "name": "Crossword Club",
-      "emoji": "🧩",
+      "emoji": "◻️",
       "url": "https://crosswordclub.com/puzzles/",
       "source": "Community",
       "description": "A daily indie crossword from rotating constructors, free to solve in the browser",
@@ -535,7 +536,7 @@
     {
       "id": "community-crosswordle",
       "name": "Crosswordle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://crosswordle.com/",
       "source": "Community",
       "description": "Reverse Wordle — you are given the coloured clue grid and have to reconstruct the guesses that produced it",
@@ -551,7 +552,7 @@
     {
       "id": "community-daily-akari",
       "name": "Daily Akari",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://dailyakari.com/",
       "source": "Community",
       "description": "Light up every square of a grid without letting two bulbs see each other",
@@ -567,7 +568,7 @@
     {
       "id": "community-daily-dozen-trivia",
       "name": "Daily Dozen Trivia",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://dailydozentrivia.com/",
       "source": "Community",
       "description": "Twelve questions a day across a fixed set of categories, with a streak to protect",
@@ -583,7 +584,7 @@
     {
       "id": "community-daily-walkoff",
       "name": "Daily Walkoff",
-      "emoji": "🧩",
+      "emoji": "⚽",
       "url": "https://www.dailywalkoff.com/",
       "source": "Community",
       "description": "A baseball trivia daily built around famous at-bats and box scores",
@@ -599,7 +600,7 @@
     {
       "id": "community-daybrix",
       "name": "DayBrix",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://vole.wtf/daybrix",
       "source": "Community",
       "description": "A daily brick-breaking layout where everyone plays the identical board",
@@ -615,7 +616,7 @@
     {
       "id": "community-domino-fit",
       "name": "Domino Fit",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://dominofit.isotropic.us/",
       "source": "Community",
       "description": "Pack dominoes into an awkward grid so that the numbers line up correctly",
@@ -631,7 +632,7 @@
     {
       "id": "community-dordle",
       "name": "Dordle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://zaratustra.itch.io/dordle",
       "source": "Community",
       "description": "The original multi-board spin-off: two grids, one shared set of guesses",
@@ -647,7 +648,7 @@
     {
       "id": "community-dungleon",
       "name": "Dungleon",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://www.dungleon.com/",
       "source": "Community",
       "description": "A short daily dungeon crawl where every player gets the same seed",
@@ -663,7 +664,7 @@
     {
       "id": "community-duotrigordle",
       "name": "Duotrigordle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://duotrigordle.com/",
       "source": "Community",
       "description": "Thirty-two boards and thirty-seven guesses, for when eight is not enough",
@@ -679,7 +680,7 @@
     {
       "id": "community-echo-chess",
       "name": "Echo Chess",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://echochess.com/",
       "source": "Community",
       "description": "A single-player chess roguelike where capturing a piece turns you into it",
@@ -695,7 +696,7 @@
     {
       "id": "community-elemingle",
       "name": "Elemingle",
-      "emoji": "🧩",
+      "emoji": "🔬",
       "url": "https://elemingle.com/",
       "source": "Community",
       "description": "Pin down a periodic-table element using group, period and physical property hints",
@@ -711,7 +712,7 @@
     {
       "id": "community-factle",
       "name": "Factle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://frontofficesports.com/trivia/factle",
       "source": "Community",
       "description": "Guess the entries in a real top-five list, ranked in the right order",
@@ -727,7 +728,7 @@
     {
       "id": "community-fibble",
       "name": "Fibble",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://fibble.xyz/",
       "source": "Community",
       "description": "Every row of feedback contains exactly one lie",
@@ -743,7 +744,7 @@
     {
       "id": "community-figure",
       "name": "Figure",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://figure.game/",
       "source": "Community",
       "description": "Clear a colour grid in a fixed number of moves by chaining matching tiles",
@@ -759,7 +760,7 @@
     {
       "id": "community-filmlink",
       "name": "FilmLink",
-      "emoji": "🧩",
+      "emoji": "🎬",
       "url": "https://filmlink.io/",
       "source": "Community",
       "description": "Connect two films through shared cast and crew in as few steps as you can",
@@ -775,7 +776,7 @@
     {
       "id": "community-flagle",
       "name": "Flagle",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://www.flagle.io/",
       "source": "Community",
       "description": "A flag revealed one tile at a time; guess it before the whole thing is uncovered",
@@ -791,7 +792,7 @@
     {
       "id": "community-flickle",
       "name": "Flickle",
-      "emoji": "🧩",
+      "emoji": "🎬",
       "url": "https://flickle.app/",
       "source": "Community",
       "description": "Guess the film from a one-second clip that grows longer with every wrong answer",
@@ -807,7 +808,7 @@
     {
       "id": "community-foodguessr",
       "name": "FoodGuessr",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://www.foodguessr.com/",
       "source": "Community",
       "description": "Name the country a dish comes from, three plates a day",
@@ -823,7 +824,7 @@
     {
       "id": "community-foodiegame",
       "name": "FoodieGame",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://www.foodiegame.org/",
       "source": "Community",
       "description": "Test your tastebuds! Discover world cuisines and pinpoint where every dish comes from",
@@ -839,7 +840,7 @@
     {
       "id": "community-gamebunny",
       "name": "Gamebunny",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://gamebunny.app/",
       "source": "Community",
       "description": "A tidy collection of original dailies spanning words, trivia and logic",
@@ -855,7 +856,7 @@
     {
       "id": "community-gaps",
       "name": "Gaps",
-      "emoji": "🧩",
+      "emoji": "🎬",
       "url": "https://gaps.wtf/",
       "source": "Community",
       "description": "Fill in the blanked-out words of a famous film quote",
@@ -871,7 +872,7 @@
     {
       "id": "community-geogrid",
       "name": "GeoGrid",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://www.geogridgame.com/",
       "source": "Community",
       "description": "Fill a 3x3 grid with countries that satisfy both the row and the column criteria",
@@ -887,7 +888,7 @@
     {
       "id": "community-geonections",
       "name": "Geonections",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://geonections.com/",
       "source": "Community",
       "description": "Connections, but every group is a geographic category",
@@ -903,7 +904,7 @@
     {
       "id": "community-google-feud",
       "name": "Google Feud",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://googlefeud.com/",
       "source": "Community",
       "description": "Complete the search query the way the rest of the internet did",
@@ -919,7 +920,7 @@
     {
       "id": "community-grid-puzzles",
       "name": "Grid Puzzles",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://gridpuzzles.app/",
       "source": "Community",
       "description": "Five daily logic puzzles (6x6 sudoku, rectangles, word paths, dominoes, number paths), each checked to have one solution, with an unlimited mode for every game",
@@ -935,7 +936,7 @@
     {
       "id": "community-guess-the-audio",
       "name": "Guess The Audio",
-      "emoji": "🧩",
+      "emoji": "🎵",
       "url": "https://guesstheaudio.com/",
       "source": "Community",
       "description": "Identify the track from progressively longer snippets, Heardle-style",
@@ -951,7 +952,7 @@
     {
       "id": "community-guess-the-house",
       "name": "Guess The House",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://guessthe.house/",
       "source": "Community",
       "description": "Estimate what a real listed property sold for",
@@ -967,7 +968,7 @@
     {
       "id": "community-guess-the-logo",
       "name": "Guess The Logo",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://guessthelogo.wtf/",
       "source": "Community",
       "description": "Name the brand from a partially obscured logo",
@@ -983,7 +984,7 @@
     {
       "id": "community-harmonies",
       "name": "Harmonies",
-      "emoji": "🧩",
+      "emoji": "🎵",
       "url": "https://harmonies.io/",
       "source": "Community",
       "description": "Connections for music nerds — group sixteen artists, songs or albums into four sets",
@@ -999,7 +1000,7 @@
     {
       "id": "community-heardle-daily",
       "name": "Heardle Daily",
-      "emoji": "🧩",
+      "emoji": "🎵",
       "url": "https://www.heardle.info/daily/",
       "source": "Community",
       "description": "A community-run continuation of Heardle after Spotify shut the original down",
@@ -1015,7 +1016,7 @@
     {
       "id": "community-hello-wordl",
       "name": "hello wordl",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://hellowordl.net/",
       "source": "Community",
       "description": "Unlimited Wordle with an adjustable word length from four to eleven letters",
@@ -1031,7 +1032,7 @@
     {
       "id": "community-hexcodle",
       "name": "Hexcodle",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://www.hexcodle.com/",
       "source": "Community",
       "description": "Guess the hex code of a displayed colour, digit by digit",
@@ -1047,7 +1048,7 @@
     {
       "id": "community-hoopgrids",
       "name": "HoopGrids",
-      "emoji": "🧩",
+      "emoji": "⚽",
       "url": "https://www.hoopgrids.com/",
       "source": "Community",
       "description": "The grid format for the NBA, with a rarity score that rewards obscure picks",
@@ -1063,7 +1064,7 @@
     {
       "id": "community-howlongtobeat-daily",
       "name": "HowLongToBeat Daily",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://howlongtobeat.com/play",
       "source": "Community",
       "description": "Guess the game from its completion times, genres and platforms",
@@ -1079,7 +1080,7 @@
     {
       "id": "community-immaculate-footy",
       "name": "Immaculate Footy",
-      "emoji": "🧩",
+      "emoji": "⚽",
       "url": "https://www.sports-reference.com/immaculate-footy/",
       "source": "Community",
       "description": "The grid applied to world football, powered by FBref data",
@@ -1095,7 +1096,7 @@
     {
       "id": "community-immaculate-grid",
       "name": "Immaculate Grid",
-      "emoji": "🧩",
+      "emoji": "⚽",
       "url": "https://www.sports-reference.com/immaculate-grid/",
       "source": "Community",
       "description": "Fill a 3x3 grid with players matching each row and column team — the format everything else copied",
@@ -1111,7 +1112,7 @@
     {
       "id": "community-ink-side-down",
       "name": "Ink Side Down",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://arkai.win/games/ink-side-down/",
       "source": "Community",
       "description": "Roll a cube across a grid; the side that's inked prints the square it lands face-down on, and ink may only touch the marked squares",
@@ -1127,7 +1128,7 @@
     {
       "id": "community-isaaconnect",
       "name": "Isaaconnect",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://isaaconnect.com/",
       "source": "Community",
       "description": "Connections for The Binding of Isaac's enormous item pool",
@@ -1143,7 +1144,7 @@
     {
       "id": "community-jeopardy-j6",
       "name": "Jeopardy! J6",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://www.jeopardy.com/play/j6",
       "source": "Community",
       "description": "Six official Jeopardy! clues a day, in ascending difficulty",
@@ -1159,7 +1160,7 @@
     {
       "id": "community-jigsy",
       "name": "Jigsy",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://jigsy.app/",
       "source": "Community",
       "description": "A daily jigsaw puzzle sized to be finished in a coffee break",
@@ -1175,7 +1176,7 @@
     {
       "id": "community-jumble-daily",
       "name": "Jumble Daily",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://fun.chicagotribune.com/game/tca-jumble-daily/",
       "source": "Community",
       "description": "The newspaper anagram classic, still running daily and still ending in a groan-worthy pun",
@@ -1191,7 +1192,7 @@
     {
       "id": "community-jumblie",
       "name": "Jumblie",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://jumblie.com/",
       "source": "Community",
       "description": "Untangle four themed words from a shared pool of letter tiles",
@@ -1207,7 +1208,7 @@
     {
       "id": "community-juxtastat",
       "name": "Juxtastat",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://urbanstats.org/quiz.html",
       "source": "Community",
       "description": "Head-to-head statistical comparisons between real places — which one is denser, richer, hotter",
@@ -1223,7 +1224,7 @@
     {
       "id": "community-kinda-hard-golf",
       "name": "Kinda Hard Golf",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://kindahardgolf.com/",
       "source": "Community",
       "description": "A physics-golf daily that lives up to its name",
@@ -1239,7 +1240,7 @@
     {
       "id": "community-le-mot",
       "name": "Le Mot",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://wordle.louan.me/",
       "source": "Community",
       "description": "Wordle, but in french",
@@ -1255,7 +1256,7 @@
     {
       "id": "community-letterboxdle",
       "name": "Letterboxdle",
-      "emoji": "🧩",
+      "emoji": "🎬",
       "url": "https://letterboxdle.net/",
       "source": "Community",
       "description": "Identify a film from its Letterboxd reviews, poster and stats",
@@ -1271,7 +1272,7 @@
     {
       "id": "community-lex-mini-crossword",
       "name": "Lex Mini Crossword",
-      "emoji": "🧩",
+      "emoji": "◻️",
       "url": "https://lex.games/mini/",
       "source": "Community",
       "description": "Indie mini crossword with a friendlier clue voice than the newspaper minis",
@@ -1287,7 +1288,7 @@
     {
       "id": "community-lex-games",
       "name": "Lex.Games",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://lex.games/",
       "source": "Community",
       "description": "Six free word puzzles a day, including a mini crossword and a Connections variant",
@@ -1303,7 +1304,7 @@
     {
       "id": "community-lichess-daily-puzzle",
       "name": "Lichess Daily Puzzle",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://lichess.org/training/daily",
       "source": "Community",
       "description": "The same idea, fully free and fully open source",
@@ -1319,7 +1320,7 @@
     {
       "id": "community-lirdle",
       "name": "Lirdle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://lirdle.com/",
       "source": "Community",
       "description": "Wordle where the game lies to you once per guess and you have to work out which tile it was",
@@ -1335,7 +1336,7 @@
     {
       "id": "community-loldle",
       "name": "LoLdle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://loldle.net/",
       "source": "Community",
       "description": "League of Legends champion deduction across classic, quote, ability and splash art modes",
@@ -1351,7 +1352,7 @@
     {
       "id": "community-loldoku",
       "name": "LoLdoku",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://www.loldoku.gg/",
       "source": "Community",
       "description": "Fill a League of Legends champion grid, identify champions from attribute clues, or guess their silhouettes",
@@ -1367,7 +1368,7 @@
     {
       "id": "community-lyricle",
       "name": "Lyricle",
-      "emoji": "🧩",
+      "emoji": "🎵",
       "url": "https://www.lyricle.app/",
       "source": "Community",
       "description": "Guess the song from its lyrics, revealed a line at a time",
@@ -1383,7 +1384,7 @@
     {
       "id": "community-mahjong-handle",
       "name": "Mahjong Handle",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://mahjong-handle.update.sh/",
       "source": "Community",
       "description": "Wordle for riichi mahjong hands",
@@ -1399,7 +1400,7 @@
     {
       "id": "community-mapster",
       "name": "Mapster",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://mapster.teuteuf.fr/",
       "source": "Community",
       "description": "Rebuild a map from scattered country pieces",
@@ -1415,7 +1416,7 @@
     {
       "id": "community-mathler",
       "name": "Mathler",
-      "emoji": "🧩",
+      "emoji": "🔢",
       "url": "https://www.mathler.com/",
       "source": "Community",
       "description": "Find the hidden calculation that produces the given target number",
@@ -1431,7 +1432,7 @@
     {
       "id": "community-meloguessr",
       "name": "MeloGuessr",
-      "emoji": "🧩",
+      "emoji": "🎵",
       "url": "https://meloguessr.com/",
       "source": "Community",
       "description": "GeoGuessr's format applied to sheet music and melodies",
@@ -1447,7 +1448,7 @@
     {
       "id": "community-metaflora",
       "name": "Metaflora",
-      "emoji": "🧩",
+      "emoji": "🔬",
       "url": "https://flora.metazooa.com/",
       "source": "Community",
       "description": "Metazooa's botanical sibling, built on the plant family tree",
@@ -1463,7 +1464,7 @@
     {
       "id": "community-minecraftle",
       "name": "Minecraftle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://minecraftle.zachmanson.com/",
       "source": "Community",
       "description": "Wordle played on a crafting table — reach the target item through valid recipes",
@@ -1479,7 +1480,7 @@
     {
       "id": "community-minigolfle",
       "name": "Minigolfle",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://minigolfle.com/",
       "source": "Community",
       "description": "Nine holes of daily minigolf with a shareable scorecard",
@@ -1495,7 +1496,7 @@
     {
       "id": "community-mlb-pickle",
       "name": "MLB Pickle",
-      "emoji": "🧩",
+      "emoji": "⚽",
       "url": "https://www.mlbpickle.com/",
       "source": "Community",
       "description": "Deduce a mystery baseball player from team, position, age and stat feedback",
@@ -1511,7 +1512,7 @@
     {
       "id": "community-movie-grid",
       "name": "Movie Grid",
-      "emoji": "🧩",
+      "emoji": "🎬",
       "url": "https://moviegrid.io/",
       "source": "Community",
       "description": "Immaculate Grid for cinema — nine cells, nine films, each matching two constraints",
@@ -1527,7 +1528,7 @@
     {
       "id": "community-moviedle",
       "name": "Moviedle",
-      "emoji": "🧩",
+      "emoji": "🎬",
       "url": "https://moviedle.xyz/",
       "source": "Community",
       "description": "An entire film compressed into one second, then two, then four, until you recognise it",
@@ -1543,7 +1544,7 @@
     {
       "id": "community-netflix-puzzled",
       "name": "Netflix Puzzled",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://www.netflix.com/tudum/puzzled",
       "source": "Community",
       "description": "Netflix's free daily puzzle collection — sudoku, jigsaws, crosswords and word games",
@@ -1559,7 +1560,7 @@
     {
       "id": "community-nibble-games",
       "name": "Nibble Games",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://nibble.games/",
       "source": "Community",
       "description": "A set of short pencil-and-paper style puzzles refreshed daily",
@@ -1575,7 +1576,7 @@
     {
       "id": "community-nonodaily",
       "name": "NonoDaily",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://www.nonodaily.com/",
       "source": "Community",
       "description": "A fresh nonogram every day, where the numbers along the edges reveal a picture",
@@ -1591,7 +1592,7 @@
     {
       "id": "community-numble",
       "name": "Numble",
-      "emoji": "🧩",
+      "emoji": "🔢",
       "url": "https://numble.wtf/",
       "source": "Community",
       "description": "Route through a grid of numbers and operators to hit the day's target",
@@ -1607,7 +1608,7 @@
     {
       "id": "community-numle",
       "name": "Numle",
-      "emoji": "🧩",
+      "emoji": "🔢",
       "url": "https://martintale.com/numle/",
       "source": "Community",
       "description": "Wordle but with numbers where you guess the 5-digit number in 6 or less tries",
@@ -1623,7 +1624,7 @@
     {
       "id": "community-one-step-late",
       "name": "One Step Late",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://arkai.win/games/one-step-late/",
       "source": "Community",
       "description": "Your shadow repeats your previous move one turn late; bring yourself to the sun and it to the moon on the same turn",
@@ -1639,7 +1640,7 @@
     {
       "id": "community-one-up-puzzle",
       "name": "One Up Puzzle",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://www.oneuppuzzle.com/",
       "source": "Community",
       "description": "Fill each run of cells with ascending numbers so no row or column repeats",
@@ -1655,7 +1656,7 @@
     {
       "id": "community-pedantle",
       "name": "Pedantle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://pedantle.certitudes.org/",
       "source": "Community",
       "description": "Uncover a hidden Wikipedia article by guessing words, with semantic near-misses highlighted",
@@ -1671,7 +1672,7 @@
     {
       "id": "community-perfect-pitch-puzzle",
       "name": "Perfect Pitch Puzzle",
-      "emoji": "🧩",
+      "emoji": "🎵",
       "url": "https://www.perfectpitchpuzzle.com/",
       "source": "Community",
       "description": "An ear-training daily that turns interval recognition into a scored puzzle",
@@ -1687,7 +1688,7 @@
     {
       "id": "community-picsey",
       "name": "Picsey",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://picsey.io/",
       "source": "Community",
       "description": "Identify an image from a handful of colour-sampled pixels",
@@ -1703,7 +1704,7 @@
     {
       "id": "community-pimantle",
       "name": "Pimantle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://semantle.pimanrul.es/",
       "source": "Community",
       "description": "Semantle plotted on a two-dimensional map so you can see your guesses closing in",
@@ -1719,7 +1720,7 @@
     {
       "id": "community-play-higher-lower",
       "name": "Play Higher Lower",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://playhigherlower.com/daily",
       "source": "Community",
       "description": "Guess which of two real-world numbers is bigger, from box office grosses to country populations, across a shared daily board",
@@ -1735,7 +1736,7 @@
     {
       "id": "community-plotwords",
       "name": "Plotwords",
-      "emoji": "🧩",
+      "emoji": "🎬",
       "url": "https://plotwords.com/daily",
       "source": "Community",
       "description": "Guess the film from a drip-feed of plot keywords, cheapest clues first",
@@ -1751,7 +1752,7 @@
     {
       "id": "community-poeltl",
       "name": "Poeltl",
-      "emoji": "🧩",
+      "emoji": "⚽",
       "url": "https://poeltl.nbpa.com/",
       "source": "Community",
       "description": "Eight guesses to find the mystery NBA player, with feedback on team, height, age and number",
@@ -1767,7 +1768,7 @@
     {
       "id": "community-pokedle",
       "name": "Pokedle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://pokedle.net/",
       "source": "Community",
       "description": "Guess the Pokémon from type, generation, habitat and stat comparisons",
@@ -1783,7 +1784,7 @@
     {
       "id": "community-pokedoku",
       "name": "Pokedoku",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://pokedoku.com/",
       "source": "Community",
       "description": "The Immaculate Grid format applied to the National Pokédex",
@@ -1799,7 +1800,7 @@
     {
       "id": "community-pokle",
       "name": "Pokle",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://poklegame.com/",
       "source": "Community",
       "description": "Reconstruct the board of a poker hand from the players' final results",
@@ -1815,7 +1816,7 @@
     {
       "id": "community-polygonle",
       "name": "Polygonle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://www.polygonle.com/",
       "source": "Community",
       "description": "Instead of a fixed length you get a shape pattern showing which letters repeat",
@@ -1831,7 +1832,7 @@
     {
       "id": "community-primel",
       "name": "Primel",
-      "emoji": "🧩",
+      "emoji": "🔢",
       "url": "https://converged.yt/primel/",
       "source": "Community",
       "description": "Wordle where every guess and the answer must be a five-digit prime",
@@ -1847,7 +1848,7 @@
     {
       "id": "community-puckdoku",
       "name": "Puckdoku",
-      "emoji": "🧩",
+      "emoji": "⚽",
       "url": "https://www.puckdoku.com/",
       "source": "Community",
       "description": "The grid for hockey, covering the full history of the NHL",
@@ -1863,7 +1864,7 @@
     {
       "id": "community-putt-day",
       "name": "putt.day",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://putt.day/play",
       "source": "Community",
       "description": "One daily minigolf course, shared par, and 2D or 3D replays of everyone's shots",
@@ -1879,7 +1880,7 @@
     {
       "id": "community-puzzgrid",
       "name": "Puzzgrid",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://www.puzzgrid.com/",
       "source": "Community",
       "description": "Community-made connecting walls in the style of the BBC quiz show Only Connect",
@@ -1895,7 +1896,7 @@
     {
       "id": "community-puzzmallow",
       "name": "Puzzmallow",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://puzzmallow.com/",
       "source": "Community",
       "description": "Several original daily logic and word puzzles with a clean, ad-free interface",
@@ -1911,7 +1912,7 @@
     {
       "id": "community-rankle",
       "name": "Rankle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://www.rankle.app/",
       "source": "Community",
       "description": "Put five things in the correct order — by size, date, price or whatever the day demands",
@@ -1927,7 +1928,7 @@
     {
       "id": "community-real-bird-fake-bird",
       "name": "Real Bird Fake Bird",
-      "emoji": "🧩",
+      "emoji": "🔬",
       "url": "https://realbirdfakebird.com/",
       "source": "Community",
       "description": "Decide whether each bird name is a genuine species or an invention",
@@ -1943,7 +1944,7 @@
     {
       "id": "community-redactle",
       "name": "Redactle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://redactle.net/",
       "source": "Community",
       "description": "Identify a fully redacted Wikipedia article by guessing the words back into existence",
@@ -1959,7 +1960,7 @@
     {
       "id": "community-regexle",
       "name": "Regexle",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://regexle.com/",
       "source": "Community",
       "description": "A hexagonal crossword where every line is a regular expression you have to satisfy",
@@ -1975,7 +1976,7 @@
     {
       "id": "community-relatle",
       "name": "Relatle",
-      "emoji": "🧩",
+      "emoji": "🎵",
       "url": "https://relatle.io/",
       "source": "Community",
       "description": "Travel from one artist to another through related-artist links in as few hops as possible",
@@ -1991,7 +1992,7 @@
     {
       "id": "community-reversle",
       "name": "Reversle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://reversle.net/",
       "source": "Community",
       "description": "Speed variant where you race to reproduce a finished board from its clue colours",
@@ -2007,7 +2008,7 @@
     {
       "id": "community-riddl-ing",
       "name": "riddl.ing",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://riddl.ing/",
       "source": "Community",
       "description": "One lateral-thinking riddle a day, with hints if you get stuck",
@@ -2023,7 +2024,7 @@
     {
       "id": "community-rogule",
       "name": "Rogule",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://rogule.com/",
       "source": "Community",
       "description": "A tiny daily roguelike run that takes about five minutes and shares as an emoji grid",
@@ -2039,7 +2040,7 @@
     {
       "id": "community-satle",
       "name": "Satle",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://satle.ca/",
       "source": "Community",
       "description": "Identify a city from a slowly zooming-out satellite image",
@@ -2055,7 +2056,7 @@
     {
       "id": "community-scores",
       "name": "Scores",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://scores.lol/",
       "source": "Community",
       "description": "Score words by their Scrabble-style letter values, chasing the highest total on a board that resets once a day",
@@ -2071,7 +2072,7 @@
     {
       "id": "community-scrandle",
       "name": "Scrandle",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://scrandle.com/",
       "source": "Community",
       "description": "Two foods head to head, and you have to call which one packs more calories",
@@ -2087,7 +2088,7 @@
     {
       "id": "community-scrimp",
       "name": "Scrimp",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://playscrimp.com/",
       "source": "Community",
       "description": "You are given the clued words, not asked to guess them, and must pack them into a row too short to spell them out",
@@ -2103,7 +2104,7 @@
     {
       "id": "community-semantle",
       "name": "Semantle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://semantle.com/",
       "source": "Community",
       "description": "The original semantic-similarity hunt, and still one of the hardest daily games there is",
@@ -2119,7 +2120,7 @@
     {
       "id": "community-shikaku-of-the-day",
       "name": "Shikaku of the Day",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://shikakuofthe.day/",
       "source": "Community",
       "description": "Cut a grid into rectangles so that each one contains exactly one number equal to its area",
@@ -2135,7 +2136,7 @@
     {
       "id": "community-smashdle",
       "name": "Smashdle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://smashdle.net/",
       "source": "Community",
       "description": "Super Smash Bros. character, move and stage guessing modes",
@@ -2151,7 +2152,7 @@
     {
       "id": "community-spot-the-differences",
       "name": "Spot the Differences",
-      "emoji": "🧩",
+      "emoji": "🖼️",
       "url": "https://www.spot-differences.com/",
       "source": "Community",
       "description": "A new pair of near-identical images every day",
@@ -2167,7 +2168,7 @@
     {
       "id": "community-spotle",
       "name": "Spotle",
-      "emoji": "🧩",
+      "emoji": "🎵",
       "url": "https://spotle.io/",
       "source": "Community",
       "description": "Deduce the mystery artist from genre, popularity, debut year and country clues",
@@ -2183,7 +2184,7 @@
     {
       "id": "community-squardle",
       "name": "Squardle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://fubargames.se/squardle/",
       "source": "Community",
       "description": "Wordle on a 5x5 board, solving six interlocking words across two directions at once",
@@ -2199,7 +2200,7 @@
     {
       "id": "community-squaredle",
       "name": "Squaredle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://squaredle.app/",
       "source": "Community",
       "description": "A Boggle-style grid where you have to find every valid word, not just the long ones",
@@ -2215,7 +2216,7 @@
     {
       "id": "community-squareword",
       "name": "Squareword",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://squareword.org/",
       "source": "Community",
       "description": "Fill a 5x5 grid where every row and every column has to be a real word",
@@ -2231,7 +2232,7 @@
     {
       "id": "community-squirdle",
       "name": "Squirdle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://squirdle.fireblend.com/daily.html",
       "source": "Community",
       "description": "The original Pokémon Wordle, with higher-or-lower feedback on height, weight and generation",
@@ -2247,7 +2248,7 @@
     {
       "id": "community-squishy-billiards",
       "name": "Squishy Billiards",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://squishybilliards.com/",
       "source": "Community",
       "description": "A daily trick-shot puzzle played with deformable billiard balls",
@@ -2263,7 +2264,7 @@
     {
       "id": "community-stardewdle",
       "name": "Stardewdle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://www.stardewdle.com/",
       "source": "Community",
       "description": "A Stardew Valley daily covering villagers, items and seasons",
@@ -2279,7 +2280,7 @@
     {
       "id": "community-stardle",
       "name": "Stardle",
-      "emoji": "🧩",
+      "emoji": "🔬",
       "url": "https://stardlegame.github.io/stardle/",
       "source": "Community",
       "description": "Identify a star or deep-sky object from its astronomical data",
@@ -2295,7 +2296,7 @@
     {
       "id": "community-stat-mini-crossword",
       "name": "STAT Mini Crossword",
-      "emoji": "🧩",
+      "emoji": "◻️",
       "url": "https://www.statnews.com/stat-mini-crossword/",
       "source": "Community",
       "description": "A mini crossword with a health, biotech and medicine slant",
@@ -2311,7 +2312,7 @@
     {
       "id": "community-statele",
       "name": "Statele",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://statele.teuteuf.fr/",
       "source": "Community",
       "description": "Worldle for the fifty US states",
@@ -2327,7 +2328,7 @@
     {
       "id": "community-steamdle",
       "name": "Steamdle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://steamdle.com/",
       "source": "Community",
       "description": "Identify a Steam game from its user reviews, revealed one at a time",
@@ -2343,7 +2344,7 @@
     {
       "id": "community-stepwords",
       "name": "Stepwords",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://stepwords.xyz/",
       "source": "Community",
       "description": "Each answer is the previous one plus a letter, stacked into a staircase",
@@ -2359,7 +2360,7 @@
     {
       "id": "community-subwaydle",
       "name": "Subwaydle",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://www.subwaydle.com/",
       "source": "Community",
       "description": "Work out a New York City subway trip from its route bullets in six guesses",
@@ -2375,7 +2376,7 @@
     {
       "id": "community-summle",
       "name": "Summle",
-      "emoji": "🧩",
+      "emoji": "🔢",
       "url": "https://summle.net/",
       "source": "Community",
       "description": "Reach the target number by chaining small sums, Countdown-style",
@@ -2391,7 +2392,7 @@
     {
       "id": "community-sumplete",
       "name": "Sumplete",
-      "emoji": "🧩",
+      "emoji": "🔢",
       "url": "https://sumplete.com/daily",
       "source": "Community",
       "description": "Delete numbers from a grid until every row and column adds up to its target",
@@ -2407,7 +2408,7 @@
     {
       "id": "community-survivle",
       "name": "Survivle",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://lazyguyy.github.io/survivle/",
       "source": "Community",
       "description": "Wordle turned survival horror — guessing the answer is how you lose",
@@ -2423,7 +2424,7 @@
     {
       "id": "community-sutom",
       "name": "SUTOM",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://sutom.nocle.fr/",
       "source": "Community",
       "description": "French Wordle with six to nine letter words and the first letter given away",
@@ -2439,7 +2440,7 @@
     {
       "id": "community-ted-games",
       "name": "TED Games",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://www.ted.com/games",
       "source": "Community",
       "description": "TED's free daily word and knowledge puzzles",
@@ -2455,7 +2456,7 @@
     {
       "id": "community-term-ooo",
       "name": "Term.ooo",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://term.ooo/",
       "source": "Community",
       "description": "The Brazilian Portuguese Wordle, with three-board and six-board modes",
@@ -2471,7 +2472,7 @@
     {
       "id": "community-the-wiki-game-daily",
       "name": "The Wiki Game Daily",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://www.thewikigamedaily.com/",
       "source": "Community",
       "description": "Race from one Wikipedia article to another using only in-article links",
@@ -2487,7 +2488,7 @@
     {
       "id": "community-thinky-dailies",
       "name": "Thinky Dailies",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://thinkygames.com/dailies/today/",
       "source": "Community",
       "description": "An aggregator that pulls together the day's puzzles from dozens of indie thinky games",
@@ -2503,7 +2504,7 @@
     {
       "id": "community-thrice",
       "name": "Thrice",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://thrice.geekswhodrink.com/",
       "source": "Community",
       "description": "Three questions, three guesses each, from the people behind Geeks Who Drink pub quizzes",
@@ -2519,7 +2520,7 @@
     {
       "id": "community-timdle",
       "name": "Timdle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://www.timdle.com/",
       "source": "Community",
       "description": "Sort a shuffled set of events chronologically, with themed daily rounds",
@@ -2535,7 +2536,7 @@
     {
       "id": "community-timeguessr",
       "name": "TimeGuessr",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://timeguessr.com/",
       "source": "Community",
       "description": "Place five historical photographs in both space and time, scored on distance and years off",
@@ -2551,7 +2552,7 @@
     {
       "id": "community-tradle",
       "name": "Tradle",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://oec.world/en/games/tradle",
       "source": "Community",
       "description": "Identify a country from the breakdown of what it exports",
@@ -2567,7 +2568,7 @@
     {
       "id": "community-travle",
       "name": "Travle",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://travle.earth/",
       "source": "Community",
       "description": "Connect a start country to an end country by naming the chain of neighbours between them",
@@ -2583,7 +2584,7 @@
     {
       "id": "community-unolingo",
       "name": "Unolingo",
-      "emoji": "🧩",
+      "emoji": "◻️",
       "url": "https://games.usatoday.com/games/uclick-unolingo",
       "source": "Community",
       "description": "A crossword with no clues at all — every letter appears exactly once and logic does the rest",
@@ -2599,7 +2600,7 @@
     {
       "id": "community-weaver",
       "name": "Weaver",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://weavergame.org/",
       "source": "Community",
       "description": "Classic word ladder — change one letter at a time to get from the start word to the end word",
@@ -2615,7 +2616,7 @@
     {
       "id": "community-weddle",
       "name": "Weddle",
-      "emoji": "🧩",
+      "emoji": "⚽",
       "url": "https://www.weddlegame.com/",
       "source": "Community",
       "description": "Wordle rules applied to NFL players — conference, division, position, height and number",
@@ -2631,7 +2632,7 @@
     {
       "id": "community-whentaken",
       "name": "WhenTaken",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://whentaken.com/",
       "source": "Community",
       "description": "Year-and-location guessing over a rotating archive of historical photography",
@@ -2647,7 +2648,7 @@
     {
       "id": "community-whereabouts",
       "name": "Whereabouts",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://whereabouts.earth/daily/",
       "source": "Community",
       "description": "A daily street-level location round in the GeoGuessr mould, free and account-free",
@@ -2663,7 +2664,7 @@
     {
       "id": "community-wheretaken",
       "name": "WhereTaken",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://wheretaken.teuteuf.fr/",
       "source": "Community",
       "description": "Guess where a photograph was taken, with proximity feedback after each attempt",
@@ -2679,7 +2680,7 @@
     {
       "id": "community-wikitrivia",
       "name": "Wikitrivia",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://wikitrivia.tomjwatson.com/daily",
       "source": "Community",
       "description": "Build a timeline card by card from Wikidata; one wrong placement ends the run",
@@ -2695,7 +2696,7 @@
     {
       "id": "community-word-peaks",
       "name": "Word Peaks",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://vegeta897.github.io/word-peaks/",
       "source": "Community",
       "description": "Clues tell you whether each letter comes alphabetically before or after your guess",
@@ -2711,7 +2712,7 @@
     {
       "id": "community-word-golf",
       "name": "word.golf",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://word.golf/",
       "source": "Community",
       "description": "Travel between two words in as few semantic hops as possible",
@@ -2727,7 +2728,7 @@
     {
       "id": "community-wordlelike",
       "name": "WordleLike",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://wordlelike.com/",
       "source": "Community",
       "description": "A free hub of five daily word games — classic Wordle, six-letter Word Hurdle, Mini Crossword, Word Search and Anagram Solver",
@@ -2743,7 +2744,7 @@
     {
       "id": "community-wordweb",
       "name": "WordWeb",
-      "emoji": "🧩",
+      "emoji": "🔤",
       "url": "https://blendletan.github.io/WordWeb/",
       "source": "Community",
       "description": "Connect the day's words by changing one letter at a time while using as few words as possible",
@@ -2759,7 +2760,7 @@
     {
       "id": "community-world-flag-games",
       "name": "World Flag Games",
-      "emoji": "🧩",
+      "emoji": "🌍",
       "url": "https://worldflagmap.com/games/daily/",
       "source": "Community",
       "description": "Identify ten countries from their flags, then ten more from real outlines and map positions in two shared daily challenges",
@@ -2775,7 +2776,7 @@
     {
       "id": "community-yeardle",
       "name": "Yeardle",
-      "emoji": "🧩",
+      "emoji": "❓",
       "url": "https://histordle.com/yeardle",
       "source": "Community",
       "description": "Guess the year an event happened, with warmer or colder feedback each turn",
@@ -2791,7 +2792,7 @@
     {
       "id": "community-zebra-puzzles",
       "name": "Zebra Puzzles",
-      "emoji": "🧩",
+      "emoji": "🤔",
       "url": "https://www.zebrapuzzles.com/",
       "source": "Community",
       "description": "The classic \"who owns the fish\" constraint puzzle, generated fresh each day",
