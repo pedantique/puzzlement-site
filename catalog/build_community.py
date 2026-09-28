@@ -136,6 +136,8 @@ def main() -> int:
     games = convert(parse(yaml_text), known)
     doc = {
         "schemaVersion": 1,
+        "warning": "Unvetted. Some of these games will not load, fit, reset or "
+                   "score correctly in an embedded web view.",
         "updated": dt.date.today().isoformat(),
         "source": "https://github.com/guilyx/awesome-daily-minigames (CC0-1.0)",
         "note": "Community list, not vetted by Puzzlement. Shown only when "
