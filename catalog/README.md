@@ -94,5 +94,56 @@ rule makes the app reject the whole document and keep its cached copy, and a
 list that fails to compile falls back to the built-in one. Use it to add a
 tracker, or to loosen a rule that breaks a puzzle, without an App Store release.
 
+## Fixing a score parser without a build
+
+Score parsing normally lives in Swift. When a site rewords its share text — or
+stops handing it over and leaves the app the page itself — the catalog can carry
+a fix that takes effect on the next launch. Two forms, both under a puzzle's
+`classification`, tried in order and both ahead of the built-in parser:
+
+```json
+"minute-cryptic": {
+  "classification": {
+    "scoreRules": [
+      {
+        "require": ["you got it"],
+        "captures": {
+          "par": "(on par|\\d+ (?:under|over) par)",
+          "hints": "your hints\\s*(\\d+)"
+        },
+        "template": "{par} · {hints|hint|hints}"
+      }
+    ]
+  }
+}
+```
+
+- `require` / `reject` (optional): substrings that must, or must not, appear —
+  case-insensitive. Use `require` to avoid claiming a score from an unfinished
+  page.
+- `captures`: name → regex. The first capture group is used, or the whole match
+  if there isn't one.
+- `template`: `{name}` substitutes a capture; `{name|singular|plural}` appends
+  the right word for a count. **If any name in the template didn't match, the
+  rule is abandoned** — a half-matched rule never produces half a score. The
+  next rule is tried, then the built-in parser.
+
+For anything a template can't express — arithmetic, conditionals — there's
+`"scoreJS"`, a function of one string:
+
+```json
+"scoreJS": "function(t){ var m=t.match(/Your hints\\s*(\\d+)/i); return m ? m[1]+' hints' : null; }"
+```
+
+It runs in a bare JavaScriptCore context: **no DOM, no network, no cookies, no
+access to the puzzle page**, and it is never injected into the web view — those
+hold the user's signed-in publisher sessions and must stay out of reach of
+anything served from here. It gets a string, returns a string or null, and is
+abandoned if it runs longer than a moment. Prefer `scoreRules`; reach for
+`scoreJS` only when a template genuinely can't do the job.
+
+Genuinely complicated parsers (Puzzmo's share URLs, Twixtle's score-plus-time)
+stay in Swift where they can be tested properly.
+
 `schemaVersion` must stay `1` until an app build that understands a newer one
 ships — older builds ignore a document with a version they don't know.
