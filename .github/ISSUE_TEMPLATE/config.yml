@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Something's wrong with a puzzle in the app
+    url: https://github.com/pedantique/puzzlement-site/issues/new
+    about: A game that won't load, a wrong day number, a score that stopped saving — open a blank issue and say which puzzle.
+  - name: Suggest a puzzle without a GitHub account
+    url: https://puzzlement.games/submit/
+    about: The web form. Fewer fields, no account needed.

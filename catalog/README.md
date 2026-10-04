@@ -41,6 +41,28 @@ lists the domains Puzzlement already has, so its own games aren't duplicated.
 The "Refresh community catalog" action does this weekly and opens a pull request
 so new upstream entries get a look before they ship.
 
+## Submitting a puzzle
+
+Anyone with a GitHub account can open
+[**Add a puzzle**](https://github.com/pedantique/puzzlement-site/issues/new?template=add-puzzle.yml)
+— a form, not a file: dropdowns for the things the catalog is fussy about
+(genre, access, cadence, metric), free text for the rest, and one box for a real
+pasted result, which is worth more than everything else on the form because the
+score parser is written against it.
+
+A bot turns each submission into the catalog entry it would become and posts it
+back as a comment, flagging anything under `_review`. Nothing reaches the app
+until the **approved** label goes on; that commits the entry and closes the
+issue, and it's live within the hour.
+
+`catalog/from_issue.py` does the conversion and can be run by hand:
+
+    python3 catalog/from_issue.py --body-file issue.md          # see the draft
+    python3 catalog/from_issue.py --body-file issue.md --apply  # write it in
+
+It is deliberately conservative: a blank field, or one holding something the
+catalog doesn't accept, is left out rather than guessed at.
+
 ## Format
 
 ```json

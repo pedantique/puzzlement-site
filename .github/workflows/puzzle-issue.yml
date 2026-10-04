@@ -1,0 +1,111 @@
+name: Puzzle submissions
+
+# An "Add a puzzle" issue is turned into a draft catalog entry and posted back
+# as a comment, so the submitter can see what it became and correct the form.
+# Nothing reaches the app until you add the "approved" label — that's the second
+# job, which commits the entry and closes the issue.
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  draft:
+    if: contains(github.event.issue.labels.*.name, 'puzzle') && github.event.label.name != 'approved'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Convert the form to a catalog entry
+        id: convert
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: |
+          printf '%s' "$BODY" > issue.md
+          if python3 catalog/from_issue.py --body-file issue.md > draft.json 2> error.txt; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            cat error.txt
+          fi
+
+      - name: Say what it became
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const ok = '${{ steps.convert.outputs.ok }}' === 'true';
+            const body = ok
+              ? [
+                  "Here's what this becomes in the catalog. Anything under `_review` is worth a look;",
+                  "edit the issue above and this comment's successor will follow.",
+                  "",
+                  '```json',
+                  fs.readFileSync('draft.json', 'utf8').trim(),
+                  '```',
+                  "",
+                  "Add the **approved** label to publish it — it reaches everyone's app within the hour,",
+                  "with no App Store update.",
+                ].join("\n")
+              : [
+                  "I couldn't read that form:",
+                  '```',
+                  fs.readFileSync('error.txt', 'utf8').trim(),
+                  '```',
+                  "Edit the issue and I'll try again.",
+                ].join("\n");
+            await github.rest.issues.createComment({
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: context.issue.number, body,
+            });
+
+  publish:
+    if: github.event.action == 'labeled' && github.event.label.name == 'approved'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add it to the catalog
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: |
+          set -e
+          printf '%s' "$BODY" > issue.md
+          python3 catalog/from_issue.py --body-file issue.md --apply > draft.json
+          python3 -c "import json; json.load(open('catalog/catalog.json'))"
+          python3 -c "
+          import json
+          print(json.load(open('draft.json'))['id'])" > id.txt
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog/catalog.json
+          git commit -m "Catalog: add $(cat id.txt) (issue #${{ github.event.issue.number }})"
+          git push
+
+      - name: Close the issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const id = fs.readFileSync('id.txt', 'utf8').trim();
+            await github.rest.issues.createComment({
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: [
+                `Published as \`${id}\`. It'll appear in Discovery the next time each app`,
+                "fetches the catalog — on launch, or within the hour.",
+                "",
+                "If it needs a score parser, that's a separate change in the app.",
+              ].join("\n"),
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: context.issue.number, state: 'closed',
+            });

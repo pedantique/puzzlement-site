@@ -1,0 +1,174 @@
+name: Add a puzzle
+description: Everything Puzzlement needs to add a daily puzzle to its catalog
+title: "Add: "
+labels: ["puzzle"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One form per puzzle. Only the first few fields are required — leave
+        anything you're unsure about blank and it'll be worked out or left at a
+        sensible default. An accepted puzzle reaches everyone's app within the
+        hour, with no App Store update.
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: As the puzzle calls itself
+      placeholder: One Up
+    validations: { required: true }
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://www.oneuppuzzle.com/
+    validations: { required: true }
+
+  - type: input
+    id: description
+    attributes:
+      label: One line about it
+      description: What a player would want to know. No marketing.
+      placeholder: Sudoku meets Fences, but different
+    validations: { required: true }
+
+  - type: input
+    id: publisher
+    attributes:
+      label: Publisher
+      description: The masthead, or "Indie" for a solo/small site
+      placeholder: Indie
+    validations: { required: true }
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Genre
+      options:
+        - Word
+        - Spelling
+        - Trivia
+        - Logic
+        - Numbers
+        - Sudoku
+        - Crossword
+        - Cryptic
+        - Visual
+        - Music
+        - Sports
+        - Geography
+        - Science
+        - Movie & TV
+    validations: { required: true }
+
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access
+      options:
+        - Free
+        - Login required
+        - Freemium
+        - Paid sub required
+    validations: { required: true }
+
+  - type: dropdown
+    id: cadence
+    attributes:
+      label: How often
+      options:
+        - daily
+        - weekly
+        - sporadic
+        - unlimited
+        - monday
+        - tuesday
+        - wednesday
+        - thursday
+        - friday
+        - saturday
+        - sunday
+        - monWed
+        - thuFri
+        - monSat
+      description: "`unlimited` = play as much as you like; `sporadic` = whenever they feel like it"
+    validations: { required: true }
+
+  - type: input
+    id: emoji
+    attributes:
+      label: Emoji
+      description: One, used when the site's own icon can't be fetched
+      placeholder: 💊
+
+  - type: input
+    id: reset_time
+    attributes:
+      label: Reset time
+      description: When the new puzzle appears, in words
+      placeholder: Midnight UTC
+
+  - type: input
+    id: estimated_minutes
+    attributes:
+      label: Typical minutes
+      placeholder: "10"
+
+  - type: dropdown
+    id: primary_metric
+    attributes:
+      label: What the result is measured in
+      options:
+        - passFail
+        - time
+        - guesses
+        - mistakes
+        - hints
+        - points
+        - par
+        - tier
+      description: "`passFail` = solved or not, with nothing to compare"
+
+  - type: dropdown
+    id: score_share
+    attributes:
+      label: How a result can be captured
+      options:
+        - "none — nothing to copy"
+        - "shareText — a Share button that writes text"
+        - "clipboardAuto — it copies to the clipboard by itself"
+
+  - type: textarea
+    id: sample_share
+    attributes:
+      label: A real result, pasted
+      description: >
+        Paste exactly what the game's Share/Copy gives you, emoji and all. This
+        is what the score parser is written against, so a real one is worth more
+        than every other field here.
+      render: text
+
+  - type: input
+    id: edition_number
+    attributes:
+      label: Today's edition number
+      description: "If the game numbers its puzzles: the number and the date you saw it, e.g. 2026-10-04 = 928"
+      placeholder: 2026-10-04 = 928
+
+  - type: checkboxes
+    id: extras
+    attributes:
+      label: Anything true of this one
+      options:
+        - label: Signing in gets you something (streaks, saved progress)
+        - label: Past puzzles can be played
+        - label: It can be failed outright, not just scored badly
+        - label: It doesn't fit the screen properly without help
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Oddities, a second URL, why it's worth adding
