@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-30",
+  "updated": "2026-10-04",
   "puzzles": {
     "guardian-cryptic": {
       "url": "https://www.theguardian.com/crosswords/series/cryptic"
@@ -58,6 +58,33 @@
         "resetTime": "Midnight local",
         "manualArchiveURLs": {
           "2026-09-17": "https://www.nytimes.com/games/bonus/crossword/standard/2026-09-17"
+        }
+      }
+    },
+    {
+      "id": "one-up",
+      "name": "One Up",
+      "emoji": "💊",
+      "url": "https://www.oneuppuzzle.com/",
+      "source": "Indie",
+      "description": "Sudoku meets Fences, but different",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "launchDate": "2024-03-20",
+        "resetTime": "Midnight UTC",
+        "estimatedMinutes": 10,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "fitToScreen": false,
+        "loginBenefit": true,
+        "loginPromptTiming": "atStart",
+        "editionNumberRef": {
+          "date": "2026-10-04",
+          "number": 928
         }
       }
     }
