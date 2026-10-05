@@ -29,6 +29,16 @@ ACCESS = {"Free", "Login required", "Freemium", "Paid sub required"}
 CADENCE = {"daily", "weekly", "sporadic", "unlimited", "monday", "tuesday", "wednesday",
            "thursday", "friday", "saturday", "sunday", "monWed", "thuFri", "monSat"}
 METRICS = {"passFail", "time", "guesses", "mistakes", "hints", "points", "par", "tier"}
+# Reset strings the app actually understands. Anything else gives the puzzle no
+# countdown at all, so it's flagged rather than published quietly ("Midnight UTC"
+# did exactly that on One Up).
+RESET_TIMES = {"Midnight local", "Midnight ET", "Midnight PT", "Midnight GMT",
+               "Midnight London", "Midnight EST", "3:00 AM ET", "6:00 AM ET",
+               "10:00 PM ET", "4:00 PM GMT"}
+RESET_SYNONYMS = {"midnight utc": "Midnight GMT", "midnight z": "Midnight GMT",
+                  "00:00 utc": "Midnight GMT", "midnight": "Midnight local",
+                  "midnight eastern": "Midnight ET", "midnight pacific": "Midnight PT",
+                  "midnight uk": "Midnight London", "midnight bst": "Midnight London"}
 
 # Issue-form label -> our key. The labels are the form's, verbatim.
 FIELDS = {
@@ -128,7 +138,13 @@ def convert(fields):
         c["scoreShare"] = share.split()[0]          # "none — nothing to copy" -> "none"
 
     if reset := value(fields, "reset_time"):
-        c["resetTime"] = reset
+        canonical = RESET_SYNONYMS.get(reset.strip().lower(), reset.strip())
+        c["resetTime"] = canonical
+        if canonical != reset.strip():
+            review.append(f"reset time {reset!r} written as {canonical!r}, which the app understands")
+        elif canonical not in RESET_TIMES:
+            review.append(f"reset time {canonical!r} isn't one the app knows — "
+                          f"the puzzle will have no countdown. Known: {', '.join(sorted(RESET_TIMES))}")
     if minutes := value(fields, "estimated_minutes"):
         digits = re.sub(r"\D", "", minutes)
         if digits:
