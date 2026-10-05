@@ -167,5 +167,12 @@ abandoned if it runs longer than a moment. Prefer `scoreRules`; reach for
 Genuinely complicated parsers (Puzzmo's share URLs, Twixtle's score-plus-time)
 stay in Swift where they can be tested properly.
 
+`iconURL` (optional, on a puzzle's `classification`) points at an icon we serve
+— `img/icons/<id>.png` in this repo, so `https://puzzlement.games/img/icons/one-up.png`.
+The app prefers it over anything it can scrape from the game's own site, which is
+the point: some games publish nothing better than a 32px favicon and the app
+would otherwise upscale that to a blur. 256×256 PNG with transparency; the app
+draws it on a white card.
+
 `schemaVersion` must stay `1` until an app build that understands a newer one
 ships — older builds ignore a document with a version they don't know.

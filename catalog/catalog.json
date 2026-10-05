@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "puzzles": {
     "guardian-cryptic": {
       "url": "https://www.theguardian.com/crosswords/series/cryptic"
@@ -85,7 +85,8 @@
         "editionNumberRef": {
           "date": "2026-10-04",
           "number": 928
-        }
+        },
+        "iconURL": "https://puzzlement.games/img/icons/one-up.png"
       }
     }
   ],
