@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "puzzles": {
     "guardian-cryptic": {
       "url": "https://www.theguardian.com/crosswords/series/cryptic"
@@ -75,7 +75,7 @@
         "canFail": false,
         "cadence": "daily",
         "launchDate": "2024-03-20",
-        "resetTime": "Midnight UTC",
+        "resetTime": "Midnight GMT",
         "estimatedMinutes": 10,
         "archiveAccess": "none",
         "scoreShare": "none",
