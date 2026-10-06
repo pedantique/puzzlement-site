@@ -146,11 +146,23 @@ def main() -> int:
         known = set()
 
     games = convert(parse(yaml_text), known)
+
+    # Keep the stamp from last time when nothing actually changed, so the weekly
+    # job doesn't open a pull request whose only diff is today's date.
+    updated = dt.date.today().isoformat()
+    try:
+        previous = json.load(open(args.out))
+        if previous.get("added") == games:
+            updated = previous.get("updated", updated)
+            print("upstream unchanged", file=sys.stderr)
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+
     doc = {
         "schemaVersion": 1,
         "warning": "Unvetted. Some of these games will not load, fit, reset or "
                    "score correctly in an embedded web view.",
-        "updated": dt.date.today().isoformat(),
+        "updated": updated,
         "source": "https://github.com/guilyx/awesome-daily-minigames (CC0-1.0)",
         "note": "Community list, not vetted by Puzzlement. Shown only when "
                 "Settings > Experimental > Community puzzles is on.",
