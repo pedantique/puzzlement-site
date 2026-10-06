@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "warning": "Unvetted. Some of these games will not load, fit, reset or score correctly in an embedded web view.",
-  "updated": "2026-09-29",
+  "updated": "2026-10-06",
   "source": "https://github.com/guilyx/awesome-daily-minigames (CC0-1.0)",
   "note": "Community list, not vetted by Puzzlement. Shown only when Settings > Experimental > Community puzzles is on.",
   "added": [
