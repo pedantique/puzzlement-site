@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-07",
+  "updated": "2026-10-09",
   "puzzles": {
     "guardian-cryptic": {
       "url": "https://www.theguardian.com/crosswords/series/cryptic"
@@ -121,7 +121,7 @@
         "shareButtonLabel": "Share",
         "popularityScore": 45,
         "launchDate": "2026-10-01",
-        "resetTime": "Midnight local",
+        "resetTime": "1st of month",
         "manualArchiveURLs": {
           "2026-10-01": "https://www.nytimes.com/games/bonus/crossword/monthly/2026-10-01"
         }
