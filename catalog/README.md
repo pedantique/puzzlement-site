@@ -7,6 +7,26 @@ URLs, dates, metadata, whole new games — never score parsers.
 
 Served at <https://puzzlement.games/catalog/catalog.json>.
 
+## siteFixRules
+
+Per-site element hiding, shipped the same day a publisher restyles something
+over the top of a puzzle. Same content-blocker format as `adBlockRules`, but
+**appended** to whichever ad list is in force rather than replacing it:
+
+```json
+"siteFixRules": [
+  { "trigger": { "url-filter": ".*", "if-domain": ["example.com"] },
+    "action": { "type": "css-display-none", "selector": ".sticky-banner" } }
+]
+```
+
+This is deliberately the only over-the-air lever on page appearance. The
+publisher scripts in `PublisherScripts.swift` are JavaScript injected into the
+puzzle web view, which holds the user's signed-in NYT, LinkedIn and Puzzmo
+sessions — anyone able to change this file could read or use those. A
+`WKContentRuleList` rule can hide an element and nothing else: no DOM access,
+no cookies, no network. Same reason score JS runs in a bare JSContext.
+
 ## The Wednesday job (Colorful Strands)
 
 NYT's Colorful Strands has a URL that can't be predicted from the date, so each
