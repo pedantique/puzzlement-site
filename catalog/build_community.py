@@ -92,6 +92,36 @@ def slug(name: str) -> str:
     return f"community-{s}"
 
 
+# Entries that are a SITE of several games rather than one daily puzzle.
+#
+# Puzzlement treats each entry as a single puzzle with one edition a day, so a
+# hub can never be completed, never has an edition, and never scores — it just
+# sits in the list being unfinishable. "Coffee First Games" is the type: a
+# studio's front page, not a game.
+#
+# Matched on the description, because that is where the upstream list says so.
+# Deliberately NOT on a bare-domain URL: most single games live at one.
+HUB_PHRASES = re.compile(
+    r"(a set of|suite of|collection of|several |hub of|studio|aggregator"
+    r"|home for|platform for|\bportal\b|\bdailies\b"
+    # "five daily logic puzzles", "six free word puzzles" — a count of games,
+    # not of rounds within one ("ten countries from their flags" stays).
+    r"|\b(two|three|four|five|six|seven|eight|nine|ten|a dozen)\b"
+    r"(?:\s+\S+){0,3}\s+(puzzles|games))",
+    re.I,
+)
+
+# Hubs the phrasing doesn't give away. ted.com/games is a landing page.
+HUB_IDS = {"community-ted-games"}
+
+
+def is_hub(game: dict, gid: str) -> bool:
+    if gid in HUB_IDS:
+        return True
+    text = f"{game.get('description', '')} {game.get('name', '')}"
+    return bool(HUB_PHRASES.search(text))
+
+
 def convert(games: list[dict], known_hosts: set[str]) -> list[dict]:
     out, seen = [], set()
     for g in games:
@@ -105,6 +135,10 @@ def convert(games: list[dict], known_hosts: set[str]) -> list[dict]:
             continue
         gid = slug(g["name"])
         if gid in seen:
+            continue
+        if is_hub(g, gid):
+            print(f"skipped {g['name']}: a site of several games, not one puzzle",
+                  file=sys.stderr)
             continue
         seen.add(gid)
         tags = g.get("tags", [])

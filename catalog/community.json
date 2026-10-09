@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "warning": "Unvetted. Some of these games will not load, fit, reset or score correctly in an embedded web view.",
-  "updated": "2026-09-29",
+  "updated": "2026-10-09",
   "source": "https://github.com/guilyx/awesome-daily-minigames (CC0-1.0)",
   "note": "Community list, not vetted by Puzzlement. Shown only when Settings > Experimental > Community puzzles is on.",
   "added": [
@@ -64,6 +64,22 @@
       "access": "Free",
       "classification": {
         "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-arrowgame",
+      "name": "ArrowGame",
+      "emoji": "🤔",
+      "url": "https://arrowgame.app/",
+      "source": "Community",
+      "description": "Tap arrows off the board only once their exit path is clear, with a shared daily Boss puzzle alongside a 1,000-level campaign",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "cadence": "unlimited",
         "resetTime": "Midnight local",
         "popularityScore": 1,
         "scoreShare": "none"
@@ -157,22 +173,6 @@
       "source": "Community",
       "description": "Name the top five films at the US box office for a mystery weekend in history",
       "category": "Movie & TV",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
-      "id": "community-brainbashers-daily-puzzle",
-      "name": "BrainBashers Daily Puzzle",
-      "emoji": "🤔",
-      "url": "https://www.brainbashers.com/dailypuzzle.asp",
-      "source": "Community",
-      "description": "A long-running rotation of Slitherlink, Hitori, Futoshiki and a dozen other pencil puzzles",
-      "category": "Logic",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -342,22 +342,6 @@
       }
     },
     {
-      "id": "community-cinenerdle",
-      "name": "CineNerdle",
-      "emoji": "🎬",
-      "url": "https://www.cinenerdle.app/",
-      "source": "Community",
-      "description": "A suite of film puzzles including the excellent Cine2Nerdle tile-swapping grid",
-      "category": "Movie & TV",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
       "id": "community-clues-by-sam",
       "name": "Clues by Sam",
       "emoji": "🤔",
@@ -365,22 +349,6 @@
       "source": "Community",
       "description": "A daily deduction grid where each clue eliminates suspects, houses or objects",
       "category": "Logic",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
-      "id": "community-coffee-first-games",
-      "name": "Coffee First Games",
-      "emoji": "🔤",
-      "url": "https://coffeefirst.games/",
-      "source": "Community",
-      "description": "A small indie studio shipping several short, polished dailies",
-      "category": "Word",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -477,22 +445,6 @@
       "source": "Community",
       "description": "Identify a photograph from an extreme crop that widens with every guess",
       "category": "Visual",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
-      "id": "community-crosshare",
-      "name": "Crosshare",
-      "emoji": "◻️",
-      "url": "https://crosshare.org/",
-      "source": "Community",
-      "description": "Free, open-source, ad-light home for community-built crosswords including a daily mini",
-      "category": "Crossword",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -710,6 +662,22 @@
       }
     },
     {
+      "id": "community-elided",
+      "name": "Elided",
+      "emoji": "🔤",
+      "url": "https://elided.app/",
+      "source": "Community",
+      "description": "A daily puzzle to find the longest hidden word: tap letters left to right across the grid, skipping any you like, to spell words",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-factle",
       "name": "Factle",
       "emoji": "❓",
@@ -838,22 +806,6 @@
       }
     },
     {
-      "id": "community-gamebunny",
-      "name": "Gamebunny",
-      "emoji": "🔤",
-      "url": "https://gamebunny.app/",
-      "source": "Community",
-      "description": "A tidy collection of original dailies spanning words, trivia and logic",
-      "category": "Word",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
       "id": "community-gaps",
       "name": "Gaps",
       "emoji": "🎬",
@@ -912,22 +864,6 @@
       "access": "Free",
       "classification": {
         "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
-      "id": "community-grid-puzzles",
-      "name": "Grid Puzzles",
-      "emoji": "🔤",
-      "url": "https://gridpuzzles.app/",
-      "source": "Community",
-      "description": "Five daily logic puzzles (6x6 sudoku, rectangles, word paths, dominoes, number paths), each checked to have one solution, with an unlimited mode for every game",
-      "category": "Word",
-      "access": "Free",
-      "classification": {
-        "cadence": "unlimited",
         "resetTime": "Midnight local",
         "popularityScore": 1,
         "scoreShare": "none"
@@ -1286,13 +1222,13 @@
       }
     },
     {
-      "id": "community-lex-games",
-      "name": "Lex.Games",
-      "emoji": "🔤",
-      "url": "https://lex.games/",
+      "id": "community-lichess-daily-puzzle",
+      "name": "Lichess Daily Puzzle",
+      "emoji": "🤔",
+      "url": "https://lichess.org/training/daily",
       "source": "Community",
-      "description": "Six free word puzzles a day, including a mini crossword and a Connections variant",
-      "category": "Word",
+      "description": "The same idea, fully free and fully open source",
+      "category": "Logic",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -1302,14 +1238,14 @@
       }
     },
     {
-      "id": "community-lichess-daily-puzzle",
-      "name": "Lichess Daily Puzzle",
+      "id": "community-lie-of-sight",
+      "name": "Lie of Sight",
       "emoji": "🤔",
-      "url": "https://lichess.org/training/daily",
+      "url": "https://lieofsight.com/",
       "source": "Community",
-      "description": "The same idea, fully free and fully open source",
+      "description": "Move a family around a room to test what each says they saw, then accuse the one whose story can't be true",
       "category": "Logic",
-      "access": "Free",
+      "access": "Paid sub required",
       "classification": {
         "cadence": "daily",
         "resetTime": "Midnight local",
@@ -1558,22 +1494,6 @@
       }
     },
     {
-      "id": "community-nibble-games",
-      "name": "Nibble Games",
-      "emoji": "🔤",
-      "url": "https://nibble.games/",
-      "source": "Community",
-      "description": "A set of short pencil-and-paper style puzzles refreshed daily",
-      "category": "Word",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
       "id": "community-nonodaily",
       "name": "NonoDaily",
       "emoji": "🤔",
@@ -1596,6 +1516,22 @@
       "url": "https://numble.wtf/",
       "source": "Community",
       "description": "Route through a grid of numbers and operators to hit the day's target",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-numgrove",
+      "name": "Numgrove",
+      "emoji": "🔢",
+      "url": "https://numgrove.com/",
+      "source": "Community",
+      "description": "A daily math puzzle where you grow a factor/sum tree to reach the target number",
       "category": "Numbers",
       "access": "Free",
       "classification": {
@@ -1888,22 +1824,6 @@
       "access": "Free",
       "classification": {
         "cadence": "unlimited",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
-      "id": "community-puzzmallow",
-      "name": "Puzzmallow",
-      "emoji": "🔤",
-      "url": "https://puzzmallow.com/",
-      "source": "Community",
-      "description": "Several original daily logic and word puzzles with a clean, ad-free interface",
-      "category": "Word",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
         "resetTime": "Midnight local",
         "popularityScore": 1,
         "scoreShare": "none"
@@ -2438,22 +2358,6 @@
       }
     },
     {
-      "id": "community-ted-games",
-      "name": "TED Games",
-      "emoji": "🔤",
-      "url": "https://www.ted.com/games",
-      "source": "Community",
-      "description": "TED's free daily word and knowledge puzzles",
-      "category": "Word",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
       "id": "community-term-ooo",
       "name": "Term.ooo",
       "emoji": "🔤",
@@ -2477,22 +2381,6 @@
       "source": "Community",
       "description": "Race from one Wikipedia article to another using only in-article links",
       "category": "Trivia",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
-      "id": "community-thinky-dailies",
-      "name": "Thinky Dailies",
-      "emoji": "🔤",
-      "url": "https://thinkygames.com/dailies/today/",
-      "source": "Community",
-      "description": "An aggregator that pulls together the day's puzzles from dozens of indie thinky games",
-      "category": "Word",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -2716,22 +2604,6 @@
       "url": "https://word.golf/",
       "source": "Community",
       "description": "Travel between two words in as few semantic hops as possible",
-      "category": "Word",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
-      "id": "community-wordlelike",
-      "name": "WordleLike",
-      "emoji": "🔤",
-      "url": "https://wordlelike.com/",
-      "source": "Community",
-      "description": "A free hub of five daily word games — classic Wordle, six-letter Word Hurdle, Mini Crossword, Word Search and Anagram Solver",
       "category": "Word",
       "access": "Free",
       "classification": {
