@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "warning": "Unvetted. Some of these games will not load, fit, reset or score correctly in an embedded web view.",
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "source": "https://github.com/guilyx/awesome-daily-minigames (CC0-1.0)",
   "note": "Community list, not vetted by Puzzlement. Shown only when Settings > Experimental > Community puzzles is on.",
   "added": [
@@ -1382,22 +1382,6 @@
       }
     },
     {
-      "id": "community-metaflora",
-      "name": "Metaflora",
-      "emoji": "🔬",
-      "url": "https://flora.metazooa.com/",
-      "source": "Community",
-      "description": "Metazooa's botanical sibling, built on the plant family tree",
-      "category": "Science",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
       "id": "community-minecraftle",
       "name": "Minecraftle",
       "emoji": "❓",
@@ -1564,22 +1548,6 @@
       "url": "https://arkai.win/games/one-step-late/",
       "source": "Community",
       "description": "Your shadow repeats your previous move one turn late; bring yourself to the sun and it to the moon on the same turn",
-      "category": "Logic",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
-      "id": "community-one-up-puzzle",
-      "name": "One Up Puzzle",
-      "emoji": "🤔",
-      "url": "https://www.oneuppuzzle.com/",
-      "source": "Community",
-      "description": "Fill each run of cells with ascending numbers so no row or column repeats",
       "category": "Logic",
       "access": "Free",
       "classification": {

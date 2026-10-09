@@ -169,6 +169,9 @@ def main() -> int:
     ap.add_argument("--source", default=SOURCE)
     ap.add_argument("--known-hosts", default="catalog/known_hosts.txt",
                     help="one registrable domain per line: games the app already has")
+    ap.add_argument("--catalog", default="catalog/catalog.json",
+                    help="the curated overlay, so games added there are never "
+                         "offered again as community entries")
     args = ap.parse_args()
 
     with urllib.request.urlopen(args.source, timeout=60) as r:
@@ -178,6 +181,24 @@ def main() -> int:
         known = {l.strip().lower() for l in open(args.known_hosts) if l.strip() and not l.startswith("#")}
     except FileNotFoundError:
         known = set()
+
+    # The hand-written list only knows what somebody remembered to add to it,
+    # and a game added to the curated overlay later is not in it. One Up was:
+    # it appeared a second time as "One Up Puzzle", with a midnight-local reset
+    # instead of its real midnight GMT, so the app offered the same game twice
+    # and got the reset wrong on one of them. Read the overlay instead of
+    # trusting the list to have been kept in step.
+    try:
+        overlay = json.load(open(args.catalog))
+        entries = list(overlay.get("added") or [])
+        # "puzzles" patches existing games by id, and a patch may move a URL.
+        entries += list((overlay.get("puzzles") or {}).values())
+        for entry in entries:
+            url = (entry.get("puzzle") or entry).get("url")
+            if url:
+                known.add(registrable(url))
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
 
     games = convert(parse(yaml_text), known)
 
