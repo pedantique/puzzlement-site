@@ -176,6 +176,11 @@
       "classification": {
         "archiveAccess": "subscriptionRequired"
       }
+    },
+    "connections-sports": {
+      "classification": {
+        "shareButtonLabel": "Share Your Results"
+      }
     }
   },
   "added": [
