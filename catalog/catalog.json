@@ -104,7 +104,8 @@
     },
     "nyt-crossword": {
       "classification": {
-        "minimumPlausibleSeconds": 30
+        "minimumPlausibleSeconds": 30,
+        "scoreShare": "none"
       }
     },
     "sudoku-easy": {
@@ -159,6 +160,21 @@
     "patches": {
       "classification": {
         "editionNameTiming": "none"
+      }
+    },
+    "wordle": {
+      "classification": {
+        "archiveAccess": "subscriptionRequired"
+      }
+    },
+    "connections": {
+      "classification": {
+        "archiveAccess": "subscriptionRequired"
+      }
+    },
+    "strands": {
+      "classification": {
+        "archiveAccess": "subscriptionRequired"
       }
     }
   },
