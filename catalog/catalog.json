@@ -105,7 +105,8 @@
     "nyt-crossword": {
       "classification": {
         "minimumPlausibleSeconds": 30,
-        "scoreShare": "none"
+        "scoreShare": "none",
+        "editionNameCrossFrame": true
       }
     },
     "sudoku-easy": {
@@ -180,6 +181,16 @@
     "connections-sports": {
       "classification": {
         "shareButtonLabel": "Share Your Results"
+      }
+    },
+    "mini": {
+      "classification": {
+        "editionNameCrossFrame": true
+      }
+    },
+    "midi": {
+      "classification": {
+        "editionNameCrossFrame": true
       }
     }
   },
