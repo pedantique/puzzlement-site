@@ -142,6 +142,11 @@
         "resetTime": "1st of month",
         "manualArchiveURLs": {
           "2026-10-01": "https://www.nytimes.com/games/bonus/crossword/monthly/2026-10-01"
+        },
+        "variantPill": {
+          "label": "Special",
+          "position": "bottom",
+          "colorName": "grey"
         }
       }
     }
