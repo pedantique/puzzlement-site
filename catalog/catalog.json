@@ -197,7 +197,7 @@
   "added": [
     {
       "id": "special-crossword",
-      "name": "Special Crossword",
+      "name": "Special Crossword (17 Sep)",
       "emoji": "✨",
       "url": "https://www.nytimes.com/games/bonus/crossword/standard/2026-09-17",
       "source": "NYT",
@@ -210,7 +210,7 @@
         "cadence": "sporadic",
         "archiveAccess": "subscriptionRequired",
         "estimatedMinutes": 15,
-        "shareButtonLabel": "Share",
+        "shareButtonLabel": "Share your results",
         "popularityScore": 45,
         "launchDate": "2026-09-17",
         "resetTime": "Midnight local",
@@ -264,7 +264,7 @@
         "estimatedMinutes": 20,
         "shareButtonLabel": "Share your results",
         "popularityScore": 45,
-        "launchDate": "2026-10-01",
+        "launchDate": "2026-09-01",
         "resetTime": "1st of month",
         "variantPill": {
           "label": "Special",
