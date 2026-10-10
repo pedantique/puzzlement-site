@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "puzzles": {
     "guardian-cryptic": {
-      "url": "https://www.theguardian.com/crosswords/series/cryptic"
+      "url": "https://www.theguardian.com/crosswords/series/cryptic",
+      "classification": {
+        "editionNumberRef": {
+          "date": "2026-10-10",
+          "number": 30133
+        }
+      }
     },
     "guardian-mini": {
       "url": "https://www.theguardian.com/crosswords/series/mini-crossword"
