@@ -101,6 +101,26 @@
           "isNextDayRelease": false
         }
       }
+    },
+    "nyt-crossword": {
+      "classification": {
+        "minimumPlausibleSeconds": 30
+      }
+    },
+    "sudoku-easy": {
+      "classification": {
+        "minimumPlausibleSeconds": 20
+      }
+    },
+    "sudoku-medium": {
+      "classification": {
+        "minimumPlausibleSeconds": 20
+      }
+    },
+    "sudoku-hard": {
+      "classification": {
+        "minimumPlausibleSeconds": 20
+      }
     }
   },
   "added": [
