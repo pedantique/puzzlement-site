@@ -132,7 +132,33 @@
         "modifiers": [
           "hints",
           "backtracks"
-        ]
+        ],
+        "editionNameTiming": "none"
+      }
+    },
+    "pinpoint": {
+      "classification": {
+        "editionNameTiming": "atFinish"
+      }
+    },
+    "tango": {
+      "classification": {
+        "editionNameTiming": "none"
+      }
+    },
+    "queens": {
+      "classification": {
+        "editionNameTiming": "none"
+      }
+    },
+    "linkedin-sudoku": {
+      "classification": {
+        "editionNameTiming": "none"
+      }
+    },
+    "patches": {
+      "classification": {
+        "editionNameTiming": "none"
       }
     }
   },
