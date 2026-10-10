@@ -52,7 +52,8 @@
     "mystery-mini": {
       "classification": {
         "cadence": "tuesday",
-        "dateURLDayOffset": 0
+        "dateURLDayOffset": 0,
+        "shareButtonLabel": "Share your results"
       }
     },
     "easy-mode-crossword": {
