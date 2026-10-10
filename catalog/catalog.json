@@ -121,6 +121,15 @@
       "classification": {
         "minimumPlausibleSeconds": 20
       }
+    },
+    "zip": {
+      "classification": {
+        "editionNumberRef": {
+          "date": "2026-10-09",
+          "number": 571
+        },
+        "launchDate": "2025-03-18"
+      }
     }
   },
   "added": [
