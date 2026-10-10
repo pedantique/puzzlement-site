@@ -219,7 +219,7 @@
       "id": "monthly-crossword",
       "name": "Special Crossword",
       "emoji": "🗓",
-      "url": "https://www.nytimes.com/games/bonus/crossword/monthly/2026-10-01",
+      "url": "https://www.nytimes.com/crosswords/game/bonus/2026/10",
       "source": "NYT",
       "description": "A full-size bonus crossword, once a month",
       "category": "Crossword",
@@ -234,14 +234,12 @@
         "popularityScore": 45,
         "launchDate": "2026-10-01",
         "resetTime": "1st of month",
-        "manualArchiveURLs": {
-          "2026-10-01": "https://www.nytimes.com/games/bonus/crossword/monthly/2026-10-01"
-        },
         "variantPill": {
           "label": "Special",
           "position": "bottom",
           "colorName": "grey"
-        }
+        },
+        "dateURLPattern": "https://www.nytimes.com/crosswords/game/bonus/{yyyy}/{MM}"
       }
     }
   ],
