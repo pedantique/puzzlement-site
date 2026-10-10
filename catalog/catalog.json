@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "puzzles": {
     "guardian-cryptic": {
       "url": "https://www.theguardian.com/crosswords/series/cryptic"
@@ -46,7 +46,8 @@
     },
     "mystery-mini": {
       "classification": {
-        "dateURLDayOffset": -1
+        "cadence": "tuesday",
+        "dateURLDayOffset": 0
       }
     }
   },
@@ -115,7 +116,7 @@
       "classification": {
         "primaryMetric": "time",
         "lowerIsBetter": true,
-        "cadence": "sporadic",
+        "cadence": "monthly",
         "archiveAccess": "subscriptionRequired",
         "estimatedMinutes": 20,
         "shareButtonLabel": "Share",
