@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "warning": "Unvetted. Some of these games will not load, fit, reset or score correctly in an embedded web view.",
-  "updated": "2026-10-10",
+  "updated": "2026-10-13",
   "source": "https://github.com/guilyx/awesome-daily-minigames (CC0-1.0)",
   "note": "Community list, not vetted by Puzzlement. Shown only when Settings > Experimental > Community puzzles is on.",
   "added": [
@@ -2016,6 +2016,38 @@
       "access": "Free",
       "classification": {
         "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-shople",
+      "name": "Shople",
+      "emoji": "❓",
+      "url": "https://playshople.com/",
+      "source": "Community",
+      "description": "Guess the mystery brand in ten tries; each guess compares headquarters, founding year, industry, revenue and more against the answer",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-sizeguess",
+      "name": "SizeGuess",
+      "emoji": "🖼️",
+      "url": "https://sizeguess.com/",
+      "source": "Community",
+      "description": "Resize real-world objects against a known reference over five daily rounds, then see the true measurement and how close you got",
+      "category": "Visual",
+      "access": "Free",
+      "classification": {
+        "cadence": "unlimited",
         "resetTime": "Midnight local",
         "popularityScore": 1,
         "scoreShare": "none"
