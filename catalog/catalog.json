@@ -37,7 +37,7 @@
         "dateURLReset": {
           "hour": 0,
           "minute": 0,
-          "timezone": "America/New_York",
+          "timezone": "current",
           "isNextDayRelease": false
         }
       }
@@ -84,14 +84,14 @@
     },
     "mystery-mini": {
       "classification": {
-        "cadence": "tuesday",
-        "dateURLDayOffset": 0,
+        "cadence": "wednesday",
+        "dateURLDayOffset": -1,
         "shareButtonLabel": "Share your results",
         "resetTime": "Midnight ET",
         "dateURLReset": {
           "hour": 0,
           "minute": 0,
-          "timezone": "America/New_York",
+          "timezone": "current",
           "isNextDayRelease": false
         }
       }
