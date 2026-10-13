@@ -53,7 +53,7 @@
         "dateURLReset": {
           "hour": 0,
           "minute": 0,
-          "timezone": "America/New_York",
+          "timezone": "current",
           "isNextDayRelease": false
         },
         "manualArchiveURLs": {
@@ -77,7 +77,7 @@
         "dateURLReset": {
           "hour": 0,
           "minute": 0,
-          "timezone": "America/New_York",
+          "timezone": "current",
           "isNextDayRelease": false
         }
       }
