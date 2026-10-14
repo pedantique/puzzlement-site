@@ -7,9 +7,10 @@ can feed a commercial app.
 
 The result is a SEPARATE document from catalog.json: the app fetches it only
 when "Community puzzles" is switched on in Settings → Experimental, and its
-games are marked so they read as unvetted. Games already in the app (matched on
-registrable domain) are skipped, as are Reddit-hosted ones, which don't work in
-an embedded web view.
+games are marked so they read as unvetted. Games already in the app are skipped — matched on the FULL host, so the
+several games sharing daily-game.page are told apart by subdomain — and so are
+Reddit-hosted ones, which don't work in an embedded web view. A skipped
+duplicate says so on stderr; read the weekly run's log alongside the diff.
 
     python3 catalog/build_community.py --out catalog/community.json
 
@@ -128,7 +129,16 @@ def convert(games: list[dict], known_hosts: set[str]) -> list[dict]:
         if g.get("platform") != "web":
             continue                      # Reddit-hosted games need the Reddit app
         host = registrable(g["url"])
-        if host in known_hosts or host.endswith("reddit.com"):
+        if host in known_hosts:
+            # Said out loud, like every other skip. Silently dropping these
+            # made the weekly diff unreadable in one direction: a game missing
+            # from the output could mean "we already have it" or "upstream
+            # never had it", and the log could not tell you which. John's four
+            # daily-game.page games arrived in the upstream list on 2026-10-13
+            # and vanished here with nothing said.
+            print(f"skipped {g['name']}: already in Puzzlement ({host})", file=sys.stderr)
+            continue
+        if host.endswith("reddit.com"):
             continue
         if g.get("category") not in CATEGORY:
             print(f"skipped {g['name']}: unknown category {g.get('category')!r}", file=sys.stderr)
