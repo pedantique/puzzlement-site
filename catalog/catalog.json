@@ -1,6 +1,20 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-14",
+  "updated": "2026-10-17T05:05:13Z",
+  "siteFixRules": [
+    {
+      "trigger": {
+        "url-filter": "^https://www\\.linkedin\\.com/games/",
+        "if-domain": [
+          "*linkedin.com"
+        ]
+      },
+      "action": {
+        "type": "css-display-none",
+        "selector": "#artdeco-toasts, #toast-wormhole"
+      }
+    }
+  ],
   "puzzles": {
     "guardian-cryptic": {
       "url": "https://www.theguardian.com/crosswords/series/cryptic",
