@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-18T04:04:46Z",
+  "updated": "2026-10-18T04:16:56Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -622,6 +622,52 @@
               "pieces": "(\\d+)-piece set"
             },
             "template": "{pieces|piece|pieces}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "heistle",
+      "name": "Heistle",
+      "emoji": "🔒",
+      "url": "https://heistle.com/",
+      "source": "Indie",
+      "description": "Crack the code to earn the daily heist",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "guesses",
+        "lowerIsBetter": true,
+        "canFail": true,
+        "scoreMax": 4,
+        "failureAtMax": true,
+        "cadence": "daily",
+        "launchDate": "2026-07-03",
+        "editionNumberRef": {
+          "date": "2026-07-03",
+          "number": 1
+        },
+        "estimatedMinutes": 3,
+        "shareButtonLabel": "SHARE RESULT",
+        "loginBenefit": true,
+        "scoreRules": [
+          {
+            "require": [
+              "heistle",
+              "busted"
+            ],
+            "captures": {},
+            "template": "X/4"
+          },
+          {
+            "require": [
+              "heistle",
+              "cracked in"
+            ],
+            "captures": {
+              "guesses": "cracked in\\s*(\\d+/\\d+)"
+            },
+            "template": "{guesses}"
           }
         ]
       }
