@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-18T03:46:48Z",
+  "updated": "2026-10-18T04:04:46Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -593,6 +593,37 @@
           }
         ],
         "iconURL": "https://puzzlement.games/img/icons/unstack-the-dock.png"
+      }
+    },
+    {
+      "id": "mayhex-babushka",
+      "name": "Babushka",
+      "emoji": "🪆",
+      "url": "https://mayhex.gg/babushka/",
+      "source": "Mayhex",
+      "description": "Name something increasingly bigger within a category",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "points",
+        "lowerIsBetter": false,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "estimatedMinutes": 2,
+        "shareButtonLabel": "Share",
+        "iconURL": "https://puzzlement.games/img/icons/mayhex-babushka.png",
+        "scoreRules": [
+          {
+            "require": [
+              "babushka"
+            ],
+            "captures": {
+              "pieces": "(\\d+)-piece set"
+            },
+            "template": "{pieces|piece|pieces}"
+          }
+        ]
       }
     }
   ],
