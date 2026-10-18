@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-18T10:36:26Z",
+  "updated": "2026-10-18T10:52:38Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -24,6 +24,18 @@
       "action": {
         "type": "css-display-none",
         "selector": ".tbGameSizes"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https://(www\\.)?oneuppuzzle\\.com/",
+        "if-domain": [
+          "*oneuppuzzle.com"
+        ]
+      },
+      "action": {
+        "type": "css-display-none",
+        "selector": ".google-auto-placed, ins.adsbygoogle"
       }
     }
   ],
