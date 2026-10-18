@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-18T01:35:34Z",
+  "updated": "2026-10-18T03:46:48Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -532,7 +532,8 @@
             },
             "template": "{solved} solved · {hints|hint|hints}"
           }
-        ]
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/tirds.png"
       }
     },
     {
@@ -590,7 +591,8 @@
             },
             "template": "{time}"
           }
-        ]
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/unstack-the-dock.png"
       }
     }
   ],
