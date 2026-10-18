@@ -1,0 +1,196 @@
+[
+  {
+    "id": "community-sudoku-shift",
+    "name": "Sudoku Shift",
+    "emoji": "🔁",
+    "url": "https://coffeefirst.games/sudoku-shift",
+    "source": "Community",
+    "description": "Three linked Sudoku puzzles, 4×4 to 9×9, in one sitting",
+    "category": "Sudoku",
+    "access": "Free",
+    "classification": {
+      "cadence": "daily",
+      "resetTime": "Midnight UTC",
+      "estimatedMinutes": 6,
+      "archiveAccess": "none",
+      "scoreShare": "none",
+      "editionNumberRef": {
+        "date": "2026-10-18",
+        "number": 482
+      },
+      "iconURL": "https://puzzlement.games/img/icons/community-sudoku-shift.png"
+    }
+  },
+  {
+    "id": "community-yearly-daily",
+    "name": "Yearly Daily",
+    "emoji": "📅",
+    "url": "https://coffeefirst.games/yearly-daily",
+    "source": "Community",
+    "description": "Real events from this day in history — guess each year",
+    "category": "Trivia",
+    "access": "Free",
+    "classification": {
+      "cadence": "daily",
+      "resetTime": "Midnight UTC",
+      "estimatedMinutes": 4,
+      "archiveAccess": "none",
+      "scoreShare": "none",
+      "iconURL": "https://puzzlement.games/img/icons/community-yearly-daily.png"
+    }
+  },
+  {
+    "id": "community-crossnumber",
+    "name": "Crossnumber",
+    "emoji": "➕",
+    "url": "https://coffeefirst.games/crossnumber",
+    "source": "Community",
+    "description": "A mini-crossword solved with digits, new every Sunday",
+    "category": "Crossword",
+    "access": "Free",
+    "classification": {
+      "cadence": "weekly",
+      "resetTime": "Midnight UTC",
+      "estimatedMinutes": 8,
+      "archiveAccess": "none",
+      "scoreShare": "none",
+      "editionNumberRef": {
+        "date": "2026-10-18",
+        "number": 55
+      },
+      "iconURL": "https://puzzlement.games/img/icons/community-crossnumber.png"
+    }
+  },
+  {
+    "id": "community-geografind",
+    "name": "Geografind",
+    "emoji": "🧭",
+    "url": "https://coffeefirst.games/geografind",
+    "source": "Community",
+    "description": "Find the mystery country from map clues",
+    "category": "Geography",
+    "access": "Free",
+    "classification": {
+      "cadence": "daily",
+      "resetTime": "Midnight UTC",
+      "estimatedMinutes": 4,
+      "archiveAccess": "none",
+      "scoreShare": "none",
+      "editionNumberRef": {
+        "date": "2026-10-18",
+        "number": 365
+      },
+      "iconURL": "https://puzzlement.games/img/icons/community-geografind.png"
+    }
+  },
+  {
+    "id": "community-royal-family",
+    "name": "Royal Family",
+    "emoji": "♜",
+    "url": "https://coffeefirst.games/royal-family",
+    "source": "Community",
+    "description": "Place six chess pieces so none attacks another",
+    "category": "Logic",
+    "access": "Free",
+    "classification": {
+      "cadence": "daily",
+      "resetTime": "Midnight UTC",
+      "estimatedMinutes": 4,
+      "archiveAccess": "none",
+      "scoreShare": "none",
+      "editionNumberRef": {
+        "date": "2026-10-18",
+        "number": 358
+      },
+      "iconURL": "https://puzzlement.games/img/icons/community-royal-family.png"
+    }
+  },
+  {
+    "id": "community-bean-sort",
+    "name": "Bean Sort",
+    "emoji": "🫘",
+    "url": "https://coffeefirst.games/bean-sort",
+    "source": "Community",
+    "description": "Sort the coffee beans into single-colour tubes",
+    "category": "Logic",
+    "access": "Free",
+    "classification": {
+      "cadence": "daily",
+      "resetTime": "Midnight UTC",
+      "estimatedMinutes": 4,
+      "archiveAccess": "none",
+      "scoreShare": "none",
+      "editionNumberRef": {
+        "date": "2026-10-18",
+        "number": 281
+      },
+      "iconURL": "https://puzzlement.games/img/icons/community-bean-sort.png"
+    }
+  },
+  {
+    "id": "community-nurikabe",
+    "name": "Nurikabe",
+    "emoji": "🏝️",
+    "url": "https://coffeefirst.games/nurikabe",
+    "source": "Community",
+    "description": "Build islands and keep the sea connected",
+    "category": "Logic",
+    "access": "Free",
+    "classification": {
+      "cadence": "daily",
+      "resetTime": "Midnight UTC",
+      "estimatedMinutes": 6,
+      "archiveAccess": "none",
+      "scoreShare": "none",
+      "editionNumberRef": {
+        "date": "2026-10-18",
+        "number": 267
+      },
+      "iconURL": "https://puzzlement.games/img/icons/community-nurikabe.png"
+    }
+  },
+  {
+    "id": "community-bean-connect",
+    "name": "Bean Connect",
+    "emoji": "➰",
+    "url": "https://coffeefirst.games/bean-connect",
+    "source": "Community",
+    "description": "Connect every bean in one unbroken path",
+    "category": "Logic",
+    "access": "Free",
+    "classification": {
+      "cadence": "daily",
+      "resetTime": "Midnight UTC",
+      "estimatedMinutes": 4,
+      "archiveAccess": "none",
+      "scoreShare": "none",
+      "editionNumberRef": {
+        "date": "2026-10-18",
+        "number": 200
+      },
+      "iconURL": "https://puzzlement.games/img/icons/community-bean-connect.png"
+    }
+  },
+  {
+    "id": "community-bean-counter",
+    "name": "Bean Counter",
+    "emoji": "💣",
+    "url": "https://coffeefirst.games/bean-counter",
+    "source": "Community",
+    "description": "Minesweeper in reverse: place the beans the numbers describe",
+    "category": "Logic",
+    "access": "Free",
+    "classification": {
+      "cadence": "daily",
+      "resetTime": "Midnight UTC",
+      "estimatedMinutes": 4,
+      "archiveAccess": "none",
+      "scoreShare": "none",
+      "editionNumberRef": {
+        "date": "2026-10-18",
+        "number": 64
+      },
+      "iconURL": "https://puzzlement.games/img/icons/community-bean-counter.png"
+    }
+  }
+]

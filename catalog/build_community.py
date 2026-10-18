@@ -18,6 +18,7 @@ Run it in CI weekly; review the diff before merging — the upstream list takes
 community pull requests and nobody here has played most of these.
 """
 import argparse
+import pathlib
 import datetime as dt
 import json
 import re
@@ -173,6 +174,40 @@ def convert(games: list[dict], known_hosts: set[str]) -> list[dict]:
     return sorted(out, key=lambda x: x["name"].lower())
 
 
+def load_extras(path, curated_hosts):
+    """Games found by hand that the upstream list does not carry.
+
+    CoffeeFirst's nine are the first of these. They were written up properly
+    — real URLs, edition numbers read off each page, icons drawn for them —
+    and then put in the curated overlay, which was wrong: a curated entry
+    says somebody has played the game and knows how it scores, and nobody
+    had. Darren, 2026-10-19: "Oh, they are not ready for that. Remove them
+    back to community."
+
+    They cannot simply be typed into community.json, because this script
+    REWRITES that file from upstream every week and would erase them. So
+    they live in their own file and are appended on every run.
+
+    A game that later earns a curated entry should be DELETED from the
+    extras file rather than left in both: the host dedupe above reads the
+    overlay, so the curated copy would win and this one would quietly
+    disappear anyway — which is the same confusion One Up caused when it
+    appeared twice with two different reset times.
+    """
+    try:
+        extras = json.load(open(path))
+    except FileNotFoundError:
+        return []
+    kept = []
+    for game in extras:
+        host = registrable(game["url"])
+        if host in curated_hosts:
+            print(f"extras: {game['id']} skipped, {host} has a curated entry now", file=sys.stderr)
+            continue
+        kept.append(game)
+    return kept
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--out", default="catalog/community.json")
@@ -182,6 +217,8 @@ def main() -> int:
     ap.add_argument("--catalog", default="catalog/catalog.json",
                     help="the curated overlay, so games added there are never "
                          "offered again as community entries")
+    ap.add_argument("--extras", default=str(pathlib.Path(__file__).with_name("community_extras.json")),
+                    help="hand-written community entries the upstream list does not carry")
     args = ap.parse_args()
 
     with urllib.request.urlopen(args.source, timeout=60) as r:
@@ -198,6 +235,7 @@ def main() -> int:
     # instead of its real midnight GMT, so the app offered the same game twice
     # and got the reset wrong on one of them. Read the overlay instead of
     # trusting the list to have been kept in step.
+    overlay_hosts = set()
     try:
         overlay = json.load(open(args.catalog))
         entries = list(overlay.get("added") or [])
@@ -206,11 +244,17 @@ def main() -> int:
         for entry in entries:
             url = (entry.get("puzzle") or entry).get("url")
             if url:
-                known.add(registrable(url))
+                overlay_hosts.add(registrable(url))
+        known |= overlay_hosts
     except (FileNotFoundError, json.JSONDecodeError):
         pass
 
     games = convert(parse(yaml_text), known)
+    # Checked against the CURATED overlay only, not known_hosts.txt: that
+    # file carries coffeefirst.games precisely to keep the upstream list's
+    # publisher-level row out, and these nine are the games behind it.
+    games += load_extras(args.extras, overlay_hosts)
+    games.sort(key=lambda g: g["id"])
 
     # Keep the stamp from last time when nothing actually changed, so the weekly
     # job doesn't open a pull request whose only diff is today's date.
