@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-18T10:52:38Z",
+  "updated": "2026-10-18T10:58:41Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -28,10 +28,7 @@
     },
     {
       "trigger": {
-        "url-filter": "^https://(www\\.)?oneuppuzzle\\.com/",
-        "if-domain": [
-          "*oneuppuzzle.com"
-        ]
+        "url-filter": ".*"
       },
       "action": {
         "type": "css-display-none",
