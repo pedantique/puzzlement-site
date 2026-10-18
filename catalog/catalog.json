@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-18T04:16:56Z",
+  "updated": "2026-10-18T04:33:11Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -642,6 +642,7 @@
         "scoreMax": 4,
         "failureAtMax": true,
         "cadence": "daily",
+        "resetTime": "Midnight Amsterdam",
         "launchDate": "2026-07-03",
         "editionNumberRef": {
           "date": "2026-07-03",

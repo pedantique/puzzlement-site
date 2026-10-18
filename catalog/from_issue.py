@@ -33,12 +33,19 @@ METRICS = {"passFail", "time", "guesses", "mistakes", "hints", "points", "par", 
 # countdown at all, so it's flagged rather than published quietly ("Midnight UTC"
 # did exactly that on One Up).
 RESET_TIMES = {"Midnight local", "Midnight ET", "Midnight PT", "Midnight GMT",
-               "Midnight London", "Midnight EST", "3:00 AM ET", "6:00 AM ET",
-               "10:00 PM ET", "4:00 PM GMT"}
+               "Midnight London", "Midnight Amsterdam", "Midnight EST",
+               "3:00 AM ET", "6:00 AM ET", "10:00 PM ET", "4:00 PM GMT"}
 RESET_SYNONYMS = {"midnight utc": "Midnight GMT", "midnight z": "Midnight GMT",
                   "00:00 utc": "Midnight GMT", "midnight": "Midnight local",
                   "midnight eastern": "Midnight ET", "midnight pacific": "Midnight PT",
-                  "midnight uk": "Midnight London", "midnight bst": "Midnight London"}
+                  "midnight uk": "Midnight London", "midnight bst": "Midnight London",
+                  # Heistle's server is in the Netherlands; midnight there is
+                  # 22:00 UTC in summer and 23:00 in winter, so it has to be a
+                  # zone rather than either of those offsets.
+                  "midnight cet": "Midnight Amsterdam",
+                  "midnight cest": "Midnight Amsterdam",
+                  "midnight netherlands": "Midnight Amsterdam",
+                  "10pm utc": "Midnight Amsterdam"}
 
 # Issue-form label -> our key. The labels are the form's, verbatim.
 FIELDS = {
