@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-18T06:40:14Z",
+  "updated": "2026-10-18T10:36:26Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -272,7 +272,7 @@
       "category": "Logic",
       "access": "Free",
       "classification": {
-        "primaryMetric": "passFail",
+        "primaryMetric": "time",
         "canFail": false,
         "cadence": "daily",
         "launchDate": "2024-03-20",
@@ -287,7 +287,54 @@
           "date": "2026-10-04",
           "number": 928
         },
-        "iconURL": "https://puzzlement.games/img/icons/one-up.png"
+        "iconURL": "https://puzzlement.games/img/icons/one-up.png",
+        "lowerIsBetter": true,
+        "scoreRules": [
+          {
+            "require": [
+              "puzzle completed",
+              "you finished puzzle"
+            ],
+            "captures": {
+              "h": "finished puzzle #\\d+ in\\s+(\\d+) hours?,",
+              "m": "finished puzzle #\\d+ in\\s+\\d+ hours?,\\s*(\\d+) minutes?,",
+              "s": "finished puzzle #\\d+ in\\s+\\d+ hours?,\\s*\\d+ minutes?,\\s*(\\d+) seconds?"
+            },
+            "template": "{h}h {m}m {s}s"
+          },
+          {
+            "require": [
+              "puzzle completed",
+              "you finished puzzle"
+            ],
+            "captures": {
+              "h": "finished puzzle #\\d+ in\\s+(\\d+) hours?,",
+              "s": "finished puzzle #\\d+ in\\s+\\d+ hours?,\\s*(\\d+) seconds?"
+            },
+            "template": "{h}h {s}s"
+          },
+          {
+            "require": [
+              "puzzle completed",
+              "you finished puzzle"
+            ],
+            "captures": {
+              "m": "finished puzzle #\\d+ in\\s+(\\d+) minutes?,",
+              "s": "finished puzzle #\\d+ in\\s+\\d+ minutes?,\\s*(\\d+) seconds?"
+            },
+            "template": "{m}m {s}s"
+          },
+          {
+            "require": [
+              "puzzle completed",
+              "you finished puzzle"
+            ],
+            "captures": {
+              "s": "finished puzzle #\\d+ in\\s+(\\d+) seconds?"
+            },
+            "template": "{s}s"
+          }
+        ]
       }
     },
     {
