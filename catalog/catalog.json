@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-18T01:10:25Z",
+  "updated": "2026-10-18T01:20:55Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -470,6 +470,63 @@
             ],
             "captures": {},
             "template": "2 mistakes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tirds",
+      "name": "Tirds",
+      "emoji": "🆖",
+      "url": "https://www.playtirds.com/daily",
+      "source": "Indie",
+      "description": "Three little word puzzles each day",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": true,
+        "modifiers": [
+          "hints"
+        ],
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "estimatedMinutes": 2,
+        "shareButtonLabel": "Share your tird",
+        "scoreRules": [
+          {
+            "require": [
+              "my daily tird",
+              "finished in",
+              "0 hints used"
+            ],
+            "captures": {
+              "time": "finished in\\s*([0-9:]+)"
+            },
+            "template": "{time}"
+          },
+          {
+            "require": [
+              "my daily tird",
+              "finished in"
+            ],
+            "captures": {
+              "time": "finished in\\s*([0-9:]+)",
+              "hints": "(\\d+)\\s*hints? used"
+            },
+            "template": "{time} · {hints|hint|hints}"
+          },
+          {
+            "require": [
+              "my daily tird",
+              "solved"
+            ],
+            "captures": {
+              "solved": "(\\d+/3)\\s*solved",
+              "hints": "(\\d+)\\s*hints? used"
+            },
+            "template": "{solved} solved · {hints|hint|hints}"
           }
         ]
       }
