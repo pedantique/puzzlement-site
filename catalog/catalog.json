@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-17T05:05:13Z",
+  "updated": "2026-10-18T01:10:25Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -303,6 +303,175 @@
           "colorName": "grey"
         },
         "dateURLPattern": "https://www.nytimes.com/crosswords/game/bonus/{yyyy}/{MM}"
+      }
+    },
+    {
+      "id": "mayhex-hundo",
+      "name": "Hundo",
+      "emoji": "♥️",
+      "url": "https://mayhex.gg/hundo/",
+      "source": "Mayhex",
+      "description": "Bet a hand of cards on trivia questions",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "points",
+        "lowerIsBetter": false,
+        "scoreMax": 100,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-14",
+        "estimatedMinutes": 2,
+        "shareButtonLabel": "SHARE",
+        "editionNameTiming": "atStart",
+        "editionNumberRef": {
+          "date": "2026-10-14",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "hundo"
+            ],
+            "captures": {
+              "score": "(\\d+/100)"
+            },
+            "template": "{score}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mayhex-pour",
+      "name": "Pour",
+      "emoji": "💧",
+      "url": "https://mayhex.gg/pour/",
+      "source": "Mayhex",
+      "description": "Guess where liquid lands when one glass is poured into another",
+      "category": "Visual",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "points",
+        "lowerIsBetter": false,
+        "scoreMax": 500,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-01",
+        "estimatedMinutes": 1,
+        "shareButtonLabel": "Share",
+        "editionNameTiming": "atStart",
+        "editionNumberRef": {
+          "date": "2026-10-01",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pour"
+            ],
+            "captures": {
+              "score": "(\\d+/500)"
+            },
+            "template": "{score}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mayhex-span",
+      "name": "Span",
+      "emoji": "⬢",
+      "url": "https://mayhex.gg/span/",
+      "source": "Mayhex",
+      "description": "Answer trivia to build a gold path across the board",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": true,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-06",
+        "estimatedMinutes": 2,
+        "shareButtonLabel": "Share result",
+        "editionNameTiming": "atStart",
+        "editionNumberRef": {
+          "date": "2026-10-06",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "span"
+            ],
+            "captures": {
+              "time": "span\\s*#\\d+\\s*\\u00b7\\s*([0-9:.]+)"
+            },
+            "template": "{time}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mayhex-truth-sweeper",
+      "name": "Truth Sweeper",
+      "emoji": "🧹",
+      "url": "https://mayhex.gg/truthsweeper/",
+      "source": "Mayhex",
+      "description": "Minesweeper, except the mines are lies",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "mistakes",
+        "lowerIsBetter": true,
+        "canFail": true,
+        "scoreMax": 3,
+        "failureAtMax": true,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-07",
+        "estimatedMinutes": 2,
+        "shareButtonLabel": "Share result",
+        "editionNameTiming": "atStart",
+        "editionNumberRef": {
+          "date": "2026-10-07",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "truth sweeper",
+              "case unsolved"
+            ],
+            "captures": {},
+            "template": "Unsuccessful"
+          },
+          {
+            "require": [
+              "truth sweeper",
+              "❤️❤️❤️"
+            ],
+            "captures": {},
+            "template": "Perfect"
+          },
+          {
+            "require": [
+              "truth sweeper",
+              "❤️❤️🖤"
+            ],
+            "captures": {},
+            "template": "1 mistake"
+          },
+          {
+            "require": [
+              "truth sweeper",
+              "❤️🖤🖤"
+            ],
+            "captures": {},
+            "template": "2 mistakes"
+          }
+        ]
       }
     }
   ],
