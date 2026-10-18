@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-18T01:31:26Z",
+  "updated": "2026-10-18T01:35:34Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -338,7 +338,8 @@
             },
             "template": "{score}"
           }
-        ]
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/mayhex-hundo.png"
       }
     },
     {
@@ -374,7 +375,8 @@
             },
             "template": "{score}"
           }
-        ]
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/mayhex-pour.png"
       }
     },
     {
@@ -410,7 +412,8 @@
             },
             "template": "{time}"
           }
-        ]
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/mayhex-span.png"
       }
     },
     {
@@ -471,7 +474,8 @@
             "captures": {},
             "template": "2 mistakes"
           }
-        ]
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/mayhex-truth-sweeper.png"
       }
     },
     {
