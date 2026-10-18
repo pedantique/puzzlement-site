@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-18T01:20:55Z",
+  "updated": "2026-10-18T01:31:26Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -527,6 +527,64 @@
               "hints": "(\\d+)\\s*hints? used"
             },
             "template": "{solved} solved · {hints|hint|hints}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unstack-the-dock",
+      "name": "Unstack the Dock",
+      "emoji": "🗳️",
+      "url": "https://unstackthedock.com/daily",
+      "source": "Indie",
+      "description": "Unstack • Fill • Ship",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": true,
+        "cadence": "daily",
+        "resetTime": "Midnight GMT",
+        "launchDate": "2026-09-30",
+        "editionNumberRef": {
+          "date": "2026-09-30",
+          "number": 1
+        },
+        "estimatedMinutes": 6,
+        "shareButtonLabel": "Share result",
+        "loginBenefit": true,
+        "scoreRules": [
+          {
+            "require": [
+              "unstack the dock",
+              "❌"
+            ],
+            "captures": {
+              "progress": "❌\\s*([0-9]+/[0-9]+)"
+            },
+            "template": "Failed: {progress}"
+          },
+          {
+            "require": [
+              "unstack the dock",
+              "✅"
+            ],
+            "captures": {
+              "time": "✅\\s*([0-9:]+)",
+              "note": "✅\\s*[0-9:]+\\s*·\\s*([^\\n]+)"
+            },
+            "template": "{time} · {note}"
+          },
+          {
+            "require": [
+              "unstack the dock",
+              "✅"
+            ],
+            "captures": {
+              "time": "✅\\s*([0-9:]+)"
+            },
+            "template": "{time}"
           }
         ]
       }
