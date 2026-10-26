@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-20T21:42:19Z",
+  "updated": "2026-10-26T08:40:58Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -683,6 +683,7 @@
         "resetTime": "Midnight local",
         "estimatedMinutes": 2,
         "shareButtonLabel": "Share",
+        "editionNumberRef": {"date": "2026-10-10", "number": 1},
         "iconURL": "https://puzzlement.games/img/icons/mayhex-babushka.png",
         "scoreRules": [
           {
