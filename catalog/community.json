@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "warning": "Unvetted. Some of these games will not load, fit, reset or score correctly in an embedded web view.",
-  "updated": "2026-10-19",
+  "updated": "2026-10-26T08:47:07Z",
   "source": "https://github.com/guilyx/awesome-daily-minigames (CC0-1.0)",
   "note": "Community list, not vetted by Puzzlement. Shown only when Settings > Experimental > Community puzzles is on.",
   "added": [
@@ -147,12 +147,35 @@
         "resetTime": "Midnight UTC",
         "estimatedMinutes": 4,
         "archiveAccess": "none",
-        "scoreShare": "none",
         "editionNumberRef": {
           "date": "2026-10-18",
           "number": 200
         },
-        "iconURL": "https://puzzlement.games/img/icons/community-bean-connect.png"
+        "iconURL": "https://puzzlement.games/img/icons/community-bean-connect.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "scoreRules": [
+          {
+            "require": [
+              "bean connect #",
+              "expert"
+            ],
+            "captures": {
+              "t": "Expert\\s*-?\\s*(\\d+:\\d{2}(?:\\.\\d+)?)"
+            },
+            "template": "Expert {t}"
+          },
+          {
+            "require": [
+              "bean connect #",
+              "normal"
+            ],
+            "captures": {
+              "t": "Normal\\s*-?\\s*(\\d+:\\d{2}(?:\\.\\d+)?)"
+            },
+            "template": "Normal {t}"
+          }
+        ]
       }
     },
     {
@@ -169,12 +192,48 @@
         "resetTime": "Midnight UTC",
         "estimatedMinutes": 4,
         "archiveAccess": "none",
-        "scoreShare": "none",
         "editionNumberRef": {
           "date": "2026-10-18",
           "number": 64
         },
-        "iconURL": "https://puzzlement.games/img/icons/community-bean-counter.png"
+        "iconURL": "https://puzzlement.games/img/icons/community-bean-counter.png",
+        "primaryMetric": "mistakes",
+        "lowerIsBetter": true,
+        "canFail": true,
+        "scoreRules": [
+          {
+            "require": [
+              "Expert - complete"
+            ],
+            "captures": {
+              "m": "Expert - complete - (\\d+) mistake"
+            },
+            "template": "Expert, {m|mistake|mistakes}"
+          },
+          {
+            "require": [
+              "Normal - complete"
+            ],
+            "captures": {
+              "m": "Normal - complete - (\\d+) mistake"
+            },
+            "template": "Normal, {m|mistake|mistakes}"
+          },
+          {
+            "require": [
+              "Expert - failed"
+            ],
+            "captures": {},
+            "template": "Expert, failed"
+          },
+          {
+            "require": [
+              "Normal - failed"
+            ],
+            "captures": {},
+            "template": "Normal, failed"
+          }
+        ]
       }
     },
     {
@@ -191,12 +250,33 @@
         "resetTime": "Midnight UTC",
         "estimatedMinutes": 4,
         "archiveAccess": "none",
-        "scoreShare": "none",
         "editionNumberRef": {
           "date": "2026-10-18",
           "number": 281
         },
-        "iconURL": "https://puzzlement.games/img/icons/community-bean-sort.png"
+        "iconURL": "https://puzzlement.games/img/icons/community-bean-sort.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "scoreRules": [
+          {
+            "require": [
+              "Expert -"
+            ],
+            "captures": {
+              "t": "Expert\\s*-\\s*(\\d+:\\d{2}(?:\\.\\d+)?)"
+            },
+            "template": "Expert {t}"
+          },
+          {
+            "require": [
+              "Normal -"
+            ],
+            "captures": {
+              "t": "Normal\\s*-\\s*(\\d+:\\d{2}(?:\\.\\d+)?)"
+            },
+            "template": "Normal {t}"
+          }
+        ]
       }
     },
     {
@@ -533,12 +613,24 @@
         "resetTime": "Midnight UTC",
         "estimatedMinutes": 8,
         "archiveAccess": "none",
-        "scoreShare": "none",
         "editionNumberRef": {
           "date": "2026-10-18",
           "number": 55
         },
-        "iconURL": "https://puzzlement.games/img/icons/community-crossnumber.png"
+        "iconURL": "https://puzzlement.games/img/icons/community-crossnumber.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "scoreRules": [
+          {
+            "require": [
+              "crossnumber #"
+            ],
+            "captures": {
+              "t": "#\\d+\\s*[—–-]\\s*(\\d+:\\d{2}(?:\\.\\d+)?)"
+            },
+            "template": "{t}"
+          }
+        ]
       }
     },
     {
@@ -923,12 +1015,24 @@
         "resetTime": "Midnight UTC",
         "estimatedMinutes": 4,
         "archiveAccess": "none",
-        "scoreShare": "none",
         "editionNumberRef": {
           "date": "2026-10-18",
           "number": 365
         },
-        "iconURL": "https://puzzlement.games/img/icons/community-geografind.png"
+        "iconURL": "https://puzzlement.games/img/icons/community-geografind.png",
+        "primaryMetric": "guesses",
+        "lowerIsBetter": true,
+        "scoreRules": [
+          {
+            "require": [
+              "geografind #"
+            ],
+            "captures": {
+              "n": "in (\\d+) guess"
+            },
+            "template": "{n|guess|guesses}"
+          }
+        ]
       }
     },
     {
@@ -1665,12 +1769,42 @@
         "resetTime": "Midnight UTC",
         "estimatedMinutes": 6,
         "archiveAccess": "none",
-        "scoreShare": "none",
         "editionNumberRef": {
           "date": "2026-10-18",
           "number": 267
         },
-        "iconURL": "https://puzzlement.games/img/icons/community-nurikabe.png"
+        "iconURL": "https://puzzlement.games/img/icons/community-nurikabe.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "scoreRules": [
+          {
+            "require": [
+              "9×9 -"
+            ],
+            "captures": {
+              "t": "9×9\\s*-\\s*(\\d+:\\d{2}(?:\\.\\d+)?)"
+            },
+            "template": "9×9 {t}"
+          },
+          {
+            "require": [
+              "7×7 -"
+            ],
+            "captures": {
+              "t": "7×7\\s*-\\s*(\\d+:\\d{2}(?:\\.\\d+)?)"
+            },
+            "template": "7×7 {t}"
+          },
+          {
+            "require": [
+              "5×5 -"
+            ],
+            "captures": {
+              "t": "5×5\\s*-\\s*(\\d+:\\d{2}(?:\\.\\d+)?)"
+            },
+            "template": "5×5 {t}"
+          }
+        ]
       }
     },
     {
@@ -2071,12 +2205,24 @@
         "resetTime": "Midnight UTC",
         "estimatedMinutes": 4,
         "archiveAccess": "none",
-        "scoreShare": "none",
         "editionNumberRef": {
           "date": "2026-10-18",
           "number": 358
         },
-        "iconURL": "https://puzzlement.games/img/icons/community-royal-family.png"
+        "iconURL": "https://puzzlement.games/img/icons/community-royal-family.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "scoreRules": [
+          {
+            "require": [
+              "royal family #"
+            ],
+            "captures": {
+              "t": "#\\d+\\s*[—–-]\\s*(\\d+:\\d{2}(?:\\.\\d+)?)"
+            },
+            "template": "{t}"
+          }
+        ]
       }
     },
     {
@@ -2429,12 +2575,25 @@
         "resetTime": "Midnight UTC",
         "estimatedMinutes": 6,
         "archiveAccess": "none",
-        "scoreShare": "none",
         "editionNumberRef": {
           "date": "2026-10-18",
           "number": 482
         },
-        "iconURL": "https://puzzlement.games/img/icons/community-sudoku-shift.png"
+        "iconURL": "https://puzzlement.games/img/icons/community-sudoku-shift.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "scoreRules": [
+          {
+            "require": [
+              "sudoku shift #",
+              "total"
+            ],
+            "captures": {
+              "t": "total\\s*-\\s*(\\d+:\\d{2}(?:\\.\\d+)?)"
+            },
+            "template": "{t}"
+          }
+        ]
       }
     },
     {
@@ -2819,8 +2978,20 @@
         "resetTime": "Midnight UTC",
         "estimatedMinutes": 4,
         "archiveAccess": "none",
-        "scoreShare": "none",
-        "iconURL": "https://puzzlement.games/img/icons/community-yearly-daily.png"
+        "iconURL": "https://puzzlement.games/img/icons/community-yearly-daily.png",
+        "primaryMetric": "points",
+        "lowerIsBetter": false,
+        "scoreRules": [
+          {
+            "require": [
+              "yearly daily"
+            ],
+            "captures": {
+              "n": "(\\d+) li(?:fe|ves) left"
+            },
+            "template": "{n|life|lives} left"
+          }
+        ]
       }
     },
     {
