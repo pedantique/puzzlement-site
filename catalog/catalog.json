@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-31T21:31:33Z",
+  "updated": "2026-11-01T00:05:00Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -953,6 +953,7 @@
         "estimatedMinutes": 3,
         "archiveAccess": "none",
         "shareButtonLabel": "Share",
+        "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
         "editionNumberRef": {
@@ -1004,6 +1005,7 @@
         "dateURLPattern": "https://lieofsight.com/fetch?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
         "shareButtonLabel": "Share",
+        "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
         "editionNumberRef": {
@@ -1045,6 +1047,7 @@
         "dateURLPattern": "https://lieofsight.com/web?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
         "shareButtonLabel": "Share",
+        "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
         "editionNumberRef": {
@@ -1086,6 +1089,7 @@
         "dateURLPattern": "https://lieofsight.com/knit?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
         "shareButtonLabel": "Share",
+        "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
         "editionNumberRef": {
@@ -1127,6 +1131,7 @@
         "dateURLPattern": "https://lieofsight.com/treasure?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
         "shareButtonLabel": "Share",
+        "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
         "editionNumberRef": {
@@ -1168,6 +1173,7 @@
         "dateURLPattern": "https://lieofsight.com/laser?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
         "shareButtonLabel": "Share",
+        "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
         "editionNumberRef": {
