@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-29T10:36:15Z",
+  "updated": "2026-10-31T21:31:33Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -930,6 +930,259 @@
             ],
             "captures": {},
             "template": "0/3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lieofsight-case",
+      "name": "Lie of Sight",
+      "emoji": "🕵️",
+      "url": "https://lieofsight.com/case",
+      "source": "Lie of Sight",
+      "description": "Everyone says what they could see from where they stood. One of them is lying. Find who.",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": true,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-09-19",
+        "estimatedMinutes": 3,
+        "archiveAccess": "none",
+        "shareButtonLabel": "Share",
+        "loginBenefit": true,
+        "loginPromptTiming": "anytime",
+        "editionNumberRef": {
+          "date": "2026-09-19",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "lie of sight",
+              "✅"
+            ],
+            "captures": {
+              "t": "✅\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t}"
+          },
+          {
+            "require": [
+              "lie of sight",
+              "the liar got away"
+            ],
+            "captures": {},
+            "template": "Liar got away"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/lieofsight-case.png"
+      }
+    },
+    {
+      "id": "lieofsight-fetch",
+      "name": "Rex’s Fetch",
+      "emoji": "🐕",
+      "url": "https://lieofsight.com/fetch",
+      "source": "Lie of Sight",
+      "description": "Lead Rex to the ball. He sniffs every square on the way and never crosses his own trail.",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/lieofsight-fetch.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-19",
+        "estimatedMinutes": 2,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://lieofsight.com/fetch?day={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share",
+        "loginBenefit": true,
+        "loginPromptTiming": "anytime",
+        "editionNumberRef": {
+          "date": "2026-10-19",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "fetch #"
+            ],
+            "captures": {
+              "t": "#\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lieofsight-web",
+      "name": "Lacey’s Web",
+      "emoji": "🕸️",
+      "url": "https://lieofsight.com/web",
+      "source": "Lie of Sight",
+      "description": "Connect the knots. Each number says how many threads.",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/lieofsight-web.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-19",
+        "estimatedMinutes": 2,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://lieofsight.com/web?day={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share",
+        "loginBenefit": true,
+        "loginPromptTiming": "anytime",
+        "editionNumberRef": {
+          "date": "2026-10-19",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "web #"
+            ],
+            "captures": {
+              "t": "#\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lieofsight-knit",
+      "name": "Grandma’s Knitting",
+      "emoji": "🧶",
+      "url": "https://lieofsight.com/knit",
+      "source": "Lie of Sight",
+      "description": "Knit what the numbers say. A picture appears, in Grandma’s own yarns.",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/lieofsight-knit.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-24",
+        "estimatedMinutes": 2,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://lieofsight.com/knit?day={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share",
+        "loginBenefit": true,
+        "loginPromptTiming": "anytime",
+        "editionNumberRef": {
+          "date": "2026-10-24",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "knitting #"
+            ],
+            "captures": {
+              "t": "#\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lieofsight-treasure",
+      "name": "The Kid’s Treasure Map",
+      "emoji": "🗺️",
+      "url": "https://lieofsight.com/treasure",
+      "source": "Lie of Sight",
+      "description": "Flag the buried treasure. Each number counts the treasure around it.",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/lieofsight-treasure.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-24",
+        "estimatedMinutes": 2,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://lieofsight.com/treasure?day={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share",
+        "loginBenefit": true,
+        "loginPromptTiming": "anytime",
+        "editionNumberRef": {
+          "date": "2026-10-24",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "treasure map #"
+            ],
+            "captures": {
+              "t": "#\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lieofsight-laser",
+      "name": "Fibs’ Laser Chase",
+      "emoji": "🔴",
+      "url": "https://lieofsight.com/laser",
+      "source": "Lie of Sight",
+      "description": "Turn the Kid’s little mirrors. Bounce the red dot to Fibs and she pounces.",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/lieofsight-laser.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-29",
+        "estimatedMinutes": 2,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://lieofsight.com/laser?day={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share",
+        "loginBenefit": true,
+        "loginPromptTiming": "anytime",
+        "editionNumberRef": {
+          "date": "2026-10-29",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "laser chase #"
+            ],
+            "captures": {
+              "t": "#\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t}"
           }
         ]
       }
