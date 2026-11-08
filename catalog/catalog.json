@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-04T08:09:06Z",
+  "updated": "2026-11-08T06:30:00Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -1196,6 +1196,58 @@
             "template": "{t}"
           }
         ]
+      }
+    },
+    {
+      "id": "figure",
+      "name": "Figure",
+      "emoji": "🟨",
+      "url": "https://figure.game/",
+      "source": "Indie",
+      "description": "Clear all the tiles before running out of moves",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "guesses",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "modifiers": [
+          "hints"
+        ],
+        "cadence": "daily",
+        "resetTime": "Midnight PT",
+        "launchDate": "2022-06-27",
+        "estimatedMinutes": 3,
+        "archiveAccess": "none",
+        "shareButtonLabel": "Share Now",
+        "editionNumberRef": {
+          "date": "2026-11-07",
+          "number": 1595
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "figure #",
+              "no hints"
+            ],
+            "captures": {
+              "tries": "(\\d+) tr(?:y|ies)"
+            },
+            "template": "{tries|try|tries}"
+          },
+          {
+            "require": [
+              "figure #",
+              "hint"
+            ],
+            "captures": {
+              "tries": "(\\d+) tr(?:y|ies)",
+              "hints": "(\\d+) hints?"
+            },
+            "template": "{tries|try|tries} · {hints|hint|hints}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/figure.png"
       }
     }
   ],
