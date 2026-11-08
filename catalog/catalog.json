@@ -1191,7 +1191,7 @@
       "emoji": "🔴",
       "url": "https://lieofsight.com/laser",
       "source": "The Fibbersons",
-      "description": "Turn the Kid’s little mirrors. Bounce the red dot to Fibs and she pounces.",
+      "description": "Turn the Kid’s little mirrors, then shine. One red dot for Fibs, one for Rex, in 3 shots.",
       "category": "Logic",
       "access": "Free",
       "classification": {
@@ -1202,7 +1202,7 @@
         "cadence": "daily",
         "resetTime": "Midnight local",
         "launchDate": "2026-10-29",
-        "estimatedMinutes": 2,
+        "estimatedMinutes": 3,
         "archiveAccess": "free",
         "dateURLPattern": "https://lieofsight.com/laser?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
