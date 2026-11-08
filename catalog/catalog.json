@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-04T08:09:06Z",
+  "updated": "2026-11-08T06:30:00Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -1196,6 +1196,34 @@
             "template": "{t}"
           }
         ]
+      }
+    },
+    {
+      "id": "parlor-box",
+      "name": "Parlor Box",
+      "emoji": "💎",
+      "url": "https://parlorbox.com/",
+      "source": "Indie",
+      "description": "Read the clues on three boxes and open the one hiding the gems",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "points",
+        "lowerIsBetter": false,
+        "scoreMax": 3,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight ET",
+        "launchDate": "2025-08-02",
+        "estimatedMinutes": 3,
+        "archiveAccess": "none",
+        "shareButtonLabel": "Share results",
+        "editionNumberRef": {
+          "date": "2026-11-08",
+          "number": 464
+        },
+        "scoreJS": "function(t){ if(!/parlor box #\\d+/i.test(t)) return null; var sq=t.match(/\\uD83D[\\uDFE9\\uDFE8\\uDFE5]/g); if(!sq||sq.length!==3) return null; var g=0; for(var i=0;i<sq.length;i++){ if(sq[i]!=='\\uD83D\\uDFE5') g++; } return g+'/3'; }",
+        "iconURL": "https://puzzlement.games/img/icons/parlor-box.png"
       }
     }
   ],
