@@ -47,3 +47,5 @@ wirespan.app
 wordiply.com
 worldle.teuteuf.fr
 coffeefirst.games
+# Tradle: the community list links oec.world/en/games/tradle, the app games.oec.world
+oec.world

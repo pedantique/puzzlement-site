@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "warning": "Unvetted. Some of these games will not load, fit, reset or score correctly in an embedded web view.",
-  "updated": "2026-11-08T03:17:30Z",
+  "updated": "2026-11-08T06:08:22Z",
   "source": "https://github.com/guilyx/awesome-daily-minigames (CC0-1.0)",
   "note": "Community list, not vetted by Puzzlement. Shown only when Settings > Experimental > Community puzzles is on.",
   "added": [
@@ -746,22 +746,6 @@
       }
     },
     {
-      "id": "community-domino-fit",
-      "name": "Domino Fit",
-      "emoji": "🤔",
-      "url": "https://dominofit.isotropic.us/",
-      "source": "Community",
-      "description": "Pack dominoes into an awkward grid so that the numbers line up correctly",
-      "category": "Logic",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
       "id": "community-dordle",
       "name": "Dordle",
       "emoji": "🔤",
@@ -881,22 +865,6 @@
       "source": "Community",
       "description": "Every row of feedback contains exactly one lie",
       "category": "Word",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
-      "id": "community-figure",
-      "name": "Figure",
-      "emoji": "🤔",
-      "url": "https://figure.game/",
-      "source": "Community",
-      "description": "Clear a colour grid in a fixed number of moves by chaining matching tiles",
-      "category": "Logic",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -2716,22 +2684,6 @@
       "source": "Community",
       "description": "Place five historical photographs in both space and time, scored on distance and years off",
       "category": "Trivia",
-      "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
-      "id": "community-tradle",
-      "name": "Tradle",
-      "emoji": "🌍",
-      "url": "https://oec.world/en/games/tradle",
-      "source": "Community",
-      "description": "Identify a country from the breakdown of what it exports",
-      "category": "Geography",
       "access": "Free",
       "classification": {
         "cadence": "daily",
