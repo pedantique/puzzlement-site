@@ -1383,6 +1383,55 @@
         "scoreJS": "function(t){ if(!/parlor box #\\d+/i.test(t)) return null; var sq=t.match(/\\uD83D[\\uDFE9\\uDFE8\\uDFE5]/g); if(!sq||sq.length!==3) return null; var g=0; for(var i=0;i<sq.length;i++){ if(sq[i]!=='\\uD83D\\uDFE5') g++; } return g+'/3'; }",
         "iconURL": "https://puzzlement.games/img/icons/parlor-box.png"
       }
+    },
+    {
+      "id": "number-crunch",
+      "name": "Number Crunch",
+      "emoji": "🔢",
+      "url": "https://numbercrunch.fun/",
+      "source": "Indie",
+      "description": "Bump numbers up until groups of three match and pop, in as few taps as you can",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "points",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight ET",
+        "launchDate": "2026-01-21",
+        "estimatedMinutes": 3,
+        "archiveAccess": "none",
+        "shareButtonLabel": "Share Results",
+        "editionNumberRef": {
+          "date": "2026-11-08",
+          "number": 292
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "number crunch #",
+              "perfect clear"
+            ],
+            "captures": {
+              "score": "(\\d+) moves? - [Pp]erfect clear"
+            },
+            "template": "{score} · perfect clear"
+          },
+          {
+            "require": [
+              "number crunch #",
+              "remaining"
+            ],
+            "captures": {
+              "score": "[Ss]core:\\s*(\\d+)",
+              "remaining": "(\\d+) remaining"
+            },
+            "template": "{score} · {remaining} left"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/number-crunch.png"
+      }
     }
   ],
   "removed": []
