@@ -945,7 +945,7 @@
       "name": "Lie of Sight",
       "emoji": "🕵️",
       "url": "https://lieofsight.com/case",
-      "source": "Lie of Sight",
+      "source": "The Fibbersons",
       "description": "Everyone says what they could see from where they stood. One of them is lying. Find who.",
       "category": "Logic",
       "access": "Free",
@@ -970,12 +970,32 @@
           {
             "require": [
               "lie of sight",
+              "❌❌✅"
+            ],
+            "captures": {
+              "t": "✅\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t} · 3 tries"
+          },
+          {
+            "require": [
+              "lie of sight",
+              "❌✅"
+            ],
+            "captures": {
+              "t": "✅\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t} · 2 tries"
+          },
+          {
+            "require": [
+              "lie of sight",
               "✅"
             ],
             "captures": {
               "t": "✅\\s*(\\d+:\\d{2})"
             },
-            "template": "{t}"
+            "template": "{t} · 1 try"
           },
           {
             "require": [
@@ -994,7 +1014,7 @@
       "name": "Rex’s Fetch",
       "emoji": "🐕",
       "url": "https://lieofsight.com/fetch",
-      "source": "Lie of Sight",
+      "source": "The Fibbersons",
       "description": "Lead Rex to the ball. He sniffs every square on the way and never crosses his own trail.",
       "category": "Logic",
       "access": "Free",
@@ -1036,7 +1056,7 @@
       "name": "Lacey’s Web",
       "emoji": "🕸️",
       "url": "https://lieofsight.com/web",
-      "source": "Lie of Sight",
+      "source": "The Fibbersons",
       "description": "Connect the knots. Each number says how many threads.",
       "category": "Logic",
       "access": "Free",
@@ -1078,7 +1098,7 @@
       "name": "Grandma’s Knitting",
       "emoji": "🧶",
       "url": "https://lieofsight.com/knit",
-      "source": "Lie of Sight",
+      "source": "The Fibbersons",
       "description": "Knit what the numbers say. A picture appears, in Grandma’s own yarns.",
       "category": "Logic",
       "access": "Free",
@@ -1120,7 +1140,7 @@
       "name": "The Kid’s Treasure Map",
       "emoji": "🗺️",
       "url": "https://lieofsight.com/treasure",
-      "source": "Lie of Sight",
+      "source": "The Fibbersons",
       "description": "Flag the buried treasure. Each number counts the treasure around it.",
       "category": "Logic",
       "access": "Free",
@@ -1153,6 +1173,15 @@
               "t": "#\\d+\\s*·\\s*(\\d+:\\d{2})"
             },
             "template": "{t}"
+          },
+          {
+            "require": [
+              "challenge a friend"
+            ],
+            "captures": {
+              "t": "(?:Time|TIME)\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t}"
           }
         ]
       }
@@ -1162,19 +1191,19 @@
       "name": "Fibs’ Laser Chase",
       "emoji": "🔴",
       "url": "https://lieofsight.com/laser",
-      "source": "Lie of Sight",
-      "description": "Turn the Kid’s little mirrors. Bounce the red dot to Fibs and she pounces.",
+      "source": "The Fibbersons",
+      "description": "Turn the Kid’s little mirrors, then shine. One red dot for Fibs, one for Rex, in 3 shots.",
       "category": "Logic",
       "access": "Free",
       "classification": {
         "iconURL": "https://puzzlement.games/img/icons/lieofsight-laser.png",
         "primaryMetric": "time",
         "lowerIsBetter": true,
-        "canFail": false,
+        "canFail": true,
         "cadence": "daily",
         "resetTime": "Midnight local",
         "launchDate": "2026-10-29",
-        "estimatedMinutes": 2,
+        "estimatedMinutes": 3,
         "archiveAccess": "free",
         "dateURLPattern": "https://lieofsight.com/laser?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
@@ -1189,12 +1218,50 @@
         "scoreRules": [
           {
             "require": [
+              "the dots got away"
+            ],
+            "captures": {},
+            "template": "Dots got away"
+          },
+          {
+            "require": [
+              "laser chase #",
+              "of 3 shots"
+            ],
+            "captures": {
+              "t": "#\\d+\\s*·\\s*(\\d+:\\d{2})",
+              "n": "(\\d) of 3 shots"
+            },
+            "template": "{t} · {n|shot|shots}"
+          },
+          {
+            "require": [
+              "laser chase #",
+              "first shot"
+            ],
+            "captures": {
+              "t": "#\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t} · 1 shot"
+          },
+          {
+            "require": [
               "laser chase #"
             ],
             "captures": {
               "t": "#\\d+\\s*·\\s*(\\d+:\\d{2})"
             },
             "template": "{t}"
+          },
+          {
+            "require": [
+              "challenge a friend"
+            ],
+            "captures": {
+              "t": "(?:Time|TIME)\\s*(\\d+:\\d{2})",
+              "n": "(?:Shots|SHOTS)\\s*(\\d) of 3"
+            },
+            "template": "{t} · {n|shot|shots}"
           }
         ]
       }
