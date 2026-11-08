@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-04T08:09:06Z",
+  "updated": "2026-11-08T05:00:00Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -1196,6 +1196,44 @@
             "template": "{t}"
           }
         ]
+      }
+    },
+    {
+      "id": "krillion",
+      "name": "Krillion",
+      "emoji": "🦐",
+      "url": "https://krillion.io/",
+      "source": "Indie",
+      "description": "The Daily Dive",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "points",
+        "lowerIsBetter": false,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight ET",
+        "launchDate": "2026-07-16",
+        "estimatedMinutes": 2,
+        "archiveAccess": "subscriptionRequired",
+        "shareButtonLabel": "COPY RESULT",
+        "fitToScreen": false,
+        "editionNumberRef": {
+          "date": "2026-07-16",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "krillion #"
+            ],
+            "captures": {
+              "score": "krillion #\\d+\\D*?(\\d+)"
+            },
+            "template": "{score}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/krillion.png"
       }
     }
   ],
