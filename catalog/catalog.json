@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-04T08:09:06Z",
+  "updated": "2026-11-08T04:12:23Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -573,6 +573,7 @@
         "resetTime": "Midnight local",
         "estimatedMinutes": 2,
         "shareButtonLabel": "Share your tird",
+        "disableSwipeBack": true,
         "scoreRules": [
           {
             "require": [
