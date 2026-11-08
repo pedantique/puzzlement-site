@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "warning": "Unvetted. Some of these games will not load, fit, reset or score correctly in an embedded web view.",
-  "updated": "2026-10-26T08:47:07Z",
+  "updated": "2026-11-08T03:17:30Z",
   "source": "https://github.com/guilyx/awesome-daily-minigames (CC0-1.0)",
   "note": "Community list, not vetted by Puzzlement. Shown only when Settings > Experimental > Community puzzles is on.",
   "added": [
@@ -1444,22 +1444,6 @@
       "description": "The same idea, fully free and fully open source",
       "category": "Logic",
       "access": "Free",
-      "classification": {
-        "cadence": "daily",
-        "resetTime": "Midnight local",
-        "popularityScore": 1,
-        "scoreShare": "none"
-      }
-    },
-    {
-      "id": "community-lie-of-sight",
-      "name": "Lie of Sight",
-      "emoji": "🤔",
-      "url": "https://lieofsight.com/",
-      "source": "Community",
-      "description": "Move a family around a room to test what each says they saw, then accuse the one whose story can't be true",
-      "category": "Logic",
-      "access": "Paid sub required",
       "classification": {
         "cadence": "daily",
         "resetTime": "Midnight local",
