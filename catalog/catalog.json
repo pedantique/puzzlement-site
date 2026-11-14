@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-14T04:29:21Z",
+  "updated": "2026-11-14T04:34:13Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -1435,7 +1435,7 @@
     },
     {
       "id": "pencilgrid-sudoku",
-      "name": "PencilGrid Sudoku",
+      "name": "Sudoku",
       "emoji": "✏️",
       "url": "https://www.pencilgrid.com/sudoku/play?mode=daily",
       "source": "PencilGrid",
@@ -1475,7 +1475,7 @@
     },
     {
       "id": "pencilgrid-sudoku-x",
-      "name": "PencilGrid Sudoku X",
+      "name": "Sudoku X",
       "emoji": "❎",
       "url": "https://www.pencilgrid.com/sudoku-x/play?mode=daily",
       "source": "PencilGrid",
@@ -1515,7 +1515,7 @@
     },
     {
       "id": "pencilgrid-killer-sudoku",
-      "name": "PencilGrid Killer Sudoku",
+      "name": "Killer Sudoku",
       "emoji": "🗡️",
       "url": "https://www.pencilgrid.com/killer-sudoku/play?mode=daily",
       "source": "PencilGrid",
@@ -1555,7 +1555,7 @@
     },
     {
       "id": "pencilgrid-nonogram",
-      "name": "PencilGrid Nonogram",
+      "name": "Nonogram",
       "emoji": "🖼️",
       "url": "https://www.pencilgrid.com/nonogram/play?mode=daily",
       "source": "PencilGrid",
@@ -1595,7 +1595,7 @@
     },
     {
       "id": "pencilgrid-binairo",
-      "name": "PencilGrid Binairo",
+      "name": "Binairo",
       "emoji": "⚫",
       "url": "https://www.pencilgrid.com/binairo/play?mode=daily",
       "source": "PencilGrid",
@@ -1635,7 +1635,7 @@
     },
     {
       "id": "pencilgrid-suguru",
-      "name": "PencilGrid Suguru",
+      "name": "Suguru",
       "emoji": "🧱",
       "url": "https://www.pencilgrid.com/suguru/play?mode=daily",
       "source": "PencilGrid",
@@ -1675,7 +1675,7 @@
     },
     {
       "id": "pencilgrid-star-battle",
-      "name": "PencilGrid Star Battle",
+      "name": "Star Battle",
       "emoji": "⭐",
       "url": "https://www.pencilgrid.com/star-battle/play?mode=daily",
       "source": "PencilGrid",
@@ -1715,7 +1715,7 @@
     },
     {
       "id": "pencilgrid-shikaku",
-      "name": "PencilGrid Shikaku",
+      "name": "Shikaku",
       "emoji": "🟦",
       "url": "https://www.pencilgrid.com/shikaku/play?mode=daily",
       "source": "PencilGrid",
@@ -1755,7 +1755,7 @@
     },
     {
       "id": "pencilgrid-slitherlink",
-      "name": "PencilGrid Slitherlink",
+      "name": "Slitherlink",
       "emoji": "➰",
       "url": "https://www.pencilgrid.com/slitherlink/play?mode=daily",
       "source": "PencilGrid",
@@ -1795,7 +1795,7 @@
     },
     {
       "id": "pencilgrid-futoshiki",
-      "name": "PencilGrid Futoshiki",
+      "name": "Futoshiki",
       "emoji": "⚖️",
       "url": "https://www.pencilgrid.com/futoshiki/play?mode=daily",
       "source": "PencilGrid",
@@ -1835,7 +1835,7 @@
     },
     {
       "id": "pencilgrid-kakuro",
-      "name": "PencilGrid Kakuro",
+      "name": "Kakuro",
       "emoji": "➕",
       "url": "https://www.pencilgrid.com/kakuro/play?mode=daily",
       "source": "PencilGrid",
