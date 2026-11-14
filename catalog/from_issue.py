@@ -34,7 +34,10 @@ METRICS = {"passFail", "time", "guesses", "mistakes", "hints", "points", "par", 
 # did exactly that on One Up).
 RESET_TIMES = {"Midnight local", "Midnight ET", "Midnight PT", "Midnight GMT",
                "Midnight London", "Midnight Amsterdam", "Midnight EST",
-               "3:00 AM ET", "6:00 AM ET", "10:00 PM ET", "4:00 PM GMT"}
+               "3:00 AM ET", "6:00 AM ET", "10:00 PM ET", "4:00 PM GMT",
+               # Builds from 0.4 (34) read any "H:MM AM/PM ET|PT|GMT"; earlier
+               # ones only the list above, so this one has no countdown there.
+               "2:00 AM ET"}
 RESET_SYNONYMS = {"midnight utc": "Midnight GMT", "midnight z": "Midnight GMT",
                   "00:00 utc": "Midnight GMT", "midnight": "Midnight local",
                   "midnight eastern": "Midnight ET", "midnight pacific": "Midnight PT",
