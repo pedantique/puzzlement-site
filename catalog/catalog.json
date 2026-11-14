@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-14T04:40:46Z",
+  "updated": "2026-11-14T10:23:35Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -252,6 +252,12 @@
       "classification": {
         "editionNameCrossFrame": true
       }
+    },
+    "fourbythree": {
+      "source": "Hank Green"
+    },
+    "smush": {
+      "source": "Hank Green"
     }
   },
   "added": [
@@ -1873,6 +1879,30 @@
           }
         ],
         "iconURL": "https://puzzlement.games/img/icons/pencilgrid-kakuro.png"
+      }
+    },
+    {
+      "id": "4x6",
+      "name": "4x6",
+      "emoji": "🌈",
+      "url": "https://www.hankgreen.com/4x6/",
+      "source": "Hank Green",
+      "description": "Slide coloured tiles between shelves until each colour has a shelf of its own",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "par",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-07-23",
+        "estimatedMinutes": 3,
+        "archiveAccess": "none",
+        "editionNameTiming": "none",
+        "shareButtonLabel": "Copy text",
+        "scoreJS": "function(t){ if(!/4\\u00D76 \\u00B7|hankgreen\\.com\\/4x6/i.test(t)) return null; var m=t.match(/(\\d+)\\/(\\d+) moves?/); if(!m) return null; var d=+m[1]-(+m[2]); var p=d===0?'on par':Math.abs(d)+(d<0?' under par':' over par'); var tiers=[['\\uD83D\\uDCAF','Perfect'],['\\uD83E\\uDD47','Gold'],['\\uD83E\\uDD48','Silver'],['\\u2705','Solved'],['\\uD83D\\uDEDF','Rescued']]; for(var i=0;i<tiers.length;i++){ if(t.indexOf(tiers[i][0])>=0) return p+' \\u00B7 '+tiers[i][1]; } return p; }",
+        "iconURL": "https://puzzlement.games/img/icons/4x6.png"
       }
     }
   ],
