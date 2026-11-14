@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-14T04:40:46Z",
+  "updated": "2026-11-14T08:22:48Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -1873,6 +1873,173 @@
           }
         ],
         "iconURL": "https://puzzlement.games/img/icons/pencilgrid-kakuro.png"
+      }
+    },
+    {
+      "id": "crossnum",
+      "name": "Crossnum",
+      "emoji": "➗",
+      "url": "https://crossnum.com/crossnum",
+      "source": "Crossnum Games",
+      "description": "A crossword of equations: fill in the missing numbers so every sum works",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "2:00 AM ET",
+        "launchDate": "2026-09-21",
+        "estimatedMinutes": 5,
+        "archiveAccess": "none",
+        "loginBenefit": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 55
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "crossnum #",
+              "9+ misses"
+            ],
+            "captures": {
+              "t": "Crossnum #\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t} · 9+ misses"
+          },
+          {
+            "require": [
+              "crossnum #"
+            ],
+            "captures": {
+              "t": "Crossnum #\\d+\\s*·\\s*(\\d+:\\d{2})",
+              "n": "Crossnum #\\d+\\s*·\\s*\\d+:\\d{2}\\s*·\\s*(\\d+) miss"
+            },
+            "template": "{t} · {n|miss|misses}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/crossnum.png"
+      }
+    },
+    {
+      "id": "sufuku",
+      "name": "Sufuku",
+      "emoji": "🎲",
+      "url": "https://crossnum.com/sufuku",
+      "source": "Crossnum Games",
+      "description": "Like sudoku, but numbers repeat: each appears as many times as its value",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "2:00 AM ET",
+        "launchDate": "2026-10-12",
+        "estimatedMinutes": 5,
+        "archiveAccess": "none",
+        "loginBenefit": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 34
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "sufuku #",
+              "no mistakes"
+            ],
+            "captures": {
+              "t": "Sufuku #\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t} · no mistakes"
+          },
+          {
+            "require": [
+              "sufuku #",
+              "9+ mistakes"
+            ],
+            "captures": {
+              "t": "Sufuku #\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t} · 9+ mistakes"
+          },
+          {
+            "require": [
+              "sufuku #"
+            ],
+            "captures": {
+              "t": "Sufuku #\\d+\\s*·\\s*(\\d+:\\d{2})",
+              "n": "Sufuku #\\d+\\s*·\\s*\\d+:\\d{2}\\s*·\\s*(\\d+) mistake"
+            },
+            "template": "{t} · {n|mistake|mistakes}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/sufuku.png"
+      }
+    },
+    {
+      "id": "tinctile",
+      "name": "Tinctile",
+      "emoji": "🎨",
+      "url": "https://crossnum.com/tinctile",
+      "source": "Crossnum Games",
+      "description": "Colour a hex board where the only clues are how many of each colour sit in a line",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "2:00 AM ET",
+        "launchDate": "2026-11-02",
+        "estimatedMinutes": 5,
+        "archiveAccess": "none",
+        "loginBenefit": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 13
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "tinctile #",
+              "no mistakes"
+            ],
+            "captures": {
+              "t": "Tinctile #\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t} · no mistakes"
+          },
+          {
+            "require": [
+              "tinctile #",
+              "9+ mistakes"
+            ],
+            "captures": {
+              "t": "Tinctile #\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t} · 9+ mistakes"
+          },
+          {
+            "require": [
+              "tinctile #"
+            ],
+            "captures": {
+              "t": "Tinctile #\\d+\\s*·\\s*(\\d+:\\d{2})",
+              "n": "Tinctile #\\d+\\s*·\\s*\\d+:\\d{2}\\s*·\\s*(\\d+) mistake"
+            },
+            "template": "{t} · {n|mistake|mistakes}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/tinctile.png"
       }
     }
   ],
