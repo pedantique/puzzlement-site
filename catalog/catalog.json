@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-14T10:23:36Z",
+  "updated": "2026-11-14T11:24:41Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -2070,6 +2070,531 @@
           }
         ],
         "iconURL": "https://puzzlement.games/img/icons/tinctile.png"
+      }
+    },
+    {
+      "id": "greg-futoshiki",
+      "name": "Greg’s Futoshiki",
+      "emoji": "➡️",
+      "url": "https://gregpuzzles.com/pages/daily-futoshiki",
+      "source": "Greg Puzzles",
+      "description": "A six by six grid where arrows point at the smaller of two digits",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 6,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Solved. Come back tomorrow for a new one."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-futoshiki.png"
+      }
+    },
+    {
+      "id": "greg-suguru",
+      "name": "Greg’s Suguru",
+      "emoji": "🧱",
+      "url": "https://gregpuzzles.com/pages/daily-suguru",
+      "source": "Greg Puzzles",
+      "description": "Blocks of five hold 1 to 5, and touching cells never match",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 6,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Solved. Come back tomorrow for a new one."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-suguru.png"
+      }
+    },
+    {
+      "id": "greg-binairo",
+      "name": "Greg’s Binairo",
+      "emoji": "⚫",
+      "url": "https://gregpuzzles.com/pages/daily-binairo",
+      "source": "Greg Puzzles",
+      "description": "Fill a ten by ten grid with two symbols under three simple rules",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 6,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Solved. Come back tomorrow for a new one."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-binairo.png"
+      }
+    },
+    {
+      "id": "greg-dominosa",
+      "name": "Greg’s Dominosa",
+      "emoji": "🁫",
+      "url": "https://gregpuzzles.com/pages/daily-dominosa",
+      "source": "Greg Puzzles",
+      "description": "A grid of numbers hiding one full set of dominoes: find the joins",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 6,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Solved. Every domino from double blank to double five, exactly once."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-dominosa.png"
+      }
+    },
+    {
+      "id": "greg-fillomino",
+      "name": "Greg’s Fillomino",
+      "emoji": "🔢",
+      "url": "https://gregpuzzles.com/pages/daily-fillomino",
+      "source": "Greg Puzzles",
+      "description": "Every number says how big its own block is; fill in the rest",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 6,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Solved. Come back tomorrow for a new one."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-fillomino.png"
+      }
+    },
+    {
+      "id": "greg-tents",
+      "name": "Greg’s Tents",
+      "emoji": "⛺",
+      "url": "https://gregpuzzles.com/pages/daily-tents",
+      "source": "Greg Puzzles",
+      "description": "Pitch one tent beside every tree, and no two tents may touch",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 5,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Every tree has its tent. Come back tomorrow for a new camp."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-tents.png"
+      }
+    },
+    {
+      "id": "greg-light-up",
+      "name": "Greg’s Light Up",
+      "emoji": "💡",
+      "url": "https://gregpuzzles.com/pages/daily-light-up",
+      "source": "Greg Puzzles",
+      "description": "Place bulbs so every white square is lit and no bulb shines on another",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 6,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Every square is lit. Come back tomorrow for a new one."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-light-up.png"
+      }
+    },
+    {
+      "id": "greg-minesweeper",
+      "name": "Greg’s Minesweeper",
+      "emoji": "💣",
+      "url": "https://gregpuzzles.com/pages/daily-minesweeper",
+      "source": "Greg Puzzles",
+      "description": "Minesweeper with the guessing removed: flag every mine by logic alone",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 5,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Every mine accounted for. Come back tomorrow for a new field."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-minesweeper.png"
+      }
+    },
+    {
+      "id": "greg-hitori",
+      "name": "Greg’s Hitori",
+      "emoji": "⬛",
+      "url": "https://gregpuzzles.com/pages/daily-hitori",
+      "source": "Greg Puzzles",
+      "description": "Shade the repeats until no number appears twice in any row or column",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 6,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "No repeats left and nothing cut off. Come back tomorrow."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-hitori.png"
+      }
+    },
+    {
+      "id": "greg-nurikabe",
+      "name": "Greg’s Nurikabe",
+      "emoji": "🏝️",
+      "url": "https://gregpuzzles.com/pages/daily-nurikabe",
+      "source": "Greg Puzzles",
+      "description": "Flood the board, leaving an island at every number",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 8,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Every island the right size. Come back tomorrow."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-nurikabe.png"
+      }
+    },
+    {
+      "id": "greg-shikaku",
+      "name": "Greg’s Shikaku",
+      "emoji": "▭",
+      "url": "https://gregpuzzles.com/pages/daily-shikaku",
+      "source": "Greg Puzzles",
+      "description": "Cut the grid into rectangles, one number in each saying its size",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 5,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Every square accounted for. Come back tomorrow for a new grid."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-shikaku.png"
+      }
+    },
+    {
+      "id": "greg-kakuro",
+      "name": "Greg’s Kakuro",
+      "emoji": "➕",
+      "url": "https://gregpuzzles.com/pages/daily-kakuro",
+      "source": "Greg Puzzles",
+      "description": "A crossword whose clues are sums: fill each run with 1 to 9, no digit twice",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 8,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Every run adds up. Come back tomorrow for a new grid."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-kakuro.png"
+      }
+    },
+    {
+      "id": "greg-hashi",
+      "name": "Greg’s Hashiwokakero",
+      "emoji": "🌉",
+      "url": "https://gregpuzzles.com/pages/daily-hashi",
+      "source": "Greg Puzzles",
+      "description": "Join the islands with bridges until every number is met and all are connected",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 6,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Every island joined, one network. Come back tomorrow."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-hashi.png"
+      }
+    },
+    {
+      "id": "greg-numberlink",
+      "name": "Greg’s Numberlink",
+      "emoji": "〰️",
+      "url": "https://gregpuzzles.com/pages/daily-numberlink",
+      "source": "Greg Puzzles",
+      "description": "Join each pair of numbers with a line, and use every square on the board",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 5,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "Every pair joined and every square used. Come back tomorrow."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-numberlink.png"
+      }
+    },
+    {
+      "id": "greg-slitherlink",
+      "name": "Greg’s Slitherlink",
+      "emoji": "➰",
+      "url": "https://gregpuzzles.com/pages/daily-slitherlink",
+      "source": "Greg Puzzles",
+      "description": "Draw one closed loop; each number says how many of its sides it uses",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "passFail",
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-21",
+        "estimatedMinutes": 8,
+        "archiveAccess": "none",
+        "scoreShare": "none",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 25
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "One loop, every number happy. Come back tomorrow."
+            ],
+            "captures": {},
+            "template": "Solved"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/greg-slitherlink.png"
       }
     }
   ],
