@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-08T10:35:43Z",
+  "updated": "2026-11-14T09:00:00Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -1431,6 +1431,446 @@
           }
         ],
         "iconURL": "https://puzzlement.games/img/icons/number-crunch.png"
+      }
+    },
+    {
+      "id": "pencilgrid-sudoku",
+      "name": "PencilGrid Sudoku",
+      "emoji": "✏️",
+      "url": "https://www.pencilgrid.com/sudoku/play?mode=daily",
+      "source": "PencilGrid",
+      "description": "Fill the 9×9 grid so every row, column and box holds 1 to 9",
+      "category": "Sudoku",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-08-01",
+        "estimatedMinutes": 10,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://www.pencilgrid.com/sudoku/play?mode=daily&date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-10",
+          "number": 100
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pencilgrid sudoku #",
+              "solved in"
+            ],
+            "captures": {
+              "t": "[Ss]olved in (\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+      }
+    },
+    {
+      "id": "pencilgrid-sudoku-x",
+      "name": "PencilGrid Sudoku X",
+      "emoji": "❎",
+      "url": "https://www.pencilgrid.com/sudoku-x/play?mode=daily",
+      "source": "PencilGrid",
+      "description": "Sudoku where both long diagonals also hold 1 to 9",
+      "category": "Sudoku",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-08-01",
+        "estimatedMinutes": 12,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://www.pencilgrid.com/sudoku-x/play?mode=daily&date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-10",
+          "number": 100
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pencilgrid sudoku x #",
+              "solved in"
+            ],
+            "captures": {
+              "t": "[Ss]olved in (\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+      }
+    },
+    {
+      "id": "pencilgrid-killer-sudoku",
+      "name": "PencilGrid Killer Sudoku",
+      "emoji": "🗡️",
+      "url": "https://www.pencilgrid.com/killer-sudoku/play?mode=daily",
+      "source": "PencilGrid",
+      "description": "Sudoku with no givens, only caged sums to add up",
+      "category": "Sudoku",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-08-01",
+        "estimatedMinutes": 20,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://www.pencilgrid.com/killer-sudoku/play?mode=daily&date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-10",
+          "number": 100
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pencilgrid killer sudoku #",
+              "solved in"
+            ],
+            "captures": {
+              "t": "[Ss]olved in (\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+      }
+    },
+    {
+      "id": "pencilgrid-nonogram",
+      "name": "PencilGrid Nonogram",
+      "emoji": "🖼️",
+      "url": "https://www.pencilgrid.com/nonogram/play?mode=daily",
+      "source": "PencilGrid",
+      "description": "Shade cells from the row and column clues to reveal a picture",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-08-01",
+        "estimatedMinutes": 10,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://www.pencilgrid.com/nonogram/play?mode=daily&date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-10",
+          "number": 100
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pencilgrid nonogram #",
+              "solved in"
+            ],
+            "captures": {
+              "t": "[Ss]olved in (\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+      }
+    },
+    {
+      "id": "pencilgrid-binairo",
+      "name": "PencilGrid Binairo",
+      "emoji": "⚫",
+      "url": "https://www.pencilgrid.com/binairo/play?mode=daily",
+      "source": "PencilGrid",
+      "description": "Fill the grid with 0s and 1s, never three alike in a row",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-08-01",
+        "estimatedMinutes": 10,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://www.pencilgrid.com/binairo/play?mode=daily&date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-10",
+          "number": 100
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pencilgrid binairo #",
+              "solved in"
+            ],
+            "captures": {
+              "t": "[Ss]olved in (\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+      }
+    },
+    {
+      "id": "pencilgrid-suguru",
+      "name": "PencilGrid Suguru",
+      "emoji": "🧱",
+      "url": "https://www.pencilgrid.com/suguru/play?mode=daily",
+      "source": "PencilGrid",
+      "description": "Fill each region with 1 to its size; equal digits never touch",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-08-01",
+        "estimatedMinutes": 8,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://www.pencilgrid.com/suguru/play?mode=daily&date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-10",
+          "number": 100
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pencilgrid suguru #",
+              "solved in"
+            ],
+            "captures": {
+              "t": "[Ss]olved in (\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+      }
+    },
+    {
+      "id": "pencilgrid-star-battle",
+      "name": "PencilGrid Star Battle",
+      "emoji": "⭐",
+      "url": "https://www.pencilgrid.com/star-battle/play?mode=daily",
+      "source": "PencilGrid",
+      "description": "Place one star per row, column and region, none touching",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-08-01",
+        "estimatedMinutes": 8,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://www.pencilgrid.com/star-battle/play?mode=daily&date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-10",
+          "number": 100
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pencilgrid star battle #",
+              "solved in"
+            ],
+            "captures": {
+              "t": "[Ss]olved in (\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+      }
+    },
+    {
+      "id": "pencilgrid-shikaku",
+      "name": "PencilGrid Shikaku",
+      "emoji": "🟦",
+      "url": "https://www.pencilgrid.com/shikaku/play?mode=daily",
+      "source": "PencilGrid",
+      "description": "Cut the grid into rectangles, each the area of its number",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-08-01",
+        "estimatedMinutes": 5,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://www.pencilgrid.com/shikaku/play?mode=daily&date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-10",
+          "number": 100
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pencilgrid shikaku #",
+              "solved in"
+            ],
+            "captures": {
+              "t": "[Ss]olved in (\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+      }
+    },
+    {
+      "id": "pencilgrid-slitherlink",
+      "name": "PencilGrid Slitherlink",
+      "emoji": "➰",
+      "url": "https://www.pencilgrid.com/slitherlink/play?mode=daily",
+      "source": "PencilGrid",
+      "description": "Draw one loop; each number counts the loop’s edges around it",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-08-01",
+        "estimatedMinutes": 12,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://www.pencilgrid.com/slitherlink/play?mode=daily&date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-10",
+          "number": 100
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pencilgrid slitherlink #",
+              "solved in"
+            ],
+            "captures": {
+              "t": "[Ss]olved in (\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+      }
+    },
+    {
+      "id": "pencilgrid-futoshiki",
+      "name": "PencilGrid Futoshiki",
+      "emoji": "⚖️",
+      "url": "https://www.pencilgrid.com/futoshiki/play?mode=daily",
+      "source": "PencilGrid",
+      "description": "Fill a Latin square that obeys every greater-than sign",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-08-01",
+        "estimatedMinutes": 6,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://www.pencilgrid.com/futoshiki/play?mode=daily&date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-10",
+          "number": 100
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pencilgrid futoshiki #",
+              "solved in"
+            ],
+            "captures": {
+              "t": "[Ss]olved in (\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+      }
+    },
+    {
+      "id": "pencilgrid-kakuro",
+      "name": "PencilGrid Kakuro",
+      "emoji": "➕",
+      "url": "https://www.pencilgrid.com/kakuro/play?mode=daily",
+      "source": "PencilGrid",
+      "description": "A crossword of sums: distinct digits add up to each clue",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-08-01",
+        "estimatedMinutes": 12,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://www.pencilgrid.com/kakuro/play?mode=daily&date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-10",
+          "number": 100
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "pencilgrid kakuro #",
+              "solved in"
+            ],
+            "captures": {
+              "t": "[Ss]olved in (\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
       }
     }
   ],
