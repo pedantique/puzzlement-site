@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-14T04:37:22Z",
+  "updated": "2026-11-14T04:40:46Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -1472,7 +1472,7 @@
             "template": "{t}"
           }
         ],
-        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid-sudoku.png"
       }
     },
     {
@@ -1512,7 +1512,7 @@
             "template": "{t}"
           }
         ],
-        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid-sudoku-x.png"
       }
     },
     {
@@ -1552,7 +1552,7 @@
             "template": "{t}"
           }
         ],
-        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid-killer-sudoku.png"
       }
     },
     {
@@ -1592,7 +1592,7 @@
             "template": "{t}"
           }
         ],
-        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid-nonogram.png"
       }
     },
     {
@@ -1632,7 +1632,7 @@
             "template": "{t}"
           }
         ],
-        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid-binairo.png"
       }
     },
     {
@@ -1672,7 +1672,7 @@
             "template": "{t}"
           }
         ],
-        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid-suguru.png"
       }
     },
     {
@@ -1712,7 +1712,7 @@
             "template": "{t}"
           }
         ],
-        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid-star-battle.png"
       }
     },
     {
@@ -1752,7 +1752,7 @@
             "template": "{t}"
           }
         ],
-        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid-shikaku.png"
       }
     },
     {
@@ -1792,7 +1792,7 @@
             "template": "{t}"
           }
         ],
-        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid-slitherlink.png"
       }
     },
     {
@@ -1832,7 +1832,7 @@
             "template": "{t}"
           }
         ],
-        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid-futoshiki.png"
       }
     },
     {
@@ -1872,7 +1872,7 @@
             "template": "{t}"
           }
         ],
-        "iconURL": "https://puzzlement.games/img/icons/pencilgrid.png"
+        "iconURL": "https://puzzlement.games/img/icons/pencilgrid-kakuro.png"
       }
     }
   ],
