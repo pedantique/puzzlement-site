@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-14T11:24:41Z",
+  "updated": "2026-11-14T21:13:31Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -2074,7 +2074,7 @@
     },
     {
       "id": "greg-futoshiki",
-      "name": "Greg’s Futoshiki",
+      "name": "Futoshiki",
       "emoji": "➡️",
       "url": "https://gregpuzzles.com/pages/daily-futoshiki",
       "source": "Greg Puzzles",
@@ -2109,7 +2109,7 @@
     },
     {
       "id": "greg-suguru",
-      "name": "Greg’s Suguru",
+      "name": "Suguru",
       "emoji": "🧱",
       "url": "https://gregpuzzles.com/pages/daily-suguru",
       "source": "Greg Puzzles",
@@ -2144,7 +2144,7 @@
     },
     {
       "id": "greg-binairo",
-      "name": "Greg’s Binairo",
+      "name": "Binairo",
       "emoji": "⚫",
       "url": "https://gregpuzzles.com/pages/daily-binairo",
       "source": "Greg Puzzles",
@@ -2179,7 +2179,7 @@
     },
     {
       "id": "greg-dominosa",
-      "name": "Greg’s Dominosa",
+      "name": "Dominosa",
       "emoji": "🁫",
       "url": "https://gregpuzzles.com/pages/daily-dominosa",
       "source": "Greg Puzzles",
@@ -2214,7 +2214,7 @@
     },
     {
       "id": "greg-fillomino",
-      "name": "Greg’s Fillomino",
+      "name": "Fillomino",
       "emoji": "🔢",
       "url": "https://gregpuzzles.com/pages/daily-fillomino",
       "source": "Greg Puzzles",
@@ -2249,7 +2249,7 @@
     },
     {
       "id": "greg-tents",
-      "name": "Greg’s Tents",
+      "name": "Tents",
       "emoji": "⛺",
       "url": "https://gregpuzzles.com/pages/daily-tents",
       "source": "Greg Puzzles",
@@ -2284,7 +2284,7 @@
     },
     {
       "id": "greg-light-up",
-      "name": "Greg’s Light Up",
+      "name": "Light Up",
       "emoji": "💡",
       "url": "https://gregpuzzles.com/pages/daily-light-up",
       "source": "Greg Puzzles",
@@ -2319,7 +2319,7 @@
     },
     {
       "id": "greg-minesweeper",
-      "name": "Greg’s Minesweeper",
+      "name": "Minesweeper",
       "emoji": "💣",
       "url": "https://gregpuzzles.com/pages/daily-minesweeper",
       "source": "Greg Puzzles",
@@ -2354,7 +2354,7 @@
     },
     {
       "id": "greg-hitori",
-      "name": "Greg’s Hitori",
+      "name": "Hitori",
       "emoji": "⬛",
       "url": "https://gregpuzzles.com/pages/daily-hitori",
       "source": "Greg Puzzles",
@@ -2389,7 +2389,7 @@
     },
     {
       "id": "greg-nurikabe",
-      "name": "Greg’s Nurikabe",
+      "name": "Nurikabe",
       "emoji": "🏝️",
       "url": "https://gregpuzzles.com/pages/daily-nurikabe",
       "source": "Greg Puzzles",
@@ -2424,7 +2424,7 @@
     },
     {
       "id": "greg-shikaku",
-      "name": "Greg’s Shikaku",
+      "name": "Shikaku",
       "emoji": "▭",
       "url": "https://gregpuzzles.com/pages/daily-shikaku",
       "source": "Greg Puzzles",
@@ -2459,7 +2459,7 @@
     },
     {
       "id": "greg-kakuro",
-      "name": "Greg’s Kakuro",
+      "name": "Kakuro",
       "emoji": "➕",
       "url": "https://gregpuzzles.com/pages/daily-kakuro",
       "source": "Greg Puzzles",
@@ -2494,7 +2494,7 @@
     },
     {
       "id": "greg-hashi",
-      "name": "Greg’s Hashiwokakero",
+      "name": "Hashiwokakero",
       "emoji": "🌉",
       "url": "https://gregpuzzles.com/pages/daily-hashi",
       "source": "Greg Puzzles",
@@ -2529,7 +2529,7 @@
     },
     {
       "id": "greg-numberlink",
-      "name": "Greg’s Numberlink",
+      "name": "Numberlink",
       "emoji": "〰️",
       "url": "https://gregpuzzles.com/pages/daily-numberlink",
       "source": "Greg Puzzles",
@@ -2564,7 +2564,7 @@
     },
     {
       "id": "greg-slitherlink",
-      "name": "Greg’s Slitherlink",
+      "name": "Slitherlink",
       "emoji": "➰",
       "url": "https://gregpuzzles.com/pages/daily-slitherlink",
       "source": "Greg Puzzles",
