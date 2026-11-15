@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-14T21:13:31Z",
+  "updated": "2026-11-15T01:38:56Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -2595,6 +2595,54 @@
           }
         ],
         "iconURL": "https://puzzlement.games/img/icons/greg-slitherlink.png"
+      }
+    },
+    {
+      "id": "mineracer",
+      "name": "Mineracer",
+      "emoji": "💣",
+      "url": "https://mineracer.com/daily",
+      "source": "Indie",
+      "description": "Race the world through one shared Minesweeper board a day",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": true,
+        "cadence": "daily",
+        "resetTime": "Midnight PT",
+        "launchDate": "2026-06-17",
+        "estimatedMinutes": 3,
+        "archiveAccess": "none",
+        "scoreShare": "shareText",
+        "shareButtonLabel": "Share result",
+        "loginBenefit": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 151
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "mineracer daily",
+              "busted"
+            ],
+            "captures": {},
+            "template": "Busted"
+          },
+          {
+            "require": [
+              "mineracer daily",
+              "🏁"
+            ],
+            "captures": {
+              "time": "mineracer daily #?\\d+\\s*—\\s*([0-9:.]+)"
+            },
+            "template": "{time}"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/mineracer.png"
       }
     }
   ],
