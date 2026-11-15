@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-14T21:13:31Z",
+  "updated": "2026-11-15T01:03:41Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -2595,6 +2595,48 @@
           }
         ],
         "iconURL": "https://puzzlement.games/img/icons/greg-slitherlink.png"
+      }
+    },
+    {
+      "id": "metro-maneuver",
+      "name": "Metro Maneuver",
+      "emoji": "🚇",
+      "url": "https://metromaneuver.com/",
+      "source": "Indie",
+      "description": "Draw metro lines across a city map to pick up the most riders",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "primaryMetric": "points",
+        "lowerIsBetter": false,
+        "scoreMax": 100,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight ET",
+        "launchDate": "2026-10-26",
+        "estimatedMinutes": 5,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://metromaneuver.com/?date={yyyy}-{MM}-{dd}&ref=puzzlement",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-14",
+          "number": 19
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "day ",
+              " · "
+            ],
+            "captures": {
+              "pct": "day \\d+ · [^\\n]+\\s+(?:okay|good|great|excellent|brilliant|optimal|best so far) · (\\d+)%"
+            },
+            "template": "{pct}%"
+          }
+        ],
+        "iconURL": "https://puzzlement.games/img/icons/metro-maneuver.png"
       }
     }
   ],
