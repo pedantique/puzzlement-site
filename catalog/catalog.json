@@ -1925,6 +1925,7 @@
         "archiveAccess": "none",
         "loginBenefit": true,
         "disableSwipeBack": true,
+        "shareButtonLabel": "Copy",
         "editionNumberRef": {
           "date": "2026-11-14",
           "number": 55
@@ -2034,6 +2035,7 @@
         "archiveAccess": "none",
         "loginBenefit": true,
         "disableSwipeBack": true,
+        "shareButtonLabel": "Copy",
         "editionNumberRef": {
           "date": "2026-11-14",
           "number": 13
