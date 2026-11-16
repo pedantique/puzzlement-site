@@ -1295,7 +1295,7 @@
         "archiveAccess": "free",
         "dateURLPattern": "https://lieofsight.com/dusty?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
-        "shareButtonLabel": "Share",
+        "shareButtonLabel": "Challenge a friend",
         "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
