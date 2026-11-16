@@ -2731,6 +2731,45 @@
           }
         ]
       }
+    },
+    {
+      "id": "plumb",
+      "name": "Plumb",
+      "emoji": "📐",
+      "url": "https://plumb.dailyplumb.workers.dev/",
+      "source": "Indie",
+      "description": "Five quick tests of physical intuition: where water settles, where a wheel stops, where a hidden lamp hangs, where punched holes land and where a pool ball ends up.",
+      "category": "Visual",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/plumb.png",
+        "primaryMetric": "points",
+        "lowerIsBetter": false,
+        "scoreMax": 1000,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-11-09",
+        "estimatedMinutes": 3,
+        "archiveAccess": "none",
+        "shareButtonLabel": "Copy result",
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-09",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "plumb no."
+            ],
+            "captures": {
+              "score": "·\\s*(\\d+/1000)"
+            },
+            "template": "{score}"
+          }
+        ]
+      }
     }
   ],
   "removed": []
