@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-15T01:38:56Z",
+  "updated": "2026-11-16T20:37:28Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -1038,7 +1038,7 @@
         "archiveAccess": "free",
         "dateURLPattern": "https://lieofsight.com/fetch?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
-        "shareButtonLabel": "Share",
+        "shareButtonLabel": "Challenge a friend",
         "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
@@ -1080,7 +1080,7 @@
         "archiveAccess": "free",
         "dateURLPattern": "https://lieofsight.com/web?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
-        "shareButtonLabel": "Share",
+        "shareButtonLabel": "Challenge a friend",
         "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
@@ -1122,7 +1122,7 @@
         "archiveAccess": "free",
         "dateURLPattern": "https://lieofsight.com/knit?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
-        "shareButtonLabel": "Share",
+        "shareButtonLabel": "Challenge a friend",
         "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
@@ -1164,7 +1164,7 @@
         "archiveAccess": "free",
         "dateURLPattern": "https://lieofsight.com/treasure?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
-        "shareButtonLabel": "Share",
+        "shareButtonLabel": "Challenge a friend",
         "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
@@ -1215,7 +1215,7 @@
         "archiveAccess": "free",
         "dateURLPattern": "https://lieofsight.com/laser?day={yyyy}-{MM}-{dd}",
         "isArchiveOnlyDateURL": true,
-        "shareButtonLabel": "Share",
+        "shareButtonLabel": "Challenge a friend",
         "disableSwipeBack": true,
         "loginBenefit": true,
         "loginPromptTiming": "anytime",
@@ -2688,6 +2688,48 @@
           }
         ],
         "iconURL": "https://puzzlement.games/img/icons/metro-maneuver.png"
+      }
+    },
+    {
+      "id": "lieofsight-dusty",
+      "name": "Dusty’s Rounds",
+      "emoji": "🧹",
+      "url": "https://lieofsight.com/dusty",
+      "source": "The Fibbersons",
+      "description": "Give Dusty the robot vacuum a few moves. It repeats them until every crumb is gone.",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/lieofsight-dusty.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-11-16",
+        "estimatedMinutes": 2,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://lieofsight.com/dusty?day={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Challenge a friend",
+        "disableSwipeBack": true,
+        "loginBenefit": true,
+        "loginPromptTiming": "anytime",
+        "editionNumberRef": {
+          "date": "2026-11-16",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "rounds #"
+            ],
+            "captures": {
+              "t": "#\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t}"
+          }
+        ]
       }
     }
   ],
