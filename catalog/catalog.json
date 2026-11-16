@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-15T01:38:56Z",
+  "updated": "2026-11-16T10:46:24Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -1270,6 +1270,48 @@
               "n": "(?:Shots|SHOTS)\\s*(\\d) of 3"
             },
             "template": "{t} · {n|shot|shots}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lieofsight-dusty",
+      "name": "Dusty’s Rounds",
+      "emoji": "🧹",
+      "url": "https://lieofsight.com/dusty",
+      "source": "The Fibbersons",
+      "description": "Give Dusty the robot vacuum a few moves. It repeats them until every crumb is gone.",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/lieofsight-dusty.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-11-16",
+        "estimatedMinutes": 2,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://lieofsight.com/dusty?day={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share",
+        "disableSwipeBack": true,
+        "loginBenefit": true,
+        "loginPromptTiming": "anytime",
+        "editionNumberRef": {
+          "date": "2026-11-16",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "rounds #"
+            ],
+            "captures": {
+              "t": "#\\d+\\s*·\\s*(\\d+:\\d{2})"
+            },
+            "template": "{t}"
           }
         ]
       }
