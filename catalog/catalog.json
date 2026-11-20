@@ -2781,7 +2781,7 @@
       "category": "Numbers",
       "access": "Free",
       "classification": {
-        "iconURL": "https://puzzlement.games/img/icons/sumbreak.png",
+        "iconURL": "https://puzzlement.games/img/icons/linkedin-sumbreak.png",
         "primaryMetric": "time",
         "lowerIsBetter": true,
         "canFail": false,
