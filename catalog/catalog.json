@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-16T20:37:28Z",
+  "updated": "2026-11-20T01:05:07Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -2769,6 +2769,33 @@
             "template": "{score}"
           }
         ]
+      }
+    },
+    {
+      "id": "poople",
+      "name": "Poople",
+      "emoji": "💩",
+      "url": "https://poople.io/",
+      "source": "Indie",
+      "description": "Change one letter at a time to get from the day’s word to POOP in as few steps as possible",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/poople.png",
+        "primaryMetric": "par",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "8:00 AM GMT",
+        "launchDate": "2025-08-15",
+        "estimatedMinutes": 3,
+        "archiveAccess": "none",
+        "shareButtonLabel": "Copy results",
+        "editionNumberRef": {
+          "date": "2026-11-19",
+          "number": 462
+        },
+        "scoreJS": "function(t){ var m=t.match(/Poople #\\d+ (\\d+)\\/(\\d+)/i)||t.match(/You used (\\d+) guess(?:es)?\\.?\\s*The best solution was (\\d+) guess/i); if(!m) return null; var d=+m[1]-(+m[2]); return d===0?'on par':Math.abs(d)+(d<0?' under par':' over par'); }"
       }
     }
   ],
