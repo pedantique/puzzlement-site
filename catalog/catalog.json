@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-20T01:10:30Z",
+  "updated": "2026-11-20T01:32:06Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -107,7 +107,8 @@
           "2026-10-21": "https://www.nytimes.com/games/bonus/connections/3x3/2026-10-21-1282",
           "2026-10-28": "https://www.nytimes.com/games/bonus/connections/3x3/2026-10-28-1290",
           "2026-11-04": "https://www.nytimes.com/games/bonus/connections/3x3/2026-11-04-1300",
-          "2026-11-11": "https://www.nytimes.com/games/bonus/connections/3x3/2026-11-11-1308"
+          "2026-11-11": "https://www.nytimes.com/games/bonus/connections/3x3/2026-11-11-1308",
+          "2026-11-18": "https://www.nytimes.com/games/bonus/connections/3x3/2026-11-18-1323"
         }
       }
     },
@@ -282,7 +283,8 @@
         "resetTime": "Midnight local",
         "manualArchiveURLs": {
           "2026-09-17": "https://www.nytimes.com/games/bonus/crossword/standard/2026-09-17",
-          "2026-10-15": "https://www.nytimes.com/games/bonus/crossword/standard/2026-10-15"
+          "2026-10-15": "https://www.nytimes.com/games/bonus/crossword/standard/2026-10-15",
+          "2026-11-15": "https://www.nytimes.com/games/bonus/crossword/standard/2026-11-15"
         }
       }
     },
@@ -386,6 +388,45 @@
           "colorName": "grey"
         },
         "dateURLPattern": "https://www.nytimes.com/crosswords/game/bonus/{yyyy}/{MM}"
+      }
+    },
+    {
+      "id": "strands-proper",
+      "name": "Proper Strands",
+      "emoji": "🧵",
+      "url": "https://www.nytimes.com/games/bonus/strands/proper/2026-11-18-1200",
+      "source": "NYT",
+      "description": "Strands where every theme word is a proper noun",
+      "category": "Spelling",
+      "access": "Paid sub required",
+      "classification": {
+        "primaryMetric": "hints",
+        "lowerIsBetter": true,
+        "scoreMax": 7,
+        "cadence": "sporadic",
+        "editionNameTiming": "atStart",
+        "archiveAccess": "subscriptionRequired",
+        "estimatedMinutes": 8,
+        "shareButtonLabel": "Share your results",
+        "popularityScore": 50,
+        "launchDate": "2026-11-18",
+        "resetTime": "Midnight ET",
+        "disableSwipeBack": true,
+        "manualArchiveURLs": {
+          "2026-11-18": "https://www.nytimes.com/games/bonus/strands/proper/2026-11-18-1200"
+        },
+        "dateURLReset": {
+          "hour": 0,
+          "minute": 0,
+          "timezone": "current",
+          "isNextDayRelease": false
+        },
+        "variantPill": {
+          "label": "Proper"
+        },
+        "editionNameJS": "(function(){try{var nd=document.getElementById('__NEXT_DATA__');if(nd){var d=JSON.parse(nd.textContent);var pp=d&&d.props&&d.props.pageProps;if(pp){var gd=pp.gameData||pp.game||pp.puzzle||{};var t=gd.themeCategory||gd.theme||gd.clue||gd.themeName||gd.category;if(t)return t;}}}catch(e){}return document.querySelector('[class*=riddle-module_clue]')?.textContent?.trim()||null;})()",
+        "scoreJS": "function(t){ if(!/Strands/.test(t)) return null; var rows=t.split(/\\r?\\n/).map(function(l){return l.trim();}).filter(function(l){ return l.length && /^(?:🔵|🟡|💡)+$/.test(l); }); if(!rows.length) return null; var g=rows.join(''); var hints=(g.match(/💡/g)||[]).length; var first=g.match(/🔵|🟡/); var base=hints===0?'No hints':hints+(hints===1?' hint':' hints'); return (first&&first[0]==='🟡')?base+' · Spangram first':base; }",
+        "iconURL": "https://puzzlement.games/img/icons/strands-proper.png"
       }
     },
     {
