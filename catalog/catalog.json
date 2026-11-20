@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-16T20:37:28Z",
+  "updated": "2026-11-20T01:10:30Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -2767,6 +2767,44 @@
               "score": "·\\s*(\\d+/1000)"
             },
             "template": "{score}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linkedin-sumbreak",
+      "name": "Sumbreak",
+      "emoji": "🔢",
+      "url": "https://www.linkedin.com/games/sumbreak/",
+      "source": "LinkedIn",
+      "description": "Drag to merge matching neighbouring numbers until one cell remains",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/sumbreak.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight PT",
+        "launchDate": "2026-11-18",
+        "estimatedMinutes": 2,
+        "archiveAccess": "none",
+        "loginBenefit": true,
+        "disableSwipeBack": true,
+        "editionNumberRef": {
+          "date": "2026-11-19",
+          "number": 2
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "sumbreak #"
+            ],
+            "captures": {
+              "t": "[Ss]umbreak #\\d+\\s*\\|\\s*(\\d+(?::\\d{2}){1,2})"
+            },
+            "template": "{t}"
           }
         ]
       }
