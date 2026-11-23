@@ -27,7 +27,7 @@ sessions — anyone able to change this file could read or use those. A
 `WKContentRuleList` rule can hide an element and nothing else: no DOM access,
 no cookies, no network. Same reason score JS runs in a bare JSContext.
 
-## Puzzle of the week
+## Game of the week
 
 `featured` is the queue. An entry appears in the app on its `start` date, at
 midnight where the player is, and moves to Past picks when the next one starts
@@ -48,7 +48,7 @@ queued weeks aren't secret. Needs app 0.4 (39) or later; older builds ignore it.
   their three.
 - `reviewer` and `image` are optional. Pictures must be on puzzlement.games
   (put them in `img/featured/`); they're cropped to a wide strip, about 5:2.
-- `slot` ("Logic", "Word") runs several in one week, each titled "Logic puzzle
+- `slot` ("Logic", "Word") runs several in one week, each titled "Logic game
   of the week". Leave it out for a single pick.
 
 The app's `FeaturedPuzzleTests.testTheSiteQueueIsSound` checks the whole queue.
