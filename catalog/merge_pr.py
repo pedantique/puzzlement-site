@@ -59,8 +59,32 @@ for k, v in tp.items():
         else:
             hp[k] = v
             print('override', k)
+# Puzzles of the week, keyed by week and slot.
+def week(f):
+    return (f.get('start'), f.get('slot'))
+
+
+bf = {week(f): f for f in base.get('featured', [])}
+hf = {week(f): i for i, f in enumerate(head.get('featured', []))}
+for f in theirs.get('featured', []):
+    k = week(f)
+    if f == bf.get(k):
+        continue
+    if k not in hf:
+        if k in bf:
+            print('CONFLICT featured removed in HEAD', k)
+        else:
+            head.setdefault('featured', []).append(f)
+            print('featured', k)
+    elif head['featured'][hf[k]] == bf.get(k):
+        head['featured'][hf[k]] = f
+        print('featured changed', k)
+    elif head['featured'][hf[k]] != f:
+        print('CONFLICT featured both changed', k)
+for k in set(bf) - {week(f) for f in theirs.get('featured', [])}:
+    print('WARNING branch removed featured', k)
 for k in set(base) | set(theirs):
-    if k not in ('added', 'puzzles', 'updated') and base.get(k) != theirs.get(k):
+    if k not in ('added', 'puzzles', 'updated', 'featured') and base.get(k) != theirs.get(k):
         print('WARNING', k, 'changed in branch')
 head['updated'] = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 open('catalog/catalog.json', 'w').write(json.dumps(head, indent=2, ensure_ascii=False) + '\n')

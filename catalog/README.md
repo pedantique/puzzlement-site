@@ -27,6 +27,32 @@ sessions — anyone able to change this file could read or use those. A
 `WKContentRuleList` rule can hide an element and nothing else: no DOM access,
 no cookies, no network. Same reason score JS runs in a bare JSContext.
 
+## Puzzle of the week
+
+`featured` is the queue. An entry appears in the app on its `start` date, at
+midnight where the player is, and moves to Past picks when the next one starts
+or after seven days. Queue as far ahead as you like; the file is public, so
+queued weeks aren't secret. Needs app 0.4 (39) or later; older builds ignore it.
+
+```json
+"featured": [
+  { "puzzle": "metro-maneuver", "start": "2026-11-30",
+    "review": "A few sentences by someone who has played it.",
+    "reviewer": "John",
+    "image": "https://puzzlement.games/img/featured/metro-maneuver.jpg" }
+]
+```
+
+- `puzzle`: a game's catalog id. `start`: a Monday.
+- Pick games that are free to play with no login: free users get it on top of
+  their three.
+- `reviewer` and `image` are optional. Pictures must be on puzzlement.games
+  (put them in `img/featured/`); they're cropped to a wide strip, about 5:2.
+- `slot` ("Logic", "Word") runs several in one week, each titled "Logic puzzle
+  of the week". Leave it out for a single pick.
+
+The app's `FeaturedPuzzleTests.testTheSiteQueueIsSound` checks the whole queue.
+
 ## The Wednesday job (Colorful Strands)
 
 NYT's Colorful Strands has a URL that can't be predicted from the date, so each
