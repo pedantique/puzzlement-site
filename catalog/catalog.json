@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-23T05:56:58Z",
+  "updated": "2026-11-23T06:17:12Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -2883,7 +2883,7 @@
     {
       "puzzle": "triplet",
       "start": "2026-11-23",
-      "review": "Two words are missing the same three letters. Find the three that fit both. As a line slides down the screen more words appear as clues, so waiting makes it easier but costs you. It takes about a minute, and there’s a lovely moment when the letters click.",
+      "review": "Two words are missing the same three letters. Find the three that fit both. As a line slides down the screen, more words appear as clues, so waiting makes it easier but costs you. See if you can beat the clock.",
       "image": "https://puzzlement.games/img/featured/triplet.jpg"
     }
   ]
