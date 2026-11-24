@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-23T06:17:12Z",
+  "updated": "2026-11-24T11:08:05Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -2875,6 +2875,346 @@
           "number": 462
         },
         "scoreJS": "function(t){ var m=t.match(/Poople #\\d+ (\\d+)\\/(\\d+)/i)||t.match(/You used (\\d+) guess(?:es)?\\.?\\s*The best solution was (\\d+) guess/i); if(!m) return null; var d=+m[1]-(+m[2]); return d===0?'on par':Math.abs(d)+(d<0?' under par':' over par'); }"
+      }
+    },
+    {
+      "id": "perdiem-seams",
+      "name": "Seams",
+      "emoji": "🧵",
+      "url": "https://perdiem.games/seams",
+      "source": "PerDiem Games",
+      "description": "Place tiles so every seam matches",
+      "category": "Visual",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/perdiem-seams.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-16",
+        "estimatedMinutes": 5,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://perdiem.games/seams?date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share Your Results",
+        "disableSwipeBack": true,
+        "loginBenefit": true,
+        "editionNumberRef": {
+          "date": "2026-10-16",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "seams #"
+            ],
+            "captures": {
+              "t": "Seams #\\d+ / (\\d+:\\d{2})"
+            },
+            "template": "{t}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "perdiem-seamless",
+      "name": "Seamless",
+      "emoji": "🔄",
+      "url": "https://perdiem.games/seamless",
+      "source": "PerDiem Games",
+      "description": "A Seams variant: turn the tiles until every seam matches",
+      "category": "Visual",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/perdiem-seamless.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-11-07",
+        "estimatedMinutes": 3,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://perdiem.games/seamless?date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share Your Results",
+        "disableSwipeBack": true,
+        "loginBenefit": true,
+        "editionNumberRef": {
+          "date": "2026-11-07",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "seamless #"
+            ],
+            "captures": {
+              "t": "Seamless #\\d+ / (\\d+:\\d{2})"
+            },
+            "template": "{t}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "perdiem-theorem",
+      "name": "Theorem",
+      "emoji": "🔺",
+      "url": "https://perdiem.games/theorem",
+      "source": "PerDiem Games",
+      "description": "Swap tiles to chase the highest score, on Easy, Medium or Hard boards",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/perdiem-theorem.png",
+        "primaryMetric": "points",
+        "lowerIsBetter": false,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-03-28",
+        "estimatedMinutes": 5,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://perdiem.games/theorem?date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share Your Results",
+        "disableSwipeBack": true,
+        "loginBenefit": true,
+        "editionNumberRef": {
+          "date": "2026-03-28",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "theorem #",
+              "🥇"
+            ],
+            "captures": {
+              "s": "Theorem #\\d+ / .*?🥇 ([\\d,]+)",
+              "level": "Theorem #\\d+ / (Easy|Medium|Hard|Extreme) /"
+            },
+            "template": "{s} · {level} · Gold"
+          },
+          {
+            "require": [
+              "theorem #",
+              "🥈"
+            ],
+            "captures": {
+              "s": "Theorem #\\d+ / .*?🥈 ([\\d,]+)",
+              "level": "Theorem #\\d+ / (Easy|Medium|Hard|Extreme) /"
+            },
+            "template": "{s} · {level} · Silver"
+          },
+          {
+            "require": [
+              "theorem #",
+              "🥉"
+            ],
+            "captures": {
+              "s": "Theorem #\\d+ / .*?🥉 ([\\d,]+)",
+              "level": "Theorem #\\d+ / (Easy|Medium|Hard|Extreme) /"
+            },
+            "template": "{s} · {level} · Bronze"
+          },
+          {
+            "require": [
+              "theorem #"
+            ],
+            "captures": {
+              "s": "Theorem #\\d+ / \\w+ / ([\\d,]+)",
+              "level": "Theorem #\\d+ / (Easy|Medium|Hard|Extreme) /"
+            },
+            "template": "{s} · {level}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "perdiem-stacks",
+      "name": "Stacks",
+      "emoji": "🃏",
+      "url": "https://perdiem.games/stacks",
+      "source": "PerDiem Games",
+      "description": "Stack cards that share a suit or rank",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/perdiem-stacks.png",
+        "primaryMetric": "points",
+        "lowerIsBetter": false,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-04",
+        "estimatedMinutes": 4,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://perdiem.games/stacks?date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share Your Results",
+        "disableSwipeBack": true,
+        "loginBenefit": true,
+        "editionNumberRef": {
+          "date": "2026-10-04",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "stacks #",
+              "🥇"
+            ],
+            "captures": {
+              "s": "Stacks #\\d+ / .*?🥇 ([\\d,]+)"
+            },
+            "template": "{s} · Gold"
+          },
+          {
+            "require": [
+              "stacks #",
+              "🥈"
+            ],
+            "captures": {
+              "s": "Stacks #\\d+ / .*?🥈 ([\\d,]+)"
+            },
+            "template": "{s} · Silver"
+          },
+          {
+            "require": [
+              "stacks #",
+              "🥉"
+            ],
+            "captures": {
+              "s": "Stacks #\\d+ / .*?🥉 ([\\d,]+)"
+            },
+            "template": "{s} · Bronze"
+          },
+          {
+            "require": [
+              "stacks #"
+            ],
+            "captures": {
+              "s": "Stacks #\\d+ / ([\\d,]+)"
+            },
+            "template": "{s}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "perdiem-ticker",
+      "name": "Ticker",
+      "emoji": "📈",
+      "url": "https://perdiem.games/ticker",
+      "source": "PerDiem Games",
+      "description": "Trade a 90-second day on the headlines and see how your profit compares",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/perdiem-ticker.png",
+        "primaryMetric": "points",
+        "lowerIsBetter": false,
+        "canFail": false,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-17",
+        "estimatedMinutes": 2,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://perdiem.games/ticker?date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share Your Results",
+        "loginBenefit": true,
+        "editionNumberRef": {
+          "date": "2026-10-17",
+          "number": 1
+        },
+        "scoreRules": [
+          {
+            "require": [
+              "ticker #",
+              "−$"
+            ],
+            "captures": {
+              "v": "Ticker #\\d+ / \\S+ / −\\$([\\d,]+)"
+            },
+            "template": "-${v}"
+          },
+          {
+            "require": [
+              "ticker #"
+            ],
+            "captures": {
+              "v": "Ticker #\\d+ / \\S+ / (\\+?\\$[\\d,]+)"
+            },
+            "template": "{v}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "perdiem-association",
+      "name": "Association",
+      "emoji": "🔗",
+      "url": "https://perdiem.games/association",
+      "source": "PerDiem Games",
+      "description": "Find the groups of four that connect the words",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/perdiem-association.png",
+        "primaryMetric": "time",
+        "lowerIsBetter": true,
+        "canFail": true,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-19",
+        "estimatedMinutes": 4,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://perdiem.games/association?date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share Your Results",
+        "editionNumberRef": {
+          "date": "2026-10-19",
+          "number": 1
+        },
+        "scoreJS": "function(t){ var h=t.match(/Association #\\d+ \\/ (\\u274C )?(\\d+:\\d{2})/); if(!h) return null; if(h[1]) return 'Out of mistakes'; var rows=t.split(/\\r?\\n/).map(function(l){return l.trim();}).filter(function(l){return /^(?:\\uD83D[\\uDFE9\\uDFE6\\uDFEA\\uDFE7]){4}$/.test(l);}); var m=0; for(var i=0;i<rows.length;i++){ var c=rows[i].match(/\\uD83D[\\uDFE9\\uDFE6\\uDFEA\\uDFE7]/g); if(c[0]!==c[1]||c[0]!==c[2]||c[0]!==c[3]) m++; } return m ? h[2]+' \\u00B7 '+m+(m===1?' mistake':' mistakes') : h[2]; }"
+      }
+    },
+    {
+      "id": "perdiem-clockwise",
+      "name": "Clockwise",
+      "emoji": "🕰️",
+      "url": "https://perdiem.games/clockwise",
+      "source": "PerDiem Games",
+      "description": "Wind the clock to the time of day the clue describes, with hot and cold hints",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "iconURL": "https://puzzlement.games/img/icons/perdiem-clockwise.png",
+        "primaryMetric": "guesses",
+        "lowerIsBetter": true,
+        "canFail": true,
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "launchDate": "2026-10-24",
+        "estimatedMinutes": 2,
+        "archiveAccess": "free",
+        "dateURLPattern": "https://perdiem.games/clockwise?date={yyyy}-{MM}-{dd}",
+        "isArchiveOnlyDateURL": true,
+        "shareButtonLabel": "Share Your Results",
+        "disableSwipeBack": true,
+        "loginBenefit": true,
+        "scoreMax": 6,
+        "failureAtMax": true,
+        "editionNumberRef": {
+          "date": "2026-10-24",
+          "number": 1
+        },
+        "scoreJS": "function(t){ if(!/Clockwise #\\d+ \\//.test(t)) return null; var l=t.split(/\\r?\\n/).map(function(x){return x.trim();}).filter(function(x){return /^(?:\\u2705|\\uD83D[\\uDFE5\\uDFE7\\uDFE8\\uDFE6\\uDFEA])+$/.test(x);})[0]; if(!l) return null; var n=l.match(/\\u2705|\\uD83D[\\uDFE5\\uDFE7\\uDFE8\\uDFE6\\uDFEA]/g).length; return l.indexOf('\\u2705')>=0 ? n+'/6' : 'X/6'; }"
       }
     }
   ],
