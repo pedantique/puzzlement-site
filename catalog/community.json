@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "warning": "Unvetted. Some of these games will not load, fit, reset or score correctly in an embedded web view.",
-  "updated": "2026-11-08T06:08:22Z",
+  "updated": "2026-11-24",
   "source": "https://github.com/guilyx/awesome-daily-minigames (CC0-1.0)",
   "note": "Community list, not vetted by Puzzlement. Shown only when Settings > Experimental > Community puzzles is on.",
   "added": [
@@ -29,6 +29,22 @@
       "source": "Community",
       "description": "Identify an actor from a filmography with the titles blanked out and only genres and ratings showing",
       "category": "Movie & TV",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-alembic",
+      "name": "Alembic",
+      "emoji": "🤔",
+      "url": "https://goblinarcade.com/play/alembic",
+      "source": "Community",
+      "description": "Combine Fire, Water, Earth and Air to reach the day's target element in as few brews as possible, with par for Gold",
+      "category": "Logic",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -125,6 +141,38 @@
       "source": "Community",
       "description": "Guess the day's Balatro joker from its rarity, cost and effect",
       "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-ballometry",
+      "name": "Ballometry",
+      "emoji": "⚽",
+      "url": "https://www.ballometry.com/",
+      "source": "Community",
+      "description": "Sketch the hidden part of five real sports stat charts, then see how close your line came to the actual data",
+      "category": "Sports",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-ballpark",
+      "name": "Ballpark",
+      "emoji": "🖼️",
+      "url": "https://ballparkdaily.com/",
+      "source": "Community",
+      "description": "Answer five daily number questions with a range on a log slider; a tighter range that still contains the answer scores more",
+      "category": "Visual",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -280,6 +328,38 @@
       }
     },
     {
+      "id": "community-beehints-daily",
+      "name": "BeeHints Daily",
+      "emoji": "🔤",
+      "url": "https://www.beehints.com/play",
+      "source": "Community",
+      "description": "Make words from a seven-letter hive that must use the centre letter, and hunt for the pangram",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-bigger-vs",
+      "name": "Bigger vs",
+      "emoji": "🖼️",
+      "url": "https://biggervs.com/",
+      "source": "Community",
+      "description": "Resize real-world objects against a fixed reference across five daily rounds, then see how close your estimates were",
+      "category": "Visual",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-birdie-game",
       "name": "Birdie Game",
       "emoji": "🔬",
@@ -312,6 +392,22 @@
       }
     },
     {
+      "id": "community-bljdle",
+      "name": "BLJdle",
+      "emoji": "❓",
+      "url": "https://bljdle.com/",
+      "source": "Community",
+      "description": "Practise Super Mario 64's backwards long jump in a daily challenge to see how high you can climb",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-box-office-game",
       "name": "Box Office Game",
       "emoji": "🎬",
@@ -319,6 +415,54 @@
       "source": "Community",
       "description": "Name the top five films at the US box office for a mystery weekend in history",
       "category": "Movie & TV",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-brainilab-daily",
+      "name": "BrainiLab Daily",
+      "emoji": "🔤",
+      "url": "https://brainilabgames.com/daily-quiz/",
+      "source": "Community",
+      "description": "One shared main game a day that rotates between a mixed-knowledge quiz, a word game and a number puzzle, plus an optional extra",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-bulkle",
+      "name": "Bulkle",
+      "emoji": "🔢",
+      "url": "https://www.outletpicks.com/bulkle",
+      "source": "Community",
+      "description": "Five real Amazon products a day, each in two to four pack sizes — pick the size that costs least per unit",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-cardle",
+      "name": "Cardle",
+      "emoji": "🖼️",
+      "url": "https://cardledaily.com/",
+      "source": "Community",
+      "description": "One real car photo a day starts zoomed in and pulls back after every miss; name the car in five tries",
+      "category": "Visual",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -351,6 +495,22 @@
       "source": "Community",
       "description": "Semantle's hot-and-cold sibling, reporting temperature instead of a raw rank",
       "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-chartered",
+      "name": "Chartered",
+      "emoji": "🌍",
+      "url": "https://playchartered.com/",
+      "source": "Community",
+      "description": "Pin five historical events on a world map and guess the year of each one",
+      "category": "Geography",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -488,6 +648,38 @@
       }
     },
     {
+      "id": "community-clocked",
+      "name": "Clocked",
+      "emoji": "❓",
+      "url": "https://playclocked.com/",
+      "source": "Community",
+      "description": "Twenty general-knowledge questions against a five-minute clock; type answers in any order and they slot into place",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-clueroll",
+      "name": "ClueRoll",
+      "emoji": "🔤",
+      "url": "https://clueroll.com/",
+      "source": "Community",
+      "description": "Find the word linking three clues, then roll lettered cubes into place so their top faces spell the answer",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-clues-by-sam",
       "name": "Clues by Sam",
       "emoji": "🤔",
@@ -576,6 +768,22 @@
       "description": "Narrow down a country using continent, hemisphere, population and temperature clues",
       "category": "Geography",
       "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-couscous",
+      "name": "Couscous",
+      "emoji": "🔤",
+      "url": "https://couscous.ai/play/daily",
+      "source": "Community",
+      "description": "Ask yes-or-no questions about a secret word, watch a ring warm up as you get close, then name the word",
+      "category": "Word",
+      "access": "Paid sub required",
       "classification": {
         "cadence": "daily",
         "resetTime": "Midnight local",
@@ -714,6 +922,22 @@
       }
     },
     {
+      "id": "community-daily-train-puzzle",
+      "name": "Daily train puzzle",
+      "emoji": "🤔",
+      "url": "https://griffinley.com/harold-miller/inglenook/",
+      "source": "Community",
+      "description": "Shunt eight numbered train cars across three short tracks to line up the day's five in the fewest moves",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-daily-walkoff",
       "name": "Daily Walkoff",
       "emoji": "⚽",
@@ -746,6 +970,22 @@
       }
     },
     {
+      "id": "community-decrypticle",
+      "name": "Decrypticle",
+      "emoji": "🔤",
+      "url": "https://decrypticle.com/",
+      "source": "Community",
+      "description": "Guess the hidden word using each letter's random value from 1 to 7 and the point total of every guess",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-dordle",
       "name": "Dordle",
       "emoji": "🔤",
@@ -753,6 +993,38 @@
       "source": "Community",
       "description": "The original multi-board spin-off: two grids, one shared set of guesses",
       "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-double-cross",
+      "name": "Double Cross",
+      "emoji": "◻️",
+      "url": "https://everhall.ca/",
+      "source": "Community",
+      "description": "A 7x7 daily crossword where each card clues two same-length slots at once; the crossing letters decide which answer goes where",
+      "category": "Crossword",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-drawshapes",
+      "name": "DrawShapes",
+      "emoji": "🖼️",
+      "url": "https://drawshapes.io/",
+      "source": "Community",
+      "description": "Study five shapes for three seconds each, then redraw each one from memory as a single continuous line",
+      "category": "Visual",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -842,6 +1114,38 @@
       }
     },
     {
+      "id": "community-emoji-flicks",
+      "name": "Emoji Flicks",
+      "emoji": "🎬",
+      "url": "https://simplegamestoday.com/emoji-flicks/",
+      "source": "Community",
+      "description": "Name the film from emoji clues revealed one per miss, with the genre and year shown from the start",
+      "category": "Movie & TV",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-eraguessr",
+      "name": "EraGuessr",
+      "emoji": "❓",
+      "url": "https://eraguessr.ai/play/daily",
+      "source": "Community",
+      "description": "Explore an AI-generated historical panorama and guess its place and year in a shared daily challenge",
+      "category": "Trivia",
+      "access": "Paid sub required",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-factle",
       "name": "Factle",
       "emoji": "❓",
@@ -850,6 +1154,22 @@
       "description": "Guess the entries in a real top-five list, ranked in the right order",
       "category": "Trivia",
       "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-features",
+      "name": "features",
+      "emoji": "🤔",
+      "url": "https://features.games/",
+      "source": "Community",
+      "description": "Drag dots until no lines cross on eight shared daily untangling boards, with frozen, fused and linked dot twists",
+      "category": "Logic",
+      "access": "Paid sub required",
       "classification": {
         "cadence": "daily",
         "resetTime": "Midnight local",
@@ -922,6 +1242,22 @@
       }
     },
     {
+      "id": "community-floored",
+      "name": "Floored",
+      "emoji": "❓",
+      "url": "https://playfloored.com/",
+      "source": "Community",
+      "description": "Five ranked lists a day, each with a target rank; guess any item to see its rank and work higher or lower until you land on it",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-foodguessr",
       "name": "FoodGuessr",
       "emoji": "❓",
@@ -948,6 +1284,22 @@
       "access": "Free",
       "classification": {
         "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-football-krillion",
+      "name": "Football Krillion",
+      "emoji": "⚽",
+      "url": "https://footballkrillion.net/",
+      "source": "Community",
+      "description": "Name players or teams for seven daily World Cup prompts and score more for less obvious correct answers",
+      "category": "Sports",
+      "access": "Free",
+      "classification": {
+        "cadence": "unlimited",
         "resetTime": "Midnight local",
         "popularityScore": 1,
         "scoreShare": "none"
@@ -1036,6 +1388,22 @@
       }
     },
     {
+      "id": "community-goblin-maze",
+      "name": "Goblin Maze",
+      "emoji": "🤔",
+      "url": "https://goblinarcade.com/play/goblin-maze",
+      "source": "Community",
+      "description": "Steer a ball through the day's shared maze to grab the key and reach the exit, scored against the shortest route",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-google-feud",
       "name": "Google Feud",
       "emoji": "❓",
@@ -1091,6 +1459,38 @@
       "source": "Community",
       "description": "Name the brand from a partially obscured logo",
       "category": "Visual",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-guesscrowd",
+      "name": "GuessCrowd",
+      "emoji": "❓",
+      "url": "https://guesscrowd.com/",
+      "source": "Community",
+      "description": "Predict the most popular answer to each of five daily survey questions and see where your guesses rank",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-guessnow",
+      "name": "guessNow",
+      "emoji": "❓",
+      "url": "https://guessnow.fun/",
+      "source": "Community",
+      "description": "Guess the year of five real archival photographs, with the provenance shown at each reveal",
+      "category": "Trivia",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -1171,6 +1571,38 @@
       "source": "Community",
       "description": "The grid format for the NBA, with a rarity score that rewards obscure picks",
       "category": "Sports",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-how-expensive",
+      "name": "How expensive?",
+      "emoji": "🖼️",
+      "url": "https://howexpensive.roughly.is/",
+      "source": "Community",
+      "description": "Guess what an item cost in a given country and year, then see the official historical price and how far off you were",
+      "category": "Visual",
+      "access": "Paid sub required",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-how-far-off",
+      "name": "How Far Off",
+      "emoji": "🖼️",
+      "url": "https://griffinley.com/margaret-brown/how-far-off.html",
+      "source": "Community",
+      "description": "Guess a low-to-high range for one number about a US city in three tries; narrower ranges that still hold the answer score higher",
+      "category": "Visual",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -1340,6 +1772,22 @@
       }
     },
     {
+      "id": "community-kegillion",
+      "name": "Kegillion",
+      "emoji": "❓",
+      "url": "https://kegillion.org/",
+      "source": "Community",
+      "description": "Answer seven daily campus trivia prompts against a timer, where less obvious correct answers score more points",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-kinda-hard-golf",
       "name": "Kinda Hard Golf",
       "emoji": "🤔",
@@ -1347,6 +1795,38 @@
       "source": "Community",
       "description": "A physics-golf daily that lives up to its name",
       "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-kinship",
+      "name": "Kinship",
+      "emoji": "🔤",
+      "url": "https://playkinship.com/",
+      "source": "Community",
+      "description": "Four clues share one hidden word; every guess is ranked by how close it sits to the word at their centre",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-krillion-space",
+      "name": "Krillion Space",
+      "emoji": "❓",
+      "url": "https://krilion.app/",
+      "source": "Community",
+      "description": "Answer a daily space-themed trivia challenge whose choices shape a galaxy shared by every player",
+      "category": "Trivia",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -1436,6 +1916,22 @@
       }
     },
     {
+      "id": "community-little-plot",
+      "name": "Little Plot",
+      "emoji": "🤔",
+      "url": "https://littleplotgame.com/",
+      "source": "Community",
+      "description": "Place twelve buildings on a shared 5x5 board, scoring points by planning around terrain and neighbouring buildings",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-loldle",
       "name": "LoLdle",
       "emoji": "❓",
@@ -1500,6 +1996,22 @@
       }
     },
     {
+      "id": "community-mapcade",
+      "name": "Mapcade",
+      "emoji": "🌍",
+      "url": "https://mapcade.app/",
+      "source": "Community",
+      "description": "Twenty-four geography modes with five shared daily rounds each, from redrawing a missing border to naming country outlines",
+      "category": "Geography",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-mapster",
       "name": "Mapster",
       "emoji": "🌍",
@@ -1523,6 +2035,22 @@
       "source": "Community",
       "description": "Find the hidden calculation that produces the given target number",
       "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-meccha-chameleon",
+      "name": "Meccha Chameleon",
+      "emoji": "🖼️",
+      "url": "https://kmufti.com/chameleon/",
+      "source": "Community",
+      "description": "Find a blank 3D figure camouflaged somewhere in the daily photo, scored on how fast and in how few clicks you spot it",
+      "category": "Visual",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -1628,6 +2156,22 @@
       }
     },
     {
+      "id": "community-nanizo",
+      "name": "Nanizo",
+      "emoji": "❓",
+      "url": "https://nanizo.com/en/daily/",
+      "source": "Community",
+      "description": "Ten trivia questions a day, the same for everyone and one try only, scored on accuracy and speed with world and country leaderboards",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-netflix-puzzled",
       "name": "Netflix Puzzled",
       "emoji": "🔤",
@@ -1638,6 +2182,22 @@
       "access": "Free",
       "classification": {
         "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-noillirk-puffer-party-edition",
+      "name": "Noillirk (Puffer Party edition)",
+      "emoji": "❓",
+      "url": "https://pufferparty.org/noillirk/",
+      "source": "Community",
+      "description": "Guess the most familiar valid answer for each of seven categories on a shared daily board",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "unlimited",
         "resetTime": "Midnight local",
         "popularityScore": 1,
         "scoreShare": "none"
@@ -1760,6 +2320,22 @@
       }
     },
     {
+      "id": "community-nynr",
+      "name": "NYNR",
+      "emoji": "🔤",
+      "url": "https://nynr.day/",
+      "source": "Community",
+      "description": "Trace words across a letter grid by swiping lock-screen-style patterns",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-one-step-late",
       "name": "One Step Late",
       "emoji": "🤔",
@@ -1767,6 +2343,22 @@
       "source": "Community",
       "description": "Your shadow repeats your previous move one turn late; bring yourself to the sun and it to the moon on the same turn",
       "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-originle",
+      "name": "Originle",
+      "emoji": "🌍",
+      "url": "https://originle.app/",
+      "source": "Community",
+      "description": "Watch short video clues from a daily guest and guess which country they come from",
+      "category": "Geography",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -1824,6 +2416,22 @@
       }
     },
     {
+      "id": "community-pictle",
+      "name": "pictle",
+      "emoji": "🔤",
+      "url": "https://pictle.org/",
+      "source": "Community",
+      "description": "A picture hides behind five cards; each guess folds one open, so a wrong guess still buys you a better view",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-pimantle",
       "name": "Pimantle",
       "emoji": "🔤",
@@ -1834,6 +2442,38 @@
       "access": "Free",
       "classification": {
         "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-pips-hints",
+      "name": "Pips Hints",
+      "emoji": "🤔",
+      "url": "https://pipshints.org/",
+      "source": "Community",
+      "description": "Daily hints and answers for the NYT Pips domino puzzle, plus free unlimited Pips puzzles to play",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "cadence": "unlimited",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-play-color-guesser",
+      "name": "Play Color Guesser",
+      "emoji": "🖼️",
+      "url": "https://playcolorguesser.com/",
+      "source": "Community",
+      "description": "A logo, flag, Pokémon or football crest appears in grey; pick its exact colour from memory within 20 seconds",
+      "category": "Visual",
+      "access": "Free",
+      "classification": {
+        "cadence": "unlimited",
         "resetTime": "Midnight local",
         "popularityScore": 1,
         "scoreShare": "none"
@@ -1920,6 +2560,22 @@
       }
     },
     {
+      "id": "community-pokequizz",
+      "name": "Pokequizz",
+      "emoji": "🔤",
+      "url": "https://pokequizz.com/en/",
+      "source": "Community",
+      "description": "19 daily Pokémon games, from a Pokédle and a 3 x 3 grid to The Chain and Hidden Power, plus a ranked duel mode and collectible mascots",
+      "category": "Word",
+      "access": "Paid sub required",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-pokle",
       "name": "Pokle",
       "emoji": "🤔",
@@ -1952,6 +2608,22 @@
       }
     },
     {
+      "id": "community-pooplegame-fun",
+      "name": "PoopleGame.fun",
+      "emoji": "🔤",
+      "url": "https://pooplegame.fun/",
+      "source": "Community",
+      "description": "A free daily four-letter word ladder that turns a start word into POOP one letter at a time, with hints, a solver and unlimited practice",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "unlimited",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-primel",
       "name": "Primel",
       "emoji": "🔢",
@@ -1959,6 +2631,22 @@
       "source": "Community",
       "description": "Wordle where every guess and the answer must be a five-digit prime",
       "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-prompt-duel",
+      "name": "Prompt Duel",
+      "emoji": "🖼️",
+      "url": "https://prompt-duel-delta.vercel.app/?daily",
+      "source": "Community",
+      "description": "Describe the day's AI-generated picture in 60 seconds; an image model paints your words and an AI judge scores the match from 0 to 100",
+      "category": "Visual",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -2128,6 +2816,22 @@
       }
     },
     {
+      "id": "community-riddle-of-the-day",
+      "name": "Riddle of the Day",
+      "emoji": "🤔",
+      "url": "https://brainbreaklab.com/riddle-of-the-day/",
+      "source": "Community",
+      "description": "Solve a short daily riddle, use a hint if needed, and reveal the answer when ready",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-rogule",
       "name": "Rogule",
       "emoji": "🤔",
@@ -2175,6 +2879,22 @@
             "template": "{t}"
           }
         ]
+      }
+    },
+    {
+      "id": "community-rulebreaker",
+      "name": "Rulebreaker",
+      "emoji": "🤔",
+      "url": "https://bludle.com/rulebreaker/",
+      "source": "Community",
+      "description": "Tune and reorder cipher transformations until the daily encrypted phrase becomes readable",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
       }
     },
     {
@@ -2242,6 +2962,22 @@
       }
     },
     {
+      "id": "community-seekade",
+      "name": "Seekade",
+      "emoji": "❓",
+      "url": "https://seekade.com/",
+      "source": "Community",
+      "description": "Word search featuring a new video game theme every day",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-semantle",
       "name": "Semantle",
       "emoji": "🔤",
@@ -2274,6 +3010,38 @@
       }
     },
     {
+      "id": "community-shople",
+      "name": "Shople",
+      "emoji": "❓",
+      "url": "https://playshople.com/",
+      "source": "Community",
+      "description": "Guess the mystery brand in ten tries; each guess compares headquarters, founding year, industry, revenue and more against the answer",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-sizeguess",
+      "name": "SizeGuess",
+      "emoji": "🖼️",
+      "url": "https://sizeguess.com/",
+      "source": "Community",
+      "description": "Resize real-world objects against a known reference over five daily rounds, then see the true measurement and how close you got",
+      "category": "Visual",
+      "access": "Free",
+      "classification": {
+        "cadence": "unlimited",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-smashdle",
       "name": "Smashdle",
       "emoji": "❓",
@@ -2282,6 +3050,38 @@
       "description": "Super Smash Bros. character, move and stage guessing modes",
       "category": "Trivia",
       "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-sound-of-sliver",
+      "name": "Sound of Sliver",
+      "emoji": "🎵",
+      "url": "https://soundofsliver.com/",
+      "source": "Community",
+      "description": "Name ten tunes on a daily theme, each from a 300ms slice; a wrong pick buys a longer listen for fewer points",
+      "category": "Music",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-spaceillion",
+      "name": "Spaceillion",
+      "emoji": "❓",
+      "url": "https://spaceillion.com/",
+      "source": "Community",
+      "description": "Seven trivia prompts at 25 seconds each, where rarer correct answers launch your pixel rocket farther into space",
+      "category": "Trivia",
+      "access": "Paid sub required",
       "classification": {
         "cadence": "daily",
         "resetTime": "Midnight local",
@@ -2645,6 +3445,22 @@
       }
     },
     {
+      "id": "community-think-in-odds",
+      "name": "Think in Odds",
+      "emoji": "🔢",
+      "url": "https://thinkinodds.com/",
+      "source": "Community",
+      "description": "Answer a daily probability question, using optional hints and a worked explanation to explore the reasoning",
+      "category": "Numbers",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-thrice",
       "name": "Thrice",
       "emoji": "❓",
@@ -2709,6 +3525,22 @@
       }
     },
     {
+      "id": "community-uncommon-trivia",
+      "name": "Uncommon Trivia",
+      "emoji": "❓",
+      "url": "https://www.uncommontrivia.com/",
+      "source": "Community",
+      "description": "Seven open-ended questions a day, where the most obscure correct answer scores the most points",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-unolingo",
       "name": "Unolingo",
       "emoji": "◻️",
@@ -2719,6 +3551,22 @@
       "access": "Free",
       "classification": {
         "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-vowelkit",
+      "name": "Vowelkit",
+      "emoji": "🔤",
+      "url": "https://www.vowelkit.com/daily",
+      "source": "Community",
+      "description": "Guess the five-letter word of the day in six tries, with extra modes from 3 to 11 letters",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "unlimited",
         "resetTime": "Midnight local",
         "popularityScore": 1,
         "scoreShare": "none"
@@ -2789,6 +3637,22 @@
       }
     },
     {
+      "id": "community-wherecast",
+      "name": "Wherecast",
+      "emoji": "🌍",
+      "url": "https://wherecast.com",
+      "source": "Community",
+      "description": "A daily city-guessing game where players use a real weather forecast to identify a mystery city in six tries",
+      "category": "Geography",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-wheretaken",
       "name": "WhereTaken",
       "emoji": "🌍",
@@ -2805,6 +3669,22 @@
       }
     },
     {
+      "id": "community-wikicards-trivia",
+      "name": "WikiCards Trivia",
+      "emoji": "❓",
+      "url": "https://playwikicards.com/trivia-questions/",
+      "source": "Community",
+      "description": "Twenty general-knowledge questions a day, generated from Wikidata facts, with each answer linked to its source item",
+      "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
       "id": "community-wikitrivia",
       "name": "Wikitrivia",
       "emoji": "❓",
@@ -2812,6 +3692,38 @@
       "source": "Community",
       "description": "Build a timeline card by card from Wikidata; one wrong placement ends the run",
       "category": "Trivia",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-witlocked-daily-lock",
+      "name": "WitLocked Daily Lock",
+      "emoji": "🤔",
+      "url": "https://witlocked.com/puzzles/daily-lock",
+      "source": "Community",
+      "description": "Search an illustrated story scene for clues and connect them to crack a new escape-room-style lock each day",
+      "category": "Logic",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-word-bridge",
+      "name": "Word Bridge",
+      "emoji": "🔤",
+      "url": "https://bludle.com/wordbridge/",
+      "source": "Community",
+      "description": "Find one word that forms a familiar compound or phrase with both words on the daily board",
+      "category": "Word",
       "access": "Free",
       "classification": {
         "cadence": "daily",
@@ -2843,6 +3755,70 @@
       "url": "https://vegeta897.github.io/word-peaks/",
       "source": "Community",
       "description": "Clues tell you whether each letter comes alphabetically before or after your guess",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-word-seesaw",
+      "name": "Word Seesaw",
+      "emoji": "◻️",
+      "url": "https://wordseesaw.com/",
+      "source": "Community",
+      "description": "Swap pairs of letters across a grid of words until every row answers its clue, in as few swaps as possible",
+      "category": "Crossword",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-wordchute",
+      "name": "Wordchute",
+      "emoji": "🔤",
+      "url": "https://wordchute.com/",
+      "source": "Community",
+      "description": "Connect touching letters to make words while planning around a visible queue of falling letters, until all 32 tiles are cleared",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-wordclips",
+      "name": "Wordclips",
+      "emoji": "🔤",
+      "url": "https://kindaneatgames.com/wordclips/",
+      "source": "Community",
+      "description": "Rotate and fit two-letter pieces so every row forms a four-letter word, guided by a theme and one fixed pair",
+      "category": "Word",
+      "access": "Free",
+      "classification": {
+        "cadence": "daily",
+        "resetTime": "Midnight local",
+        "popularityScore": 1,
+        "scoreShare": "none"
+      }
+    },
+    {
+      "id": "community-wordpaths",
+      "name": "Wordpaths",
+      "emoji": "🔤",
+      "url": "https://kindaneatgames.com/wordpaths/",
+      "source": "Community",
+      "description": "Trace words from filled dots to open rings so the paths cover every letter of the grid without crossing",
       "category": "Word",
       "access": "Free",
       "classification": {
