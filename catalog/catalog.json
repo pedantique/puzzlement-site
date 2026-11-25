@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-24T23:42:49Z",
+  "updated": "2026-11-25T03:16:01Z",
   "siteFixRules": [
     {
       "trigger": {
@@ -70,7 +70,8 @@
           "2026-10-21": "https://www.nytimes.com/games/bonus/strands/colorful/2026-10-21-1072",
           "2026-10-28": "https://www.nytimes.com/games/bonus/strands/colorful/2026-10-28-1142",
           "2026-11-04": "https://www.nytimes.com/games/bonus/strands/colorful/2026-11-04-1148",
-          "2026-11-11": "https://www.nytimes.com/games/bonus/strands/colorful/2026-11-11-1156"
+          "2026-11-11": "https://www.nytimes.com/games/bonus/strands/colorful/2026-11-11-1156",
+          "2026-11-25": "https://www.nytimes.com/games/bonus/strands/colorful/2026-11-25-1169"
         },
         "resetTime": "Midnight ET",
         "dateURLReset": {
@@ -108,7 +109,8 @@
           "2026-10-28": "https://www.nytimes.com/games/bonus/connections/3x3/2026-10-28-1290",
           "2026-11-04": "https://www.nytimes.com/games/bonus/connections/3x3/2026-11-04-1300",
           "2026-11-11": "https://www.nytimes.com/games/bonus/connections/3x3/2026-11-11-1308",
-          "2026-11-18": "https://www.nytimes.com/games/bonus/connections/3x3/2026-11-18-1323"
+          "2026-11-18": "https://www.nytimes.com/games/bonus/connections/3x3/2026-11-18-1323",
+          "2026-11-25": "https://www.nytimes.com/games/bonus/connections/3x3/2026-11-25-1332"
         }
       }
     },
